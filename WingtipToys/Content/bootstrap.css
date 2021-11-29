@@ -1,0 +1,8220 @@
+﻿/ *!
+* bootswatch v3.4.1
+* Página inicial: https://bootswatch.com
+* Copyright 2012-2019 Thomas Park
+* Licenciado pelo MIT
+* Baseado em Bootstrap
+* /
+/ *!
+* Bootstrap v3.4.1 (https://getbootstrap.com/)
+* Copyright 2011-2019 Twitter, Inc.
+* Licenciado pelo MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+* /
+/ *! normalize.css v3.0.3 | Licença MIT | github.com/necolas/normalize.css * /
+html {
+    família da fonte: sans-serif;
+    -ms-text-size-ajustar: 100%;
+    -webkit-texto-tamanho-ajuste: 100%;
+}
+
+corpo {
+    margem: 0;
+}
+
+artigo,
+a parte, de lado,
+detalhes,
+figcaption,
+figura,
+rodapé,
+cabeçalho,
+hgroup,
+a Principal,
+cardápio,
+nav,
+seção,
+resumo {
+    display: bloco;
+}
+
+áudio,
+tela,
+progresso,
+vídeo {
+    display: bloco embutido;
+    alinhamento vertical: linha de base;
+}
+
+    áudio: não ([controles]) {
+        Mostrar nenhum;
+        altura: 0;
+    }
+
+[escondido],
+modelo {
+    Mostrar nenhum;
+}
+
+uma {
+    cor de fundo: transparente;
+}
+
+a: ativo,
+a: hover {
+    esboço: 0;
+}
+
+abbr [título] {
+    borda inferior: nenhum;
+    decoração de texto: sublinhado;
+    decoração de texto: sublinhado pontilhado;
+}
+
+b,
+Forte {
+    intensidade da fonte: Negrito;
+}
+
+dfn {
+    estilo da fonte: itálico;
+}
+
+h1 {
+    tamanho da fonte: 2em;
+    margem: 0,67em 0;
+}
+
+marca {
+    plano de fundo: # ff0;
+    cor: # 000;
+}
+
+pequena {
+    tamanho da fonte: 80%;
+}
+
+sub,
+e aí {
+    tamanho da fonte: 75%;
+    altura da linha: 0;
+    posição: relativa;
+    alinhamento vertical: linha de base;
+}
+
+e aí {
+    topo: -0,5em;
+}
+
+sub {
+    inferior: -0,25em;
+}
+
+img {
+    fronteira: 0;
+}
+
+svg: not (: root) {
+    estouro: oculto;
+}
+
+figura {
+    margem: 1em 40px;
+}
+
+hr {
+    tamanho da caixa: caixa de conteúdo;
+    altura: 0;
+}
+
+pre {
+    estouro: automático;
+}
+
+código,
+kbd,
+pré,
+samp {
+    família da fonte: monoespaço, monoespaço;
+    tamanho da fonte: 1em;
+}
+
+botão,
+entrada,
+optgroup,
+selecione,
+textarea {
+    cor: herdar;
+    fonte: herdar;
+    margem: 0;
+}
+
+botão {
+    estouro: visível;
+}
+
+botão,
+select {
+    transformação de texto: nenhum;
+}
+
+botão,
+entrada html [type = "botão"],
+entrada [type = "reset"],
+input [type = "submit"] {
+    -webkit-aparência: botão;
+    cursor: ponteiro;
+}
+
+    botão [desativado],
+    entrada html [desativado] {
+        cursor: padrão;
+    }
+
+    botão :: - moz-focus-inner,
+    input :: - moz-focus-inner {
+        fronteira: 0;
+        preenchimento: 0;
+    }
+
+entrada {
+    altura da linha: normal;
+}
+
+input [type = "checkbox"],
+input [type = "radio"] {
+    dimensionamento da caixa: caixa de borda;
+    preenchimento: 0;
+}
+
+input [type = "number"] :: - webkit-inner-spin-button,
+input [type = "number"] :: - webkit-outer-spin-button {
+    altura: automático;
+}
+
+input [type = "search"] {
+    -webkit-aparência: campo de texto;
+    tamanho da caixa: caixa de conteúdo;
+}
+
+    input [type = "search"] :: - webkit-search-cancel-button,
+    input [type = "search"] :: - webkit-search-decoration {
+        -webkit-aparência: nenhum;
+    }
+
+fieldset {
+    borda: 1px sólido # c0c0c0;
+    margem: 0 2px;
+    preenchimento: 0,35em 0,625em 0,75em;
+}
+
+lenda {
+    fronteira: 0;
+    preenchimento: 0;
+}
+
+textarea {
+    estouro: automático;
+}
+
+optgroup {
+    intensidade da fonte: Negrito;
+}
+
+tabela {
+    colapso da fronteira: colapso;
+    espaçamento entre bordas: 0;
+}
+
+td,
+º {
+    preenchimento: 0;
+}
+
+/ *! Fonte: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css * /
+@media print {
+    *, *:antes, *:depois de
+
+{
+    cor: # 000 ! importante;
+    sombra do texto: nenhum ! importante;
+    fundo: transparente ! importante;
+    sombra da caixa: nenhum ! importante;
+}
+
+uma,
+a: visitou {
+    decoração de texto: sublinhado;
+}
+
+a [href]: após {
+    conteúdo: "(" attr (href) ")";
+}
+
+abbr [título]: após {
+    conteúdo: "(" attr (title) ")";
+}
+
+a [href ^ = "#"]: depois,
+a [href ^ = "javascript:"]: depois de {
+    contente: "";
+}
+
+pré,
+bloco de citação {
+    borda: 1px sólido # 999;
+    quebra de página dentro: evitar;
+}
+
+thead {
+    exibição: grupo de cabeçalho de tabela;
+}
+
+tr,
+img {
+    quebra de página dentro: evitar;
+}
+
+img {
+    largura máxima: 100% ! importante;
+}
+
+p,
+h2,
+h3 {
+    órfãos: 3;
+    viúvas: 3;
+}
+
+h2,
+h3 {
+    quebra de página após: evitar;
+}
+
+.navbar {
+    Mostrar nenhum;
+}
+
+.btn > .caret,
+.dropup > .btn > .caret {
+    border-top-color: # 000 ! importante;
+}
+
+.rótulo {
+    borda: 1px sólido # 000;
+}
+
+.tabela {
+    colapso da fronteira: colapso ! importante;
+}
+
+.table td,
+.table th {
+    cor de fundo: #fff !important;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #ddd !important;
+}
+
+}
+
+@Tipo de letra {
+    família da fonte: "Glyphicons Halflings";
+    src: url ("../ fonts / glyphicons-halflings-regular.eot");
+    src: url ("../ fonts / glyphicons-halflings-regular.eot? #iefix") formato ("embedded-opentype"), formato url ("../ fonts / glyphicons-halflings-regular.woff2") ( "woff2"), formato url ("../ fonts / glyphicons-halflings-regular.woff") ("woff"), formato url ("../ fonts / glyphicons-halflings-regular.ttf") ("truetype "), formato url (" ../ fonts / glyphicons-halflings-regular.svg # glyphicons_halflingsregular ") (" svg ");
+}
+
+.glyphicon {
+    posição: relativa;
+    topo: 1px;
+    display: bloco embutido;
+    família da fonte: "Glyphicons Halflings";
+    estilo da fonte: normal;
+    peso da fonte: 400;
+    altura da linha: 1;
+    -webkit-font-smoothing: suavizado;
+    -moz-osx-font-smoothing: tons de cinza;
+}
+
+.glyphicon-asterisk: antes de {
+    conteúdo: "\ 002a";
+}
+
+.glyphicon-plus: antes de {
+    conteúdo: "\ 002b";
+}
+
+.glyphicon-euro: antes,
+.glyphicon-eur: antes de {
+    conteúdo: "\ 20ac";
+}
+
+.glyphicon-minus: before {
+    conteúdo: "\ 2212";
+}
+
+.glyphicon-cloud: antes de {
+    conteúdo: "\ 2601";
+}
+
+.glyphicon-envelope: before {
+    conteúdo: "\ 2709";
+}
+
+.glyphicon-pencil: antes de {
+    conteúdo: "\ 270f";
+}
+
+.glyphicon-glass: before {
+    conteúdo: "\ e001";
+}
+
+.glyphicon-music: before {
+    conteúdo: "\ e002";
+}
+
+.glyphicon-search: before {
+    conteúdo: "\ e003";
+}
+
+.glyphicon-heart: before {
+    conteúdo: "\ e005";
+}
+
+.glyphicon-star: before {
+    conteúdo: "\ e006";
+}
+
+.glyphicon-star-empty: before {
+    conteúdo: "\ e007";
+}
+
+.glyphicon-user: before {
+    conteúdo: "\ e008";
+}
+
+.glyphicon-film: before {
+    conteúdo: "\ e009";
+}
+
+.glyphicon-th-large: antes de {
+    conteúdo: "\ e010";
+}
+
+.glyphicon-th: antes de {
+    conteúdo: "\ e011";
+}
+
+.glyphicon-th-list: antes de {
+    conteúdo: "\ e012";
+}
+
+.glyphicon-ok: antes de {
+    conteúdo: "\ e013";
+}
+
+.glyphicon-remove: antes de {
+    conteúdo: "\ e014";
+}
+
+.glyphicon-zoom-in: antes de {
+    conteúdo: "\ e015";
+}
+
+.glyphicon-zoom-out: antes de {
+    conteúdo: "\ e016";
+}
+
+.glyphicon-off: antes de {
+    conteúdo: "\ e017";
+}
+
+.glyphicon-signal: before {
+    conteúdo: "\ e018";
+}
+
+.glyphicon-cog: antes de {
+    conteúdo: "\ e019";
+}
+
+.glyphicon-trash: antes de {
+    conteúdo: "\ e020";
+}
+
+.glyphicon-home: antes de {
+    conteúdo: "\ e021";
+}
+
+.glyphicon-file: before {
+    conteúdo: "\ e022";
+}
+
+.glyphicon-time: before {
+    conteúdo: "\ e023";
+}
+
+.glyphicon-road: antes de {
+    conteúdo: "\ e024";
+}
+
+.glyphicon-download-alt: antes de {
+    conteúdo: "\ e025";
+}
+
+.glyphicon-download: before {
+    conteúdo: "\ e026";
+}
+
+.glyphicon-upload: before {
+    conteúdo: "\ e027";
+}
+
+.glyphicon-inbox: antes de {
+    conteúdo: "\ e028";
+}
+
+.glyphicon-play-circle: antes de {
+    conteúdo: "\ e029";
+}
+
+.glyphicon-repeat: before {
+    conteúdo: "\ e030";
+}
+
+.glyphicon-refresh: before {
+    conteúdo: "\ e031";
+}
+
+.glyphicon-list-alt: antes de {
+    conteúdo: "\ e032";
+}
+
+.glyphicon-lock: antes de {
+    conteúdo: "\ e033";
+}
+
+.glyphicon-flag: antes de {
+    conteúdo: "\ e034";
+}
+
+.glyphicon-headphones: before {
+    conteúdo: "\ e035";
+}
+
+.glyphicon-volume-off: before {
+    conteúdo: "\ e036";
+}
+
+.glyphicon-volume-down: before {
+    conteúdo: "\ e037";
+}
+
+.glyphicon-volume-up: before {
+    conteúdo: "\ e038";
+}
+
+.glyphicon-qrcode: before {
+    conteúdo: "\ e039";
+}
+
+.glyphicon-barcode: antes de {
+    conteúdo: "\ e040";
+}
+
+.glyphicon-tag: antes de {
+    conteúdo: "\ e041";
+}
+
+.glyphicon-tags: antes de {
+    conteúdo: "\ e042";
+}
+
+.glyphicon-book: antes de {
+    conteúdo: "\ e043";
+}
+
+.glyphicon-bookmark: antes de {
+    conteúdo: "\ e044";
+}
+
+.glyphicon-print: antes de {
+    conteúdo: "\ e045";
+}
+
+.glyphicon-camera: antes de {
+    conteúdo: "\ e046";
+}
+
+.glyphicon-font: antes de {
+    conteúdo: "\ e047";
+}
+
+.glyphicon-bold: antes de {
+    conteúdo: "\ e048";
+}
+
+.glyphicon-italic: before {
+    conteúdo: "\ e049";
+}
+
+.glyphicon-text-height: before {
+    conteúdo: "\ e050";
+}
+
+.glyphicon-text-width: before {
+    conteúdo: "\ e051";
+}
+
+.glyphicon-align-left: before {
+    conteúdo: "\ e052";
+}
+
+.glyphicon-align-center: before {
+    conteúdo: "\ e053";
+}
+
+.glyphicon-align-right: before {
+    conteúdo: "\ e054";
+}
+
+.glyphicon-align-justify: antes de {
+    conteúdo: "\ e055";
+}
+
+.glyphicon-list: antes de {
+    conteúdo: "\ e056";
+}
+
+.glyphicon-indent-left: before {
+    conteúdo: "\ e057";
+}
+
+.glyphicon-indent-right: antes de {
+    conteúdo: "\ e058";
+}
+
+.glyphicon-facetime-video: antes de {
+    conteúdo: "\ e059";
+}
+
+.glyphicon-picture: antes de {
+    conteúdo: "\ e060";
+}
+
+.glyphicon-map-marker: antes de {
+    conteúdo: "\ e062";
+}
+
+.glyphicon-ajustar: antes de {
+    conteúdo: "\ e063";
+}
+
+.glyphicon-tint: before {
+    conteúdo: "\ e064";
+}
+
+.glyphicon-edit: before {
+    conteúdo: "\ e065";
+}
+
+.glyphicon-share: antes de {
+    conteúdo: "\ e066";
+}
+
+.glyphicon-check: before {
+    conteúdo: "\ e067";
+}
+
+.glyphicon-move: before {
+    conteúdo: "\ e068";
+}
+
+.glyphicon-step-backward: before {
+    conteúdo: "\ e069";
+}
+
+.glyphicon-fast-backward: before {
+    conteúdo: "\ e070";
+}
+
+.glyphicon-backward: before {
+    conteúdo: "\ e071";
+}
+
+.glyphicon-play: antes de {
+    conteúdo: "\ e072";
+}
+
+.glyphicon-pause: antes de {
+    conteúdo: "\ e073";
+}
+
+.glyphicon-stop: antes de {
+    conteúdo: "\ e074";
+}
+
+.glyphicon-forward: before {
+    conteúdo: "\ e075";
+}
+
+.glyphicon-fast-forward: antes de {
+    conteúdo: "\ e076";
+}
+
+.glyphicon-step-forward: before {
+    conteúdo: "\ e077";
+}
+
+.glyphicon-eject: before {
+    conteúdo: "\ e078";
+}
+
+.glyphicon-chevron-left: before {
+    conteúdo: "\ e079";
+}
+
+.glyphicon-chevron-right: before {
+    conteúdo: "\ e080";
+}
+
+.glyphicon-plus-sign: before {
+    conteúdo: "\ e081";
+}
+
+.glyphicon-menos-sign: before {
+    conteúdo: "\ e082";
+}
+
+.glyphicon-remove-sign: antes de {
+    conteúdo: "\ e083";
+}
+
+.glyphicon-ok-sign: antes de {
+    conteúdo: "\ e084";
+}
+
+.glyphicon-question-sign: before {
+    conteúdo: "\ e085";
+}
+
+.glyphicon-info-sign: before {
+    conteúdo: "\ e086";
+}
+
+.glyphicon-screenshot: before {
+    conteúdo: "\ e087";
+}
+
+.glyphicon-remove-circle: antes de {
+    conteúdo: "\ e088";
+}
+
+.glyphicon-ok-circle: antes de {
+    conteúdo: "\ e089";
+}
+
+.glyphicon-ban-circle: antes de {
+    conteúdo: "\ e090";
+}
+
+.glyphicon-arrow-left: before {
+    conteúdo: "\ e091";
+}
+
+.glyphicon-arrow-right: before {
+    conteúdo: "\ e092";
+}
+
+.glyphicon-arrow-up: before {
+    conteúdo: "\ e093";
+}
+
+.glyphicon-arrow-down: before {
+    conteúdo: "\ e094";
+}
+
+.glyphicon-share-alt: antes de {
+    conteúdo: "\ e095";
+}
+
+.glyphicon-resize-full: antes de {
+    conteúdo: "\ e096";
+}
+
+.glyphicon-resize-small: before {
+    conteúdo: "\ e097";
+}
+
+.glyphicon-exclamation-sign: before {
+    conteúdo: "\ e101";
+}
+
+.glyphicon-gift: antes de {
+    conteúdo: "\ e102";
+}
+
+.glyphicon-leaf: before {
+    conteúdo: "\ e103";
+}
+
+.glyphicon-fire: before {
+    conteúdo: "\ e104";
+}
+
+.glyphicon-eye-open: before {
+    conteúdo: "\ e105";
+}
+
+.glyphicon-eye-close: antes de {
+    conteúdo: "\ e106";
+}
+
+.glyphicon-warning-sign: before {
+    conteúdo: "\ e107";
+}
+
+.glyphicon-plane: before {
+    conteúdo: "\ e108";
+}
+
+.glyphicon-calendar: before {
+    conteúdo: "\ e109";
+}
+
+.glyphicon-random: before {
+    conteúdo: "\ e110";
+}
+
+.glyphicon-comment: before {
+    conteúdo: "\ e111";
+}
+
+.glyphicon-magnet: before {
+    conteúdo: "\ e112";
+}
+
+.glyphicon-chevron-up: antes de {
+    conteúdo: "\ e113";
+}
+
+.glyphicon-chevron-down: before {
+    conteúdo: "\ e114";
+}
+
+.glyphicon-retweet: antes de {
+    conteúdo: "\ e115";
+}
+
+.glyphicon-shopping-cart: antes de {
+    conteúdo: "\ e116";
+}
+
+.glyphicon-folder-close: antes de {
+    conteúdo: "\ e117";
+}
+
+.glyphicon-folder-open: antes de {
+    conteúdo: "\ e118";
+}
+
+.glyphicon-resize-vertical: before {
+    conteúdo: "\ e119";
+}
+
+.glyphicon-resize-horizontal: antes de {
+    conteúdo: "\ e120";
+}
+
+.glyphicon-hdd: antes de {
+    conteúdo: "\ e121";
+}
+
+.glyphicon-megafone: antes de {
+    conteúdo: "\ e122";
+}
+
+.glyphicon-bell: antes de {
+    conteúdo: "\ e123";
+}
+
+.glyphicon-certificate: before {
+    conteúdo: "\ e124";
+}
+
+.glyphicon-thumbs-up: antes de {
+    conteúdo: "\ e125";
+}
+
+.glyphicon-thumbs-down: antes de {
+    conteúdo: "\ e126";
+}
+
+.glyphicon-hand-right: antes de {
+    conteúdo: "\ e127";
+}
+
+.glyphicon-hand-left: before {
+    conteúdo: "\ e128";
+}
+
+.glyphicon-hand-up: antes de {
+    conteúdo: "\ e129";
+}
+
+.glyphicon-hand-down: antes de {
+    conteúdo: "\ e130";
+}
+
+.glyphicon-circle-arrow-right: before {
+    conteúdo: "\ e131";
+}
+
+.glyphicon-circle-arrow-left: before {
+    conteúdo: "\ e132";
+}
+
+.glyphicon-circle-arrow-up: before {
+    conteúdo: "\ e133";
+}
+
+.glyphicon-circle-arrow-down: before {
+    conteúdo: "\ e134";
+}
+
+.glyphicon-globe: antes de {
+    conteúdo: "\ e135";
+}
+
+.glyphicon-wrench: before {
+    conteúdo: "\ e136";
+}
+
+.glyphicon-tasks: antes de {
+    conteúdo: "\ e137";
+}
+
+.glyphicon-filter: before {
+    conteúdo: "\ e138";
+}
+
+.glyphicon-maleta: antes de {
+    conteúdo: "\ e139";
+}
+
+.glyphicon-fullscreen: antes de {
+    conteúdo: "\ e140";
+}
+
+.glyphicon-dashboard: antes de {
+    conteúdo: "\ e141";
+}
+
+.glyphicon-paperclip: antes de {
+    conteúdo: "\ e142";
+}
+
+.glyphicon-heart-empty: before {
+    conteúdo: "\ e143";
+}
+
+.glyphicon-link: antes de {
+    conteúdo: "\ e144";
+}
+
+.glyphicon-phone: antes de {
+    conteúdo: "\ e145";
+}
+
+.glyphicon-pushpin: before {
+    conteúdo: "\ e146";
+}
+
+.glyphicon-usd: antes de {
+    conteúdo: "\ e148";
+}
+
+.glyphicon-gbp: antes de {
+    conteúdo: "\ e149";
+}
+
+.glyphicon-sort: before {
+    conteúdo: "\ e150";
+}
+
+.glyphicon-sort-by-alphabet: before {
+    conteúdo: "\ e151";
+}
+
+.glyphicon-sort-by-alphabet-alt: before {
+    conteúdo: "\ e152";
+}
+
+.glyphicon-sort-by-order: antes de {
+    conteúdo: "\ e153";
+}
+
+.glyphicon-sort-by-order-alt: before {
+    conteúdo: "\ e154";
+}
+
+.glyphicon-sort-by-attribute: before {
+    conteúdo: "\ e155";
+}
+
+.glyphicon-sort-by-attribute-alt: before {
+    conteúdo: "\ e156";
+}
+
+.glyphicon-unchecked: before {
+    conteúdo: "\ e157";
+}
+
+.glyphicon-expand: before {
+    conteúdo: "\ e158";
+}
+
+.glyphicon-collapse-down: before {
+    conteúdo: "\ e159";
+}
+
+.glyphicon-collapse-up: antes de {
+    conteúdo: "\ e160";
+}
+
+.glyphicon-log-in: antes de {
+    conteúdo: "\ e161";
+}
+
+.glyphicon-flash: antes de {
+    conteúdo: "\ e162";
+}
+
+.glyphicon-log-out: antes de {
+    conteúdo: "\ e163";
+}
+
+.glyphicon-new-window: antes de {
+    conteúdo: "\ e164";
+}
+
+.glyphicon-record: before {
+    conteúdo: "\ e165";
+}
+
+.glyphicon-save: antes de {
+    conteúdo: "\ e166";
+}
+
+.glyphicon-open: before {
+    conteúdo: "\ e167";
+}
+
+.glyphicon-saved: before {
+    conteúdo: "\ e168";
+}
+
+.glyphicon-import: before {
+    conteúdo: "\ e169";
+}
+
+.glyphicon-export: before {
+    conteúdo: "\ e170";
+}
+
+.glyphicon-send: before {
+    conteúdo: "\ e171";
+}
+
+.glyphicon-floppy-disk: antes de {
+    conteúdo: "\ e172";
+}
+
+.glyphicon-floppy-saved: antes de {
+    conteúdo: "\ e173";
+}
+
+.glyphicon-floppy-remove: antes de {
+    conteúdo: "\ e174";
+}
+
+.glyphicon-floppy-save: antes de {
+    conteúdo: "\ e175";
+}
+
+.glyphicon-floppy-open: antes de {
+    conteúdo: "\ e176";
+}
+
+.glyphicon-credit-card: antes de {
+    conteúdo: "\ e177";
+}
+
+.glyphicon-transfer: before {
+    conteúdo: "\ e178";
+}
+
+.glyphicon-cutlery: before {
+    conteúdo: "\ e179";
+}
+
+.glyphicon-header: antes de {
+    conteúdo: "\ e180";
+}
+
+.glyphicon-compressed: before {
+    conteúdo: "\ e181";
+}
+
+.glyphicon-earphone: before {
+    conteúdo: "\ e182";
+}
+
+.glyphicon-phone-alt: antes de {
+    conteúdo: "\ e183";
+}
+
+.glyphicon-tower: before {
+    conteúdo: "\ e184";
+}
+
+.glyphicon-stats: antes de {
+    conteúdo: "\ e185";
+}
+
+.glyphicon-sd-video: antes de {
+    conteúdo: "\ e186";
+}
+
+.glyphicon-hd-video: antes de {
+    conteúdo: "\ e187";
+}
+
+.glyphicon-subtitles: antes de {
+    conteúdo: "\ e188";
+}
+
+.glyphicon-sound-stereo: before {
+    conteúdo: "\ e189";
+}
+
+.glyphicon-sound-dolby: antes de {
+    conteúdo: "\ e190";
+}
+
+.glyphicon-sound-5-1: antes de {
+    conteúdo: "\ e191";
+}
+
+.glyphicon-sound-6-1: antes de {
+    conteúdo: "\ e192";
+}
+
+.glyphicon-sound-7-1: antes de {
+    conteúdo: "\ e193";
+}
+
+.glyphicon-copyright-mark: before {
+    conteúdo: "\ e194";
+}
+
+.glyphicon-registration-mark: before {
+    conteúdo: "\ e195";
+}
+
+.glyphicon-cloud-download: before {
+    conteúdo: "\ e197";
+}
+
+.glyphicon-cloud-upload: antes de {
+    conteúdo: "\ e198";
+}
+
+.glyphicon-tree-conifer: before {
+    conteúdo: "\ e199";
+}
+
+.glyphicon-tree-deciduous: before {
+    conteúdo: "\ e200";
+}
+
+.glyphicon-cd: antes de {
+    conteúdo: "\ e201";
+}
+
+.glyphicon-save-file: antes de {
+    conteúdo: "\ e202";
+}
+
+.glyphicon-open-file: before {
+    conteúdo: "\ e203";
+}
+
+.glyphicon-level-up: before {
+    conteúdo: "\ e204";
+}
+
+.glyphicon-copy: before {
+    conteúdo: "\ e205";
+}
+
+.glyphicon-paste: before {
+    conteúdo: "\ e206";
+}
+
+.glyphicon-alert: antes de {
+    conteúdo: "\ e209";
+}
+
+.glyphicon-equalizer: before {
+    conteúdo: "\ e210";
+}
+
+.glyphicon-king: antes de {
+    conteúdo: "\ e211";
+}
+
+.glyphicon-queen: antes de {
+    conteúdo: "\ e212";
+}
+
+.glyphicon-pewn: before {
+    conteúdo: "\ e213";
+}
+
+.glyphicon-bishop: antes de {
+    conteúdo: "\ e214";
+}
+
+.glyphicon-knight: before {
+    conteúdo: "\ e215";
+}
+
+.glyphicon-baby-formula: before {
+    conteúdo: "\ e216";
+}
+
+.glyphicon-tent: antes de {
+    conteúdo: "\ 26fa";
+}
+
+.glyphicon-Black: antes de {
+    conteúdo: "\ e218";
+}
+
+.glyphicon-bed: antes de {
+    conteúdo: "\ e219";
+}
+
+.glyphicon-apple: before {
+    conteúdo: "\ f8ff";
+}
+
+.glyphicon-erase: before {
+    conteúdo: "\ e221";
+}
+
+.glyphicon-ampulheta: antes de {
+    conteúdo: "\ 231b";
+}
+
+.glyphicon-lamp: before {
+    conteúdo: "\ e223";
+}
+
+.glyphicon-duplicate: antes de {
+    conteúdo: "\ e224";
+}
+
+.glyphicon-piggy-bank: antes de {
+    conteúdo: "\ e225";
+}
+
+.glyphicon-scissors: before {
+    conteúdo: "\ e226";
+}
+
+.glyphicon-bitcoin: antes de {
+    conteúdo: "\ e227";
+}
+
+.glyphicon-btc: antes de {
+    conteúdo: "\ e227";
+}
+
+.glyphicon-xbt: before {
+    conteúdo: "\ e227";
+}
+
+.glyphicon-yen: antes de {
+    conteúdo: "\ 00a5";
+}
+
+.glyphicon-jpy: antes de {
+    conteúdo: "\ 00a5";
+}
+
+.glyphicon-rublo: antes de {
+    conteúdo: "\ 20bd";
+}
+
+.glyphicon-rub: before {
+    conteúdo: "\ 20bd";
+}
+
+.glyphicon-scale: before {
+    conteúdo: "\ e230";
+}
+
+.glyphicon-ice-lolly: antes de {
+    conteúdo: "\ e231";
+}
+
+.glyphicon-ice-lolly-tasted: before {
+    conteúdo: "\ e232";
+}
+
+.glyphicon-education: before {
+    conteúdo: "\ e233";
+}
+
+.glyphicon-option-horizontal: antes de {
+    conteúdo: "\ e234";
+}
+
+.glyphicon-option-vertical: before {
+    conteúdo: "\ e235";
+}
+
+.glyphicon-menu-hamburger: antes de {
+    conteúdo: "\ e236";
+}
+
+.glyphicon-modal-window: antes de {
+    conteúdo: "\ e237";
+}
+
+.glyphicon-oil: before {
+    conteúdo: "\ e238";
+}
+
+.glyphicon-grain: before {
+    conteúdo: "\ e239";
+}
+
+.glyphicon-sunglasses: before {
+    conteúdo: "\ e240";
+}
+
+.glyphicon-text-size: antes de {
+    conteúdo: "\ e241";
+}
+
+.glyphicon-text-color: before {
+    conteúdo: "\ e242";
+}
+
+.glyphicon-text-background: antes de {
+    conteúdo: "\ e243";
+}
+
+.glyphicon-object-align-top: before {
+    conteúdo: "\ e244";
+}
+
+.glyphicon-object-align-bottom: before {
+    conteúdo: "\ e245";
+}
+
+.glyphicon-object-align-horizontal: before {
+    conteúdo: "\ e246";
+}
+
+.glyphicon-object-align-left: before {
+    conteúdo: "\ e247";
+}
+
+.glyphicon-object-align-vertical: before {
+    conteúdo: "\ e248";
+}
+
+.glyphicon-object-align-right: before {
+    conteúdo: "\ e249";
+}
+
+.glyphicon-triangle-right: before {
+    conteúdo: "\ e250";
+}
+
+.glyphicon-triangle-left: before {
+    conteúdo: "\ e251";
+}
+
+.glyphicon-triângulo-fundo: antes de {
+    conteúdo: "\ e252";
+}
+
+.glyphicon-triângulo-topo: antes de {
+    conteúdo: "\ e253";
+}
+
+.glyphicon-console: antes de {
+    conteúdo: "\ e254";
+}
+
+.glyphicon-superscript: antes de {
+    conteúdo: "\ e255";
+}
+
+.glyphicon-subscrito: antes de {
+    conteúdo: "\ e256";
+}
+
+.glyphicon-menu-left: before {
+    conteúdo: "\ e257";
+}
+
+.glyphicon-menu-right: before {
+    conteúdo: "\ e258";
+}
+
+.glyphicon-menu-down: before {
+    conteúdo: "\ e259";
+}
+
+.glyphicon-menu-up: antes de {
+    conteúdo: "\ e260";
+}
+
+* {
+    dimensionamento da caixa: caixa de borda;
+}
+
+    *:antes,
+    *:depois de {
+        dimensionamento da caixa: caixa de borda;
+    }
+
+html {
+    tamanho da fonte: 10px;
+    -webkit-tap-highlight-color: rgba (0, 0, 0, 0);
+}
+
+corpo {
+    família da fonte: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    tamanho da fonte: 14px;
+    altura da linha: 1,42857143;
+    cor: # 555555;
+    cor de fundo: #ffffff;
+}
+
+entrada,
+botão,
+selecione,
+textarea {
+    família de fontes: herdar;
+    tamanho da fonte: herdar;
+    altura da linha: herdar;
+}
+
+uma {
+    cor: # 2fa4e7;
+    decoração de texto: nenhum;
+}
+
+a: pairar,
+um foco {
+    cor: # 157ab5;
+    decoração de texto: sublinhado;
+}
+
+um foco {
+    contorno: 5px auto-webkit-focus-ring-color;
+    contorno-deslocamento: -2px;
+}
+
+figura {
+    margem: 0;
+}
+
+img {
+    alinhamento vertical: meio;
+}
+
+.img-responsivo,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    display: bloco;
+    largura máxima: 100%;
+    altura: automático;
+}
+
+.estou de castigo {
+    raio da borda: 6px;
+}
+
+.img-thumbnail {
+    preenchimento: 4px;
+    altura da linha: 1,42857143;
+    cor de fundo: #ffffff;
+    borda: 1px sólido #dddddd;
+    raio da borda: 4px;
+    transição: todos os 0.2s facilitam a entrada;
+    display: bloco embutido;
+    largura máxima: 100%;
+    altura: automático;
+}
+
+.img-circle {
+    raio da borda: 50%;
+}
+
+hr {
+    margem superior: 20px;
+    margin-bottom: 20px;
+    fronteira: 0;
+    border-top: 1px solid #eeeeee;
+}
+
+.sr-only {
+    posição: absoluta;
+    largura: 1px;
+    altura: 1px;
+    preenchimento: 0;
+    margem: -1px;
+    estouro: oculto;
+    clipe: rect (0, 0, 0, 0);
+    fronteira: 0;
+}
+
+.sr-only-focusable: ativo,
+.sr-only-focusable: focus {
+    posição: estática;
+    largura: automático;
+    altura: automático;
+    margem: 0;
+    estouro: visível;
+    clipe: automático;
+}
+
+[papel = "botão"] {
+    cursor: ponteiro;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    família da fonte: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    peso da fonte: 500;
+    altura da linha: 1,2;
+    cor: # 317eac;
+}
+
+    h1 pequeno,
+    h2 pequeno,
+    h3 pequeno,
+    h4 pequeno,
+    h5 pequeno,
+    h6 pequeno,
+    .h1 pequeno,
+    .h2 pequeno,
+    .h3 pequeno,
+    .h4 pequeno,
+    .h5 pequeno,
+    .h6 pequeno,
+    h1 .small,
+    h2 .small,
+    h3 .small,
+    h4 .small,
+    h5 .small,
+    h6 .small,
+    .h1 .small,
+    .h2 .small,
+    .h3 .small,
+    .h4 .small,
+    .h5 .small,
+    .h6 .small {
+        peso da fonte: 400;
+        altura da linha: 1;
+        cor: # 999999;
+    }
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    margem superior: 20px;
+    margin-bottom: 10px;
+}
+
+    h1 pequeno,
+    .h1 pequeno,
+    h2 pequeno,
+    .h2 pequeno,
+    h3 pequeno,
+    .h3 pequeno,
+    h1 .small,
+    .h1 .small,
+    h2 .small,
+    .h2 .small,
+    h3 .small,
+    .h3 .small {
+        tamanho da fonte: 65%;
+    }
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    margem superior: 10px;
+    margin-bottom: 10px;
+}
+
+    h4 pequeno,
+    .h4 pequeno,
+    h5 pequeno,
+    .h5 pequeno,
+    h6 pequeno,
+    .h6 pequeno,
+    h4 .small,
+    .h4 .small,
+    h5 .small,
+    .h5 .small,
+    h6 .small,
+    .h6 .small {
+        tamanho da fonte: 75%;
+    }
+
+h1,
+.h1 {
+    tamanho da fonte: 36px;
+}
+
+h2,
+.h2 {
+    tamanho da fonte: 30px;
+}
+
+h3,
+.h3 {
+    tamanho da fonte: 24px;
+}
+
+h4,
+.h4 {
+    tamanho da fonte: 18px;
+}
+
+h5,
+.h5 {
+    tamanho da fonte: 14px;
+}
+
+h6,
+.h6 {
+    tamanho da fonte: 12px;
+}
+
+p {
+    margem: 0 0 10px;
+}
+
+.liderar {
+    margin-bottom: 20px;
+    tamanho da fonte: 16px;
+    peso da fonte: 300;
+    altura da linha: 1,4;
+}
+
+@media (largura mínima: 768px) {
+    .liderar {
+        tamanho da fonte: 21px;
+    }
+}
+
+pequena,
+.pequena {
+    tamanho da fonte: 85%;
+}
+
+marca,
+.marca {
+    preenchimento: .2em;
+    cor de fundo: # fcf8e3;
+}
+
+.text-left {
+    alinhamento de texto: esquerda;
+}
+
+.text-right {
+    alinhamento de texto: direita;
+}
+
+.text-center {
+    alinhamento de texto: centro;
+}
+
+.text-justify {
+    alinhamento de texto: justificar;
+}
+
+.text-nowrap {
+    espaço em branco: nowrap;
+}
+
+.text-lowercase {
+    transformação de texto: minúsculas;
+}
+
+.text-uppercase {
+    transformação de texto: maiúsculas;
+}
+
+.text-capitalize {
+    transformação de texto: capitalize;
+}
+
+.text-muted {
+    cor: # 999999;
+}
+
+.text-primary {
+    cor: # 2fa4e7;
+}
+
+a.text-primary: hover,
+a.text-primary: focus {
+    cor: # 178acc;
+}
+
+.text-success {
+    cor: # 468847;
+}
+
+a.text-success: hover,
+a.text-success: focus {
+    cor: # 356635;
+}
+
+.text-info {
+    cor: # 3a87ad;
+}
+
+a.text-info: hover,
+a.text-info: focus {
+    cor: # 2d6987;
+}
+
+.text-warning {
+    cor: # c09853;
+}
+
+a.text-warning: hover,
+a.text-warning: focus {
+    cor: # a47e3c;
+}
+
+.texto-perigo {
+    cor: # b94a48;
+}
+
+perigo-a.text: hover,
+a.text-perigo: focus {
+    cor: # 953b39;
+}
+
+.bg-primary {
+    cor: #fff;
+    cor de fundo: # 2fa4e7;
+}
+
+a.bg-primary: hover,
+a.bg-primary: focus {
+    cor de fundo: # 178acc;
+}
+
+.bg-success {
+    cor de fundo: # dff0d8;
+}
+
+a.bg-success: hover,
+a.bg-success: focus {
+    cor de fundo: # c1e2b3;
+}
+
+.bg-info {
+    cor de fundo: # d9edf7;
+}
+
+a.bg-info: hover,
+a.bg-info: focus {
+    cor de fundo: # afd9ee;
+}
+
+.bg-warning {
+    cor de fundo: # fcf8e3;
+}
+
+a.bg-warning: hover,
+a.bg-warning: focus {
+    cor de fundo: # f7ecb5;
+}
+
+.bg-perigo {
+    cor de fundo: # f2dede;
+}
+
+a.bg-danger: hover,
+a.bg-danger: focus {
+    cor de fundo: # e4b9b9;
+}
+
+.cabeçalho da página {
+    acolchoamento inferior: 9px;
+    margem: 40px 0 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+ul,
+ol {
+    margem superior: 0;
+    margin-bottom: 10px;
+}
+
+    ul ul,
+    ol ul,
+    ul ol,
+    ol ol {
+        margem inferior: 0;
+    }
+
+.list-unstyled {
+    padding-left: 0;
+    estilo de lista: nenhum;
+}
+
+.list-inline {
+    padding-left: 0;
+    estilo de lista: nenhum;
+    margem esquerda: -5px;
+}
+
+    .list-inline > li {
+        display: bloco embutido;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+dl {
+    margem superior: 0;
+    margin-bottom: 20px;
+}
+
+dt,
+dd {
+    altura da linha: 1,42857143;
+}
+
+dt {
+    peso da fonte: 700;
+}
+
+dd {
+    margem esquerda: 0;
+}
+
+@media (largura mínima: 768px) {
+    .dl-horizontal dt {
+        flutuar: esquerda;
+        largura: 160px;
+        limpar: esquerda;
+        alinhamento de texto: direita;
+        estouro: oculto;
+        estouro de texto: reticências;
+        espaço em branco: nowrap;
+    }
+
+    .dl-horizontal dd {
+        margem esquerda: 180px;
+    }
+}
+
+abbr [título],
+abbr [data-original-title] {
+    cursor: ajuda;
+}
+
+.initialism {
+    tamanho da fonte: 90%;
+    transformação de texto: maiúsculas;
+}
+
+bloco de citação {
+    preenchimento: 10px 20px;
+    margem: 0 0 20px;
+    tamanho da fonte: 17,5px;
+    borda esquerda: 5px sólido #eeeeee;
+}
+
+blockquote p: último filho,
+blockquote ul: último filho,
+blockquote ol: last-child {
+    margem inferior: 0;
+}
+
+rodapé de blockquote,
+blockquote pequeno,
+blockquote .small {
+    display: bloco;
+    tamanho da fonte: 80%;
+    altura da linha: 1,42857143;
+    cor: # 999999;
+}
+
+    rodapé de blockquote: antes,
+    blockquote pequeno: antes,
+    blockquote .small: antes de {
+        conteúdo: "\ 2014 \ 00A0";
+    }
+
+.blockquote-reverse,
+blockquote.pull-right {
+    padding-right: 15px;
+    padding-left: 0;
+    alinhamento de texto: direita;
+    border-right: 5px solid #eeeeee;
+    borda esquerda: 0;
+}
+
+    .blockquote-reverse footer: before,
+    blockquote.pull-right footer: antes,
+    .blockquote-reverse small: antes,
+    blockquote.pull-right pequeno: antes,
+    .blockquote-reverse .small: antes,
+    blockquote.pull-right .small: antes de {
+        contente: "";
+    }
+
+    .blockquote-reverse footer: depois,
+    blockquote.pull-right footer: depois,
+    .blockquote-reverse small: after,
+    blockquote.pull-right pequeno: depois,
+    .blockquote-reverse .small: depois,
+    blockquote.pull-right .small: após {
+        conteúdo: "\ 00A0 \ 2014";
+    }
+
+Morada {
+    margin-bottom: 20px;
+    estilo da fonte: normal;
+    altura da linha: 1,42857143;
+}
+
+código,
+kbd,
+pré,
+samp {
+    família de fontes: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+code {
+    preenchimento: 2px 4px;
+    tamanho da fonte: 90%;
+    cor: # c7254e;
+    cor de fundo: # f9f2f4;
+    raio da borda: 4px;
+}
+
+kbd {
+    preenchimento: 2px 4px;
+    tamanho da fonte: 90%;
+    cor: #ffffff;
+    cor de fundo: # 333333;
+    raio da borda: 3px;
+    sombra da caixa: inserção 0 -1px 0 rgba (0, 0, 0, 0,25);
+}
+
+    kbd kbd {
+        preenchimento: 0;
+        tamanho da fonte: 100%;
+        peso da fonte: 700;
+        sombra da caixa: nenhum;
+    }
+
+pre {
+    display: bloco;
+    preenchimento: 9,5 px;
+    margem: 0 0 10px;
+    tamanho da fonte: 13px;
+    altura da linha: 1,42857143;
+    cor: # 333333;
+    quebra de palavra: quebra de tudo;
+    quebra de linha: quebra de palavra;
+    cor de fundo: # f5f5f5;
+    borda: 1px sólido #cccccc;
+    raio da borda: 4px;
+}
+
+    pre code {
+        preenchimento: 0;
+        tamanho da fonte: herdar;
+        cor: herdar;
+        espaço em branco: pré-embrulhamento;
+        cor de fundo: transparente;
+        raio da borda: 0;
+    }
+
+.pre-scrollable {
+    altura máxima: 340px;
+    overflow-y: scroll;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margem direita: automático;
+    margem esquerda: automático;
+}
+
+@media (largura mínima: 768px) {
+    .container {
+        largura: 750px;
+    }
+}
+
+@media (largura mínima: 992px) {
+    .container {
+        largura: 970px;
+    }
+}
+
+@media (largura mínima: 1200px) {
+    .container {
+        largura: 1170px;
+    }
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margem direita: automático;
+    margem esquerda: automático;
+}
+
+.fileira {
+    margem direita: -15px;
+    margem esquerda: -15px;
+}
+
+.row-no-gutters {
+    margem direita: 0;
+    margem esquerda: 0;
+}
+
+    .row-no-gutters [class * = "col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, . col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col -md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col- sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs -8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg- 9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    posição: relativa;
+    altura mínima: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, . col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    flutuar: esquerda;
+}
+
+.col-xs-12 {
+    largura: 100%;
+}
+
+.col-xs-11 {
+    largura: 91,666666667%;
+}
+
+.col-xs-10 {
+    largura: 83,33333333%;
+}
+
+.col-xs-9 {
+    largura: 75%;
+}
+
+.col-xs-8 {
+    largura: 66,666666667%;
+}
+
+.col-xs-7 {
+    largura: 58,33333333%;
+}
+
+.col-xs-6 {
+    largura: 50%;
+}
+
+.col-xs-5 {
+    largura: 41,666666667%;
+}
+
+.col-xs-4 {
+    largura: 33,33333333%;
+}
+
+.col-xs-3 {
+    largura: 25%;
+}
+
+.col-xs-2 {
+    largura: 16,666666667%;
+}
+
+.col-xs-1 {
+    largura: 8,33333333%;
+}
+
+.col-xs-pull-12 {
+    direita: 100%;
+}
+
+.col-xs-pull-11 {
+    direita: 91,666666667%;
+}
+
+.col-xs-pull-10 {
+    direita: 83,33333333%;
+}
+
+.col-xs-pull-9 {
+    direita: 75%;
+}
+
+.col-xs-pull-8 {
+    direita: 66,666666667%;
+}
+
+.col-xs-pull-7 {
+    direita: 58,33333333%;
+}
+
+.col-xs-pull-6 {
+    direita: 50%;
+}
+
+.col-xs-pull-5 {
+    direito: 41,666666667%;
+}
+
+.col-xs-pull-4 {
+    direita: 33,33333333%;
+}
+
+.col-xs-pull-3 {
+    direita: 25%;
+}
+
+.col-xs-pull-2 {
+    direita: 16,666666667%;
+}
+
+.col-xs-pull-1 {
+    direita: 8,33333333%;
+}
+
+.col-xs-pull-0 {
+    direita: automático;
+}
+
+.col-xs-push-12 {
+    esquerda: 100%;
+}
+
+.col-xs-push-11 {
+    esquerda: 91,666666667%;
+}
+
+.col-xs-push-10 {
+    esquerda: 83,33333333%;
+}
+
+.col-xs-push-9 {
+    esquerda: 75%;
+}
+
+.col-xs-push-8 {
+    esquerda: 66,666666667%;
+}
+
+.col-xs-push-7 {
+    esquerda: 58,33333333%;
+}
+
+.col-xs-push-6 {
+    esquerda: 50%;
+}
+
+.col-xs-push-5 {
+    esquerda: 41,666666667%;
+}
+
+.col-xs-push-4 {
+    esquerda: 33,33333333%;
+}
+
+.col-xs-push-3 {
+    esquerda: 25%;
+}
+
+.col-xs-push-2 {
+    esquerda: 16,666666667%;
+}
+
+.col-xs-push-1 {
+    esquerda: 8,33333333%;
+}
+
+.col-xs-push-0 {
+    esquerda: automático;
+}
+
+.col-xs-offset-12 {
+    margem esquerda: 100%;
+}
+
+.col-xs-offset-11 {
+    margem esquerda: 91,666666667%;
+}
+
+.col-xs-offset-10 {
+    margem esquerda: 83,33333333%;
+}
+
+.col-xs-offset-9 {
+    margem esquerda: 75%;
+}
+
+.col-xs-offset-8 {
+    margem esquerda: 66,666666667%;
+}
+
+.col-xs-offset-7 {
+    margem esquerda: 58,33333333%;
+}
+
+.col-xs-offset-6 {
+    margem esquerda: 50%;
+}
+
+.col-xs-offset-5 {
+    margem esquerda: 41,666666667%;
+}
+
+.col-xs-offset-4 {
+    margem esquerda: 33,33333333%;
+}
+
+.col-xs-offset-3 {
+    margem esquerda: 25%;
+}
+
+.col-xs-offset-2 {
+    margem esquerda: 16,666666667%;
+}
+
+.col-xs-offset-1 {
+    margem esquerda: 8,33333333%;
+}
+
+.col-xs-offset-0 {
+    margem esquerda: 0%;
+}
+
+@media (largura mínima: 768px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, . col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        flutuar: esquerda;
+    }
+
+    .col-sm-12 {
+        largura: 100%;
+    }
+
+    .col-sm-11 {
+        largura: 91,666666667%;
+    }
+
+    .col-sm-10 {
+        largura: 83,33333333%;
+    }
+
+    .col-sm-9 {
+        largura: 75%;
+    }
+
+    .col-sm-8 {
+        largura: 66,666666667%;
+    }
+
+    .col-sm-7 {
+        largura: 58,33333333%;
+    }
+
+    .col-sm-6 {
+        largura: 50%;
+    }
+
+    .col-sm-5 {
+        largura: 41,666666667%;
+    }
+
+    .col-sm-4 {
+        largura: 33,33333333%;
+    }
+
+    .col-sm-3 {
+        largura: 25%;
+    }
+
+    .col-sm-2 {
+        largura: 16,666666667%;
+    }
+
+    .col-sm-1 {
+        largura: 8,33333333%;
+    }
+
+    .col-sm-pull-12 {
+        direita: 100%;
+    }
+
+    .col-sm-pull-11 {
+        direita: 91,666666667%;
+    }
+
+    .col-sm-pull-10 {
+        direita: 83,33333333%;
+    }
+
+    .col-sm-pull-9 {
+        direita: 75%;
+    }
+
+    .col-sm-pull-8 {
+        direita: 66,666666667%;
+    }
+
+    .col-sm-pull-7 {
+        direita: 58,33333333%;
+    }
+
+    .col-sm-pull-6 {
+        direita: 50%;
+    }
+
+    .col-sm-pull-5 {
+        direito: 41,666666667%;
+    }
+
+    .col-sm-pull-4 {
+        direita: 33,33333333%;
+    }
+
+    .col-sm-pull-3 {
+        direita: 25%;
+    }
+
+    .col-sm-pull-2 {
+        direita: 16,666666667%;
+    }
+
+    .col-sm-pull-1 {
+        direita: 8,33333333%;
+    }
+
+    .col-sm-pull-0 {
+        direita: automático;
+    }
+
+    .col-sm-push-12 {
+        esquerda: 100%;
+    }
+
+    .col-sm-push-11 {
+        esquerda: 91,666666667%;
+    }
+
+    .col-sm-push-10 {
+        esquerda: 83,33333333%;
+    }
+
+    .col-sm-push-9 {
+        esquerda: 75%;
+    }
+
+    .col-sm-push-8 {
+        esquerda: 66,666666667%;
+    }
+
+    .col-sm-push-7 {
+        esquerda: 58,33333333%;
+    }
+
+    .col-sm-push-6 {
+        esquerda: 50%;
+    }
+
+    .col-sm-push-5 {
+        esquerda: 41,666666667%;
+    }
+
+    .col-sm-push-4 {
+        esquerda: 33,33333333%;
+    }
+
+    .col-sm-push-3 {
+        esquerda: 25%;
+    }
+
+    .col-sm-push-2 {
+        esquerda: 16,666666667%;
+    }
+
+    .col-sm-push-1 {
+        esquerda: 8,33333333%;
+    }
+
+    .col-sm-push-0 {
+        esquerda: automático;
+    }
+
+    .col-sm-offset-12 {
+        margem esquerda: 100%;
+    }
+
+    .col-sm-offset-11 {
+        margem esquerda: 91,666666667%;
+    }
+
+    .col-sm-offset-10 {
+        margem esquerda: 83,33333333%;
+    }
+
+    .col-sm-offset-9 {
+        margem esquerda: 75%;
+    }
+
+    .col-sm-offset-8 {
+        margem esquerda: 66,666666667%;
+    }
+
+    .col-sm-offset-7 {
+        margem esquerda: 58,33333333%;
+    }
+
+    .col-sm-offset-6 {
+        margem esquerda: 50%;
+    }
+
+    .col-sm-offset-5 {
+        margem esquerda: 41,666666667%;
+    }
+
+    .col-sm-offset-4 {
+        margem esquerda: 33,33333333%;
+    }
+
+    .col-sm-offset-3 {
+        margem esquerda: 25%;
+    }
+
+    .col-sm-offset-2 {
+        margem esquerda: 16,666666667%;
+    }
+
+    .col-sm-offset-1 {
+        margem esquerda: 8,33333333%;
+    }
+
+    .col-sm-offset-0 {
+        margem esquerda: 0%;
+    }
+}
+
+@media (largura mínima: 992px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, . col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        flutuar: esquerda;
+    }
+
+    .col-md-12 {
+        largura: 100%;
+    }
+
+    .col-md-11 {
+        largura: 91,666666667%;
+    }
+
+    .col-md-10 {
+        largura: 83,33333333%;
+    }
+
+    .col-md-9 {
+        largura: 75%;
+    }
+
+    .col-md-8 {
+        largura: 66,666666667%;
+    }
+
+    .col-md-7 {
+        largura: 58,33333333%;
+    }
+
+    .col-md-6 {
+        largura: 50%;
+    }
+
+    .col-md-5 {
+        largura: 41,666666667%;
+    }
+
+    .col-md-4 {
+        largura: 33,33333333%;
+    }
+
+    .col-md-3 {
+        largura: 25%;
+    }
+
+    .col-md-2 {
+        largura: 16,666666667%;
+    }
+
+    .col-md-1 {
+        largura: 8,33333333%;
+    }
+
+    .col-md-pull-12 {
+        direita: 100%;
+    }
+
+    .col-md-pull-11 {
+        direita: 91,666666667%;
+    }
+
+    .col-md-pull-10 {
+        direita: 83,33333333%;
+    }
+
+    .col-md-pull-9 {
+        direita: 75%;
+    }
+
+    .col-md-pull-8 {
+        direita: 66,666666667%;
+    }
+
+    .col-md-pull-7 {
+        direita: 58,33333333%;
+    }
+
+    .col-md-pull-6 {
+        direita: 50%;
+    }
+
+    .col-md-pull-5 {
+        direito: 41,666666667%;
+    }
+
+    .col-md-pull-4 {
+        direita: 33,33333333%;
+    }
+
+    .col-md-pull-3 {
+        direita: 25%;
+    }
+
+    .col-md-pull-2 {
+        direita: 16,666666667%;
+    }
+
+    .col-md-pull-1 {
+        direita: 8,33333333%;
+    }
+
+    .col-md-pull-0 {
+        direita: automático;
+    }
+
+    .col-md-push-12 {
+        esquerda: 100%;
+    }
+
+    .col-md-push-11 {
+        esquerda: 91,666666667%;
+    }
+
+    .col-md-push-10 {
+        esquerda: 83,33333333%;
+    }
+
+    .col-md-push-9 {
+        esquerda: 75%;
+    }
+
+    .col-md-push-8 {
+        esquerda: 66,666666667%;
+    }
+
+    .col-md-push-7 {
+        esquerda: 58,33333333%;
+    }
+
+    .col-md-push-6 {
+        esquerda: 50%;
+    }
+
+    .col-md-push-5 {
+        esquerda: 41,666666667%;
+    }
+
+    .col-md-push-4 {
+        esquerda: 33,33333333%;
+    }
+
+    .col-md-push-3 {
+        esquerda: 25%;
+    }
+
+    .col-md-push-2 {
+        esquerda: 16,666666667%;
+    }
+
+    .col-md-push-1 {
+        esquerda: 8,33333333%;
+    }
+
+    .col-md-push-0 {
+        esquerda: automático;
+    }
+
+    .col-md-offset-12 {
+        margem esquerda: 100%;
+    }
+
+    .col-md-offset-11 {
+        margem esquerda: 91,666666667%;
+    }
+
+    .col-md-offset-10 {
+        margem esquerda: 83,33333333%;
+    }
+
+    .col-md-offset-9 {
+        margem esquerda: 75%;
+    }
+
+    .col-md-offset-8 {
+        margem esquerda: 66,666666667%;
+    }
+
+    .col-md-offset-7 {
+        margem esquerda: 58,33333333%;
+    }
+
+    .col-md-offset-6 {
+        margem esquerda: 50%;
+    }
+
+    .col-md-offset-5 {
+        margem esquerda: 41,666666667%;
+    }
+
+    .col-md-offset-4 {
+        margem esquerda: 33,33333333%;
+    }
+
+    .col-md-offset-3 {
+        margem esquerda: 25%;
+    }
+
+    .col-md-offset-2 {
+        margem esquerda: 16,666666667%;
+    }
+
+    .col-md-offset-1 {
+        margem esquerda: 8,33333333%;
+    }
+
+    .col-md-offset-0 {
+        margem esquerda: 0%;
+    }
+}
+
+@media (largura mínima: 1200px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, . col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        flutuar: esquerda;
+    }
+
+    .col-lg-12 {
+        largura: 100%;
+    }
+
+    .col-lg-11 {
+        largura: 91,666666667%;
+    }
+
+    .col-lg-10 {
+        largura: 83,33333333%;
+    }
+
+    .col-lg-9 {
+        largura: 75%;
+    }
+
+    .col-lg-8 {
+        largura: 66,666666667%;
+    }
+
+    .col-lg-7 {
+        largura: 58,33333333%;
+    }
+
+    .col-lg-6 {
+        largura: 50%;
+    }
+
+    .col-lg-5 {
+        largura: 41,666666667%;
+    }
+
+    .col-lg-4 {
+        largura: 33,33333333%;
+    }
+
+    .col-lg-3 {
+        largura: 25%;
+    }
+
+    .col-lg-2 {
+        largura: 16,666666667%;
+    }
+
+    .col-lg-1 {
+        largura: 8,33333333%;
+    }
+
+    .col-lg-pull-12 {
+        direita: 100%;
+    }
+
+    .col-lg-pull-11 {
+        direita: 91,666666667%;
+    }
+
+    .col-lg-pull-10 {
+        direita: 83,33333333%;
+    }
+
+    .col-lg-pull-9 {
+        direita: 75%;
+    }
+
+    .col-lg-pull-8 {
+        direita: 66,666666667%;
+    }
+
+    .col-lg-pull-7 {
+        direita: 58,33333333%;
+    }
+
+    .col-lg-pull-6 {
+        direita: 50%;
+    }
+
+    .col-lg-pull-5 {
+        direito: 41,666666667%;
+    }
+
+    .col-lg-pull-4 {
+        direita: 33,33333333%;
+    }
+
+    .col-lg-pull-3 {
+        direita: 25%;
+    }
+
+    .col-lg-pull-2 {
+        direita: 16,666666667%;
+    }
+
+    .col-lg-pull-1 {
+        direita: 8,33333333%;
+    }
+
+    .col-lg-pull-0 {
+        direita: automático;
+    }
+
+    .col-lg-push-12 {
+        esquerda: 100%;
+    }
+
+    .col-lg-push-11 {
+        esquerda: 91,666666667%;
+    }
+
+    .col-lg-push-10 {
+        esquerda: 83,33333333%;
+    }
+
+    .col-lg-push-9 {
+        esquerda: 75%;
+    }
+
+    .col-lg-push-8 {
+        esquerda: 66,666666667%;
+    }
+
+    .col-lg-push-7 {
+        esquerda: 58,33333333%;
+    }
+
+    .col-lg-push-6 {
+        esquerda: 50%;
+    }
+
+    .col-lg-push-5 {
+        esquerda: 41,666666667%;
+    }
+
+    .col-lg-push-4 {
+        esquerda: 33,33333333%;
+    }
+
+    .col-lg-push-3 {
+        esquerda: 25%;
+    }
+
+    .col-lg-push-2 {
+        esquerda: 16,666666667%;
+    }
+
+    .col-lg-push-1 {
+        esquerda: 8,33333333%;
+    }
+
+    .col-lg-push-0 {
+        esquerda: automático;
+    }
+
+    .col-lg-offset-12 {
+        margem esquerda: 100%;
+    }
+
+    .col-lg-offset-11 {
+        margem esquerda: 91,666666667%;
+    }
+
+    .col-lg-offset-10 {
+        margem esquerda: 83,33333333%;
+    }
+
+    .col-lg-offset-9 {
+        margem esquerda: 75%;
+    }
+
+    .col-lg-offset-8 {
+        margem esquerda: 66,666666667%;
+    }
+
+    .col-lg-offset-7 {
+        margem esquerda: 58,33333333%;
+    }
+
+    .col-lg-offset-6 {
+        margem esquerda: 50%;
+    }
+
+    .col-lg-offset-5 {
+        margem esquerda: 41,666666667%;
+    }
+
+    .col-lg-offset-4 {
+        margem esquerda: 33,33333333%;
+    }
+
+    .col-lg-offset-3 {
+        margem esquerda: 25%;
+    }
+
+    .col-lg-offset-2 {
+        margem esquerda: 16,666666667%;
+    }
+
+    .col-lg-offset-1 {
+        margem esquerda: 8,33333333%;
+    }
+
+    .col-lg-offset-0 {
+        margem esquerda: 0%;
+    }
+}
+
+tabela {
+    cor de fundo: transparente;
+}
+
+    tabela col [classe * = "col-"] {
+        posição: estática;
+        display: tabela-coluna;
+        float: nenhum;
+    }
+
+    tabela td [classe * = "col-"],
+    mesa th [classe * = "col-"] {
+        posição: estática;
+        display: table-cell;
+        float: nenhum;
+    }
+
+caption {
+    acolchoamento superior: 8px;
+    acolchoamento inferior: 8px;
+    cor: # 999999;
+    alinhamento de texto: esquerda;
+}
+
+º {
+    alinhamento de texto: esquerda;
+}
+
+.tabela {
+    largura: 100%;
+    largura máxima: 100%;
+    margin-bottom: 20px;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    preenchimento: 8px;
+    altura da linha: 1,42857143;
+    alinhamento vertical: topo;
+    border-top: 1px solid #dddddd;
+}
+
+.table > thead > tr > th {
+    alinhamento vertical: inferior;
+    border-bottom: 2px solid #dddddd;
+}
+
+.table > caption + thead > tr: first-child > th,
+.table > colgroup + thead > tr: first-child > th,
+.table > thead: first-child > tr: first-child > th,
+.table > caption + thead > tr: first-child > td,
+.table > colgroup + thead > tr: first-child > td,
+.table > thead: first-child > tr: first-child > td {
+    borda superior: 0;
+}
+
+.table > tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+
+.table .table {
+    cor de fundo: #ffffff;
+}
+
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+    preenchimento: 5px;
+}
+
+.table-bordered {
+    borda: 1px sólido #dddddd;
+}
+
+    . bordas de mesa > thead > tr > th,
+    .table-bordered > tbody > tr > th,
+    .table-bordered > tfoot > tr > th,
+    .table-bordered > thead > tr > td,
+    .table-bordered > tbody > tr > td,
+    .table-bordered > tfoot > tr > td {
+        borda: 1px sólido #dddddd;
+    }
+
+    . bordas de mesa > thead > tr > th,
+    . table-bordered > thead > tr > td {
+        border-bottom-width: 2px;
+    }
+
+.table-listrado > tbody > tr: enésimo-do-tipo (ímpar) {
+    cor de fundo: # f9f9f9;
+}
+
+.table-hover > tbody > tr: hover {
+    cor de fundo: # f5f5f5;
+}
+
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+    cor de fundo: # f5f5f5;
+}
+
+.table-hover > tbody > tr > td.active: hover,
+.table-hover > tbody > tr > th.active: hover,
+.table-hover > tbody > tr.active: hover > td,
+.table-hover > tbody > tr: hover > .active,
+.table-hover > tbody > tr.active: hover > th {
+    cor de fundo: # e8e8e8;
+}
+
+.table > thead > tr > td.success,
+.table > tbody > tr > td.success,
+.table > tfoot > tr > td.success,
+.table > thead > tr > th.success,
+.table > tbody > tr > th.success,
+.table > tfoot > tr > th.success,
+.table > thead > tr.success > td,
+.table > tbody > tr.success > td,
+.table > tfoot > tr.success > td,
+.table > thead > tr.success > th,
+.table > tbody > tr.success > th,
+.table > tfoot > tr.success > th {
+    cor de fundo: # dff0d8;
+}
+
+.table-hover > tbody > tr > td.success: hover,
+.table-hover > tbody > tr > th.success: hover,
+.table-hover > tbody > tr.success: hover > td,
+.table-hover > tbody > tr: hover > .success,
+.table-hover > tbody > tr.success: hover > th {
+    cor de fundo: # d0e9c6;
+}
+
+.table > thead > tr > td.info,
+.table > tbody > tr > td.info,
+.table > tfoot > tr > td.info,
+.table > thead > tr > th.info,
+.table > tbody > tr > th.info,
+.table > tfoot > tr > th.info,
+.table > thead > tr.info > td,
+.table > tbody > tr.info > td,
+.table > tfoot > tr.info > td,
+.table > thead > tr.info > th,
+.table > tbody > tr.info > th,
+.table > tfoot > tr.info > th {
+    cor de fundo: # d9edf7;
+}
+
+.table-hover > tbody > tr > td.info:hover,
+.table-hover > tbody > tr > th.info:hover,
+.table-hover > tbody > tr.info:hover > td,
+.table-hover > tbody > tr: hover > .info,
+.table-hover > tbody > tr.info:hover > th {
+    cor de fundo: # c4e3f3;
+}
+
+.table > thead > tr > td.warning,
+.table > tbody > tr > td.warning,
+.table > tfoot > tr > td.warning,
+.table > thead > tr > th.warning,
+.table > tbody > tr > th.warning,
+.table > tfoot > tr > th.warning,
+.table > thead > tr.warning > td,
+.table > tbody > tr.warning > td,
+.table > tfoot > tr.warning > td,
+.table > thead > tr.warning > th,
+.table > tbody > tr.warning > th,
+.table > tfoot > tr.warning > th {
+    cor de fundo: # fcf8e3;
+}
+
+.table-hover > tbody > tr > td.warning: hover,
+.table-hover > tbody > tr > th.warning: hover,
+.table-hover > tbody > tr.warning: hover > td,
+.table-hover > tbody > tr: hover > .warning,
+.table-hover > tbody > tr.warning: hover > th {
+    cor de fundo: # faf2cc;
+}
+
+.table > thead > tr > td.danger,
+.table > tbody > tr > td.danger,
+.table > tfoot > tr > td.danger,
+.table > thead > tr > th.danger,
+.table > tbody > tr > th.danger,
+.table > tfoot > tr > th.danger,
+.table > thead > tr.danger > td,
+.table > tbody > tr.danger > td,
+.table > tfoot > tr.danger > td,
+.table > thead > tr.danger > th,
+.table > tbody > tr.danger > th,
+.table > tfoot > tr.danger > th {
+    cor de fundo: # f2dede;
+}
+
+.table-hover > tbody > tr > td.danger: hover,
+.table-hover > tbody > tr > th.danger: hover,
+.table-hover > tbody > tr.danger: hover > td,
+.table-hover > tbody > tr: hover > .danger,
+.table-hover > tbody > tr.danger: hover > th {
+    cor de fundo: #ebcccc;
+}
+
+.table-responsive {
+    altura mínima: 0,01%;
+    overflow-x: automático;
+}
+
+@media screen e (largura máxima: 767px) {
+    .table-responsive {
+        largura: 100%;
+        margin-bottom: 15px;
+        overflow-y: oculto;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        borda: 1px sólido #dddddd;
+    }
+
+        .table-responsive > .table {
+            margem inferior: 0;
+        }
+
+            .table-responsive > .table > thead > tr > th,
+            .table-responsive > .table > tbody > tr > th,
+            .table-responsive > .table > tfoot > tr > th,
+            .table-responsive > .table > thead > tr > td,
+            .table-responsive > .table > tbody > tr > td,
+            .table-responsive > .table > tfoot > tr > td {
+                espaço em branco: nowrap;
+            }
+
+        .table-responsive > .table-bordered {
+            fronteira: 0;
+        }
+
+            .table-responsive > .table-bordered > thead > tr > th: first-child,
+            .table-responsive > .table-bordered > tbody > tr > th: primeiro filho,
+            .table-responsive > .table-bordered > tfoot > tr > th: primeiro filho,
+            .table-responsive > .table-bordered > thead > tr > td: first-child,
+            .table-responsive > .table-bordered > tbody > tr > td: first-child,
+            .table-responsive > .table-bordered > tfoot > tr > td: first-child {
+                borda esquerda: 0;
+            }
+
+            .table-responsive > .table-bordered > thead > tr > th: last-child,
+            .table-responsive > .table-bordered > tbody > tr > th: último filho,
+            .table-responsive > .table-bordered > tfoot > tr > th: last-child,
+            .table-responsive > .table-bordered > thead > tr > td: last-child,
+            .table-responsive > .table-bordered > tbody > tr > td: last-child,
+            .table-responsive > .table-bordered > tfoot > tr > td: last-child {
+                borda direita: 0;
+            }
+
+            .table-responsive > .table-bordered > tbody > tr: last-child > th,
+            .table-responsive > .table-bordered > tfoot > tr: last-child > th,
+            .table-responsive > .table-bordered > tbody > tr: last-child > td,
+            .table-responsive > .table-bordered > tfoot > tr: last-child > td {
+                borda inferior: 0;
+            }
+}
+
+fieldset {
+    largura mínima: 0;
+    preenchimento: 0;
+    margem: 0;
+    fronteira: 0;
+}
+
+lenda {
+    display: bloco;
+    largura: 100%;
+    preenchimento: 0;
+    margin-bottom: 20px;
+    tamanho da fonte: 21px;
+    altura da linha: herdar;
+    cor: # 555555;
+    fronteira: 0;
+    borda inferior: 1px sólido # e5e5e5;
+}
+
+rótulo {
+    display: bloco embutido;
+    largura máxima: 100%;
+    margin-bottom: 5px;
+    peso da fonte: 700;
+}
+
+input [type = "search"] {
+    dimensionamento da caixa: caixa de borda;
+    -webkit-aparência: nenhum;
+    aparência: nenhuma;
+}
+
+input [type = "radio"],
+input [type = "checkbox"] {
+    margem: 4px 0 0;
+    margem superior: 1px \ 9;
+    altura da linha: normal;
+}
+
+    input [type = "radio"] [disabled],
+    input [type = "checkbox"] [disabled],
+    input [type = "radio"]. desativado,
+    input [type = "checkbox"]. disabled,
+    fieldset [disabled] input [type = "radio"],
+    fieldset [disabled] input [type = "checkbox"] {
+        cursor: não permitido;
+    }
+
+input [type = "arquivo"] {
+    display: bloco;
+}
+
+entrada [tipo = "intervalo"] {
+    display: bloco;
+    largura: 100%;
+}
+
+selecione [múltiplo],
+selecione o tamanho] {
+    altura: automático;
+}
+
+entrada [type = "arquivo"]: foco,
+input [type = "radio"]: foco,
+input [type = "checkbox"]: focus {
+    contorno: 5px auto-webkit-focus-ring-color;
+    contorno-deslocamento: -2px;
+}
+
+saída {
+    display: bloco;
+    acolchoamento superior: 9px;
+    tamanho da fonte: 14px;
+    altura da linha: 1,42857143;
+    cor: # 555555;
+}
+
+.form-control {
+    display: bloco;
+    largura: 100%;
+    altura: 38px;
+    preenchimento: 8px 12px;
+    tamanho da fonte: 14px;
+    altura da linha: 1,42857143;
+    cor: # 555555;
+    cor de fundo: #ffffff;
+    imagem de fundo: nenhuma;
+    borda: 1px sólido #cccccc;
+    raio da borda: 4px;
+    sombra da caixa: inserção 0 1px 1px rgba (0, 0, 0, 0,075);
+    transição: borda-cor atenuada 0,15s, caixa-sombra atenuada 0,15s;
+}
+
+    .form-control: focus {
+        border-color: # 66afe9;
+        esboço: 0;
+        sombra da caixa: inserção 0 1px 1px rgba (0, 0, 0, 0,075), 0 0 8px rgba (102, 175, 233, 0,6);
+    }
+
+    .form-control :: - moz-placeholder {
+        cor: # 999999;
+        opacidade: 1;
+    }
+
+    .form-control: -ms-input-placeholder {
+        cor: # 999999;
+    }
+
+    .form-control :: - webkit-input-placeholder {
+        cor: # 999999;
+    }
+
+    .form-control :: - ms-expand {
+        cor de fundo: transparente;
+        fronteira: 0;
+    }
+
+    .form-control [disabled],
+    .form-control [somente leitura],
+    fieldset [disabled] .form-control {
+        cor de fundo: #eeeeee;
+        opacidade: 1;
+    }
+
+    .form-control [disabled],
+    fieldset [disabled] .form-control {
+        cursor: não permitido;
+    }
+
+textarea.form-control {
+    altura: automático;
+}
+
+@media screen e (-webkit-min-device-pixel-ratio: 0) {
+    input [type = "date"]. form-control,
+    input [type = "time"]. form-control,
+    input [type = "datetime-local"]. form-control,
+    input [type = "month"]. form-control {
+        altura da linha: 38px;
+    }
+
+    input [type = "date"]. input-sm,
+    input [type = "time"]. input-sm,
+    input [type = "datetime-local"]. input-sm,
+    input [type = "month"]. input-sm,
+    .input-group-sm input [type = "data"],
+    .input-group-sm input [type = "tempo"],
+    .input-group-sm input [type = "datetime-local"],
+    .input-group-sm input [type = "mês"] {
+        altura da linha: 30px;
+    }
+
+    input [type = "date"]. input-lg,
+    input [type = "time"]. input-lg,
+    input [type = "datetime-local"]. input-lg,
+    input [type = "month"]. input-lg,
+    .input-group-lg input [type = "data"],
+    .input-group-lg input [type = "tempo"],
+    .input-group-lg input [type = "datetime-local"],
+    .input-group-lg input [type = "mês"] {
+        altura da linha: 54px;
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.rádio,
+.checkbox {
+    posição: relativa;
+    display: bloco;
+    margem superior: 10px;
+    margin-bottom: 10px;
+}
+
+    rótulo .radio.disabled,
+    .checkbox.disabled label,
+    rótulo fieldset [disabled] .radio,
+    fieldset [disabled] .checkbox label {
+        cursor: não permitido;
+    }
+
+    etiqueta .radio,
+    .checkbox label {
+        altura mínima: 20px;
+        padding-left: 20px;
+        margem inferior: 0;
+        peso da fonte: 400;
+        cursor: ponteiro;
+    }
+
+    .radio input [type = "radio"],
+    .radio-inline input [type = "radio"],
+    .checkbox input [type = "checkbox"],
+    .checkbox-inline input [type = "checkbox"] {
+        posição: absoluta;
+        margem superior: 4px \ 9;
+        margem esquerda: -20px;
+    }
+
+    .radio + .radio,
+    .checkbox + .checkbox {
+        margin-top: -5px;
+    }
+
+.radio-inline,
+.checkbox-inline {
+    posição: relativa;
+    display: bloco embutido;
+    padding-left: 20px;
+    margem inferior: 0;
+    peso da fonte: 400;
+    alinhamento vertical: meio;
+    cursor: ponteiro;
+}
+
+    .radio-inline.disabled,
+    .checkbox-inline.disabled,
+    fieldset [disabled] .radio-inline,
+    fieldset [disabled] .checkbox-inline {
+        cursor: não permitido;
+    }
+
+    .radio-inline + .radio-inline,
+    .checkbox-inline + .checkbox-inline {
+        margem superior: 0;
+        margem esquerda: 10px;
+    }
+
+.form-control-static {
+    altura mínima: 34px;
+    acolchoamento superior: 9px;
+    acolchoamento inferior: 9px;
+    margem inferior: 0;
+}
+
+    .form-control-static.input-lg,
+    .form-control-static.input-sm {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+.input-sm {
+    altura: 30px;
+    preenchimento: 5px 10px;
+    tamanho da fonte: 12px;
+    altura da linha: 1,5;
+    raio da borda: 3px;
+}
+
+select.input-sm {
+    altura: 30px;
+    altura da linha: 30px;
+}
+
+textarea.input-sm,
+selecione [múltiplo] .input-sm {
+    altura: automático;
+}
+
+.form-group-sm .form-control {
+    altura: 30px;
+    preenchimento: 5px 10px;
+    tamanho da fonte: 12px;
+    altura da linha: 1,5;
+    raio da borda: 3px;
+}
+
+.form-group-sm select.form-control {
+    altura: 30px;
+    altura da linha: 30px;
+}
+
+.form-group-sm textarea.form-control,
+.form-group-sm selecionar [múltiplo] .form-control {
+    altura: automático;
+}
+
+.form-group-sm .form-control-static {
+    altura: 30px;
+    altura mínima: 32px;
+    preenchimento: 6px 10px;
+    tamanho da fonte: 12px;
+    altura da linha: 1,5;
+}
+
+.input-lg {
+    altura: 54px;
+    preenchimento: 14px 16px;
+    tamanho da fonte: 18px;
+    altura da linha: 1,333333;
+    raio da borda: 6px;
+}
+
+select.input-lg {
+    altura: 54px;
+    altura da linha: 54px;
+}
+
+textarea.input-lg,
+selecione [múltiplo] .input-lg {
+    altura: automático;
+}
+
+.form-group-lg .form-control {
+    altura: 54px;
+    preenchimento: 14px 16px;
+    tamanho da fonte: 18px;
+    altura da linha: 1,333333;
+    raio da borda: 6px;
+}
+
+.form-group-lg select.form-control {
+    altura: 54px;
+    altura da linha: 54px;
+}
+
+.form-group-lg textarea.form-control,
+.form-group-lg select [múltiplo] .form-control {
+    altura: automático;
+}
+
+.form-group-lg .form-control-static {
+    altura: 54px;
+    altura mínima: 38px;
+    preenchimento: 15px 16px;
+    tamanho da fonte: 18px;
+    altura da linha: 1,333333;
+}
+
+.has-feedback {
+    posição: relativa;
+}
+
+    .has-feedback .form-control {
+        padding-right: 47,5 px;
+    }
+
+.form-control-feedback {
+    posição: absoluta;
+    topo: 0;
+    direita: 0;
+    índice z: 2;
+    display: bloco;
+    largura: 38px;
+    altura: 38px;
+    altura da linha: 38px;
+    alinhamento de texto: centro;
+    eventos de ponteiro: nenhum;
+}
+
+.input-lg + .form-control-feedback,
+.input-group-lg + .form-control-feedback,
+.form-group-lg .form-control + .form-control-feedback {
+    largura: 54px;
+    altura: 54px;
+    altura da linha: 54px;
+}
+
+.input-sm + .form-control-feedback,
+.input-group-sm + .form-control-feedback,
+.form-group-sm .form-control + .form-control-feedback {
+    largura: 30px;
+    altura: 30px;
+    altura da linha: 30px;
+}
+
+.has-success .help-block,
+.has-success .control-label,
+.has-sucesso .radio,
+.has-sucesso .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline,
+etiqueta .has-success.radio,
+rótulo .has-success.checkbox,
+etiqueta .has-success.radio-inline,
+.has-success.checkbox-inline label {
+    cor: # 468847;
+}
+
+.has-success .form-control {
+    border-color: # 468847;
+    sombra da caixa: inserção 0 1px 1px rgba (0, 0, 0, 0,075);
+}
+
+    .has-success .form-control: focus {
+        cor da borda: # 356635;
+        sombra da caixa: inserção 0 1px 1px rgba (0, 0, 0, 0,075), 0 0 6px # 7aba7b;
+    }
+
+.has-success .input-group-addon {
+    cor: # 468847;
+    cor de fundo: # dff0d8;
+    border-color: # 468847;
+}
+
+.has-success .form-control-feedback {
+    cor: # 468847;
+}
+
+.has-warning .help-block,
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline,
+etiqueta .has-warning.radio,
+.has-warning.checkbox label,
+.has-warning.radio-inline label,
+.has-warning.checkbox-inline label {
+    cor: # c09853;
+}
+
+.has-warning .form-control {
+    border-color: # c09853;
+    sombra da caixa: inserção 0 1px 1px rgba (0, 0, 0, 0,075);
+}
+
+    .has-warning .form-control: focus {
+        border-color: # a47e3c;
+        sombra da caixa: inserção 0 1px 1px rgba (0, 0, 0, 0,075), 0 0 6px # dbc59e;
+    }
+
+.has-warning .input-group-addon {
+    cor: # c09853;
+    cor de fundo: # fcf8e3;
+    border-color: # c09853;
+}
+
+.has-warning .form-control-feedback {
+    cor: # c09853;
+}
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+caixa de seleção .has-error,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+etiqueta .has-error.radio,
+.has-error.checkbox label,
+etiqueta .has-error.radio-inline,
+.has-error.checkbox-inline label {
+    cor: # b94a48;
+}
+
+.has-error .form-control {
+    border-color: # b94a48;
+    sombra da caixa: inserção 0 1px 1px rgba (0, 0, 0, 0,075);
+}
+
+    .has-error .form-control: focus {
+        cor da borda: # 953b39;
+        sombra da caixa: inserção 0 1px 1px rgba (0, 0, 0, 0,075), 0 0 6px # d59392;
+    }
+
+.has-error .input-group-addon {
+    cor: # b94a48;
+    cor de fundo: # f2dede;
+    border-color: # b94a48;
+}
+
+.has-error .form-control-feedback {
+    cor: # b94a48;
+}
+
+.tem-feedback label ~ .form-control-feedback {
+    topo: 25px;
+}
+
+.has-feedback label.sr-only ~ .form-control-feedback {
+    topo: 0;
+}
+
+.help-block {
+    display: bloco;
+    margem superior: 5px;
+    margin-bottom: 10px;
+    cor: # 959595;
+}
+
+@media (largura mínima: 768px) {
+    .form-inline .form-group {
+        display: bloco embutido;
+        margem inferior: 0;
+        alinhamento vertical: meio;
+    }
+
+    .form-inline .form-control {
+        display: bloco embutido;
+        largura: automático;
+        alinhamento vertical: meio;
+    }
+
+    .form-inline .form-control-static {
+        display: bloco embutido;
+    }
+
+    .form-inline .input-group {
+        display: tabela embutida;
+        alinhamento vertical: meio;
+    }
+
+        .form-inline .input-group .input-group-addon,
+        .form-inline .input-group .input-group-btn,
+        .form-inline .input-group .form-control {
+            largura: automático;
+        }
+
+        .form-inline .input-group > .form-control {
+            largura: 100%;
+        }
+
+    .form-inline .control-label {
+        margem inferior: 0;
+        alinhamento vertical: meio;
+    }
+
+    .form-inline .radio,
+    .form-inline .checkbox {
+        display: bloco embutido;
+        margem superior: 0;
+        margem inferior: 0;
+        alinhamento vertical: meio;
+    }
+
+        rótulo .form-inline .radio,
+        .form-inline .checkbox label {
+            padding-left: 0;
+        }
+
+        .form-inline .radio input [type = "radio"],
+        .form-inline .checkbox input [type = "checkbox"] {
+            posição: relativa;
+            margem esquerda: 0;
+        }
+
+    .form-inline .has-feedback .form-control-feedback {
+        topo: 0;
+    }
+}
+
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+    acolchoamento superior: 9px;
+    margem superior: 0;
+    margem inferior: 0;
+}
+
+.form-horizontal .radio,
+.form-horizontal .checkbox {
+    altura mínima: 29px;
+}
+
+.form-horizontal .form-group {
+    margem direita: -15px;
+    margem esquerda: -15px;
+}
+
+@media (largura mínima: 768px) {
+    .form-horizontal .control-label {
+        acolchoamento superior: 9px;
+        margem inferior: 0;
+        alinhamento de texto: direita;
+    }
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+    direita: 15px;
+}
+
+@media (largura mínima: 768px) {
+    .form-horizontal .form-group-lg .control-label {
+        acolchoamento superior: 15px;
+        tamanho da fonte: 18px;
+    }
+}
+
+@media (largura mínima: 768px) {
+    .form-horizontal .form-group-sm .control-label {
+        acolchoamento superior: 6px;
+        tamanho da fonte: 12px;
+    }
+}
+
+.btn {
+    display: bloco embutido;
+    margem inferior: 0;
+    peso da fonte: normal;
+    alinhamento de texto: centro;
+    espaço em branco: nowrap;
+    alinhamento vertical: meio;
+    -ms-touch-action: manipulação;
+    toque-ação: manipulação;
+    cursor: ponteiro;
+    imagem de fundo: nenhuma;
+    borda: 1px sólido transparente;
+    preenchimento: 8px 12px;
+    tamanho da fonte: 14px;
+    altura da linha: 1,42857143;
+    raio da borda: 4px;
+    -webkit-user-select: nenhum;
+    -moz-user-select: nenhum;
+    -ms-user-select: nenhum;
+    seleção do usuário: nenhum;
+}
+
+    .btn: foco,
+    .btn: ativo: foco,
+    .btn.active: foco,
+    .btn.focus,
+    .btn: active.focus,
+    .btn.active.focus {
+        contorno: 5px auto-webkit-focus-ring-color;
+        contorno-deslocamento: -2px;
+    }
+
+    .btn: hover,
+    .btn: foco,
+    .btn.focus {
+        cor: # 555555;
+        decoração de texto: nenhum;
+    }
+
+    .btn: ativo,
+    .btn.active {
+        imagem de fundo: nenhuma;
+        esboço: 0;
+        sombra da caixa: inserção 0 3px 5px rgba (0, 0, 0, 0,125);
+    }
+
+    .btn.disabled,
+    .btn [desativado],
+    fieldset [desativado] .btn {
+        cursor: não permitido;
+        filtro: alfa (opacidade = 65);
+        opacidade: 0,65;
+        sombra da caixa: nenhum;
+    }
+
+a.btn.disabled,
+fieldset [desativado] a.btn {
+    eventos de ponteiro: nenhum;
+}
+
+.btn-default {
+    cor: # 555555;
+    cor de fundo: #ffffff;
+    cor da borda: rgba (0, 0, 0, 0,1);
+}
+
+    .btn-default: focus,
+    .btn-default.focus {
+        cor: # 555555;
+        cor de fundo: # e6e6e6;
+        cor da borda: rgba (0, 0, 0, 0,1);
+    }
+
+    .btn-default: hover {
+        cor: # 555555;
+        cor de fundo: # e6e6e6;
+        cor da borda: rgba (0, 0, 0, 0,1);
+    }
+
+    .btn-default: ativo,
+    .btn-default.active,
+    .open > .dropdown-toggle.btn-default {
+        cor: # 555555;
+        cor de fundo: # e6e6e6;
+        imagem de fundo: nenhuma;
+        cor da borda: rgba (0, 0, 0, 0,1);
+    }
+
+        .btn-default: ativo: hover,
+        .btn-default.active: hover,
+        .open > .dropdown-toggle.btn-default: hover,
+        .btn-default: ativo: foco,
+        .btn-default.active: focus,
+        .open > .dropdown-toggle.btn-default: focus,
+        .btn-default: active.focus,
+        .btn-default.active.focus,
+        .open > .dropdown-toggle.btn-default.focus {
+            cor: # 555555;
+            cor de fundo: # d4d4d4;
+            cor da borda: rgba (0, 0, 0, 0,1);
+        }
+
+    .btn-default.disabled: hover,
+    .btn-default [desativado]: passar o mouse,
+    fieldset [disabled] .btn-default: hover,
+    .btn-default.disabled: focus,
+    .btn-default [desativado]: foco,
+    fieldset [disabled] .btn-default: focus,
+    .btn-default.disabled.focus,
+    .btn-default [desativado] .focus,
+    fieldset [disabled] .btn-default.focus {
+        cor de fundo: #ffffff;
+        cor da borda: rgba (0, 0, 0, 0,1);
+    }
+
+    .btn-default .badge {
+        cor: #ffffff;
+        cor de fundo: # 555555;
+    }
+
+.btn-primary {
+    cor: #ffffff;
+    cor de fundo: # 2fa4e7;
+    border-color: # 2fa4e7;
+}
+
+    .btn-primary: focus,
+    .btn-primary.focus {
+        cor: #ffffff;
+        cor de fundo: # 178acc;
+        border-color: # 105b87;
+    }
+
+    .btn-primary: hover {
+        cor: #ffffff;
+        cor de fundo: # 178acc;
+        cor da borda: # 1684c2;
+    }
+
+    .btn-primary: ativo,
+    .btn-primary.active,
+    .open > .dropdown-toggle.btn-primary {
+        cor: #ffffff;
+        cor de fundo: # 178acc;
+        imagem de fundo: nenhuma;
+        cor da borda: # 1684c2;
+    }
+
+        .btn-primary: active: hover,
+        .btn-primary.active: hover,
+        .open > .dropdown-toggle.btn-primary: hover,
+        .btn-primary: ativo: foco,
+        .btn-primary.active: focus,
+        .open > .dropdown-toggle.btn-primary: focus,
+        .btn-primary: active.focus,
+        .btn-primary.active.focus,
+        .open > .dropdown-toggle.btn-primary.focus {
+            cor: #ffffff;
+            cor de fundo: # 1474ac;
+            border-color: # 105b87;
+        }
+
+    .btn-primary.disabled: hover,
+    .btn-primary [disabled]: hover,
+    fieldset [disabled] .btn-primary: hover,
+    .btn-primary.disabled: focus,
+    .btn-primary [disabled]: focus,
+    fieldset [disabled] .btn-primary: focus,
+    .btn-primary.disabled.focus,
+    .btn-primary [disabled] .focus,
+    fieldset [desativado] .btn-primary.focus {
+        cor de fundo: # 2fa4e7;
+        border-color: # 2fa4e7;
+    }
+
+    .btn-primary .badge {
+        cor: # 2fa4e7;
+        cor de fundo: #ffffff;
+    }
+
+.btn-success {
+    cor: #ffffff;
+    cor de fundo: # 73a839;
+    cor da borda: # 73a839;
+}
+
+    .btn-success: focus,
+    .btn-success.focus {
+        cor: #ffffff;
+        cor de fundo: # 59822c;
+        cor da borda: # 324919;
+    }
+
+    .btn-success: hover {
+        cor: #ffffff;
+        cor de fundo: # 59822c;
+        cor da borda: # 547a29;
+    }
+
+    .btn-success: ativo,
+    .btn-success.active,
+    .open > .dropdown-toggle.btn-success {
+        cor: #ffffff;
+        cor de fundo: # 59822c;
+        imagem de fundo: nenhuma;
+        cor da borda: # 547a29;
+    }
+
+        .btn-success: active: hover,
+        .btn-success.active: hover,
+        .open > .dropdown-toggle.btn-success: hover,
+        .btn-success: active: focus,
+        .btn-success.active: focus,
+        .open > .dropdown-toggle.btn-success: focus,
+        .btn-success: active.focus,
+        .btn-success.active.focus,
+        .open > .dropdown-toggle.btn-success.focus {
+            cor: #ffffff;
+            cor de fundo: # 476723;
+            cor da borda: # 324919;
+        }
+
+    .btn-success.disabled: hover,
+    .btn-success [disabled]: hover,
+    fieldset [disabled] .btn-success: hover,
+    .btn-success.disabled: focus,
+    .btn-success [disabled]: focus,
+    fieldset [disabled] .btn-success: focus,
+    .btn-success.disabled.focus,
+    .btn-success [disabled] .focus,
+    fieldset [desativado] .btn-success.focus {
+        cor de fundo: # 73a839;
+        cor da borda: # 73a839;
+    }
+
+    .btn-success .badge {
+        cor: # 73a839;
+        cor de fundo: #ffffff;
+    }
+
+.btn-info {
+    cor: #ffffff;
+    cor de fundo: # 033c73;
+    border-color: # 033c73;
+}
+
+    .btn-info: focus,
+    .btn-info.focus {
+        cor: #ffffff;
+        cor de fundo: # 022241;
+        cor da borda: # 000000;
+    }
+
+    .btn-info: hover {
+        cor: #ffffff;
+        cor de fundo: # 022241;
+        border-color: # 011d37;
+    }
+
+    .btn-info: ativo,
+    .btn-info.active,
+    .open > .dropdown-toggle.btn-info {
+        cor: #ffffff;
+        cor de fundo: # 022241;
+        imagem de fundo: nenhuma;
+        border-color: # 011d37;
+    }
+
+        .btn-info: ativo: hover,
+        .btn-info.active: hover,
+        .open > .dropdown-toggle.btn-info: hover,
+        .btn-info: ativo: foco,
+        .btn-info.active: foco,
+        .open > .dropdown-toggle.btn-info: focus,
+        .btn-info: active.focus,
+        .btn-info.active.focus,
+        .open > .dropdown-toggle.btn-info.focus {
+            cor: #ffffff;
+            cor de fundo: # 01101f;
+            cor da borda: # 000000;
+        }
+
+    .btn-info.disabled: hover,
+    .btn-info [desativado]: passar o mouse,
+    fieldset [disabled] .btn-info: hover,
+    .btn-info.disabled: focus,
+    .btn-info [desativado]: foco,
+    fieldset [desativado] .btn-info: focus,
+    .btn-info.disabled.focus,
+    .btn-info [desativado] .focus,
+    fieldset [desativado] .btn-info.focus {
+        cor de fundo: # 033c73;
+        border-color: # 033c73;
+    }
+
+    .btn-info .badge {
+        cor: # 033c73;
+        cor de fundo: #ffffff;
+    }
+
+.btn-warning {
+    cor: #ffffff;
+    cor de fundo: # dd5600;
+    border-color: # dd5600;
+}
+
+    .btn-warning: focus,
+    .btn-warning.focus {
+        cor: #ffffff;
+        cor de fundo: # aa4200;
+        border-color: # 5e2400;
+    }
+
+    .btn-warning: hover {
+        cor: #ffffff;
+        cor de fundo: # aa4200;
+        border-color: # a03e00;
+    }
+
+    .btn-warning: ativo,
+    .btn-warning.active,
+    .open > .dropdown-toggle.btn-warning {
+        cor: #ffffff;
+        cor de fundo: # aa4200;
+        imagem de fundo: nenhuma;
+        border-color: # a03e00;
+    }
+
+        .btn-warning: ativo: hover,
+        .btn-warning.active: hover,
+        .open > .dropdown-toggle.btn-warning: hover,
+        .btn-aviso: ativo: foco,
+        .btn-warning.active: focus,
+        .open > .dropdown-toggle.btn-warning: focus,
+        .btn-warning: active.focus,
+        .btn-warning.active.focus,
+        .open > .dropdown-toggle.btn-warning.focus {
+            cor: #ffffff;
+            cor de fundo: # 863400;
+            border-color: # 5e2400;
+        }
+
+    .btn-warning.disabled: hover,
+    .btn-warning [disabled]: hover,
+    fieldset [disabled] .btn-warning: hover,
+    .btn-warning.disabled: focus,
+    .btn-warning [disabled]: focus,
+    fieldset [disabled] .btn-warning: focus,
+    .btn-warning.disabled.focus,
+    .btn-warning [desativado] .focus,
+    fieldset [disabled] .btn-warning.focus {
+        cor de fundo: # dd5600;
+        border-color: # dd5600;
+    }
+
+    .btn-warning .badge {
+        cor: # dd5600;
+        cor de fundo: #ffffff;
+    }
+
+.btn-perigo {
+    cor: #ffffff;
+    cor de fundo: # c71c22;
+    border-color: # c71c22;
+}
+
+    .btn-perigo: foco,
+    .btn-danger.focus {
+        cor: #ffffff;
+        cor de fundo: # 9a161a;
+        border-color: # 570c0f;
+    }
+
+    .btn-perigo: hover {
+        cor: #ffffff;
+        cor de fundo: # 9a161a;
+        cor da borda: # 911419;
+    }
+
+    .btn-perigo: ativo,
+    .btn-danger.active,
+    .open > .dropdown-toggle.btn-danger {
+        cor: #ffffff;
+        cor de fundo: # 9a161a;
+        imagem de fundo: nenhuma;
+        cor da borda: # 911419;
+    }
+
+        .btn-perigo: ativo: hover,
+        .btn-danger.active: hover,
+        .open > .dropdown-toggle.btn-danger: hover,
+        .btn-perigo: ativo: foco,
+        .btn-danger.active: focus,
+        .open > .dropdown-toggle.btn-danger: focus,
+        .btn-perigo: active.focus,
+        .btn-danger.active.focus,
+        .open > .dropdown-toggle.btn-danger.focus {
+            cor: #ffffff;
+            cor de fundo: # 7b1115;
+            border-color: # 570c0f;
+        }
+
+    .btn-danger.disabled: hover,
+    .btn-hazard [disabled]: hover,
+    fieldset [disabled] .btn-danger: hover,
+    .btn-danger.disabled: focus,
+    .btn-perigo [desativado]: foco,
+    fieldset [disabled] .btn-danger: focus,
+    .btn-danger.disabled.focus,
+    .btn-perigo [desativado] .focus,
+    fieldset [desativado] .btn-danger.focus {
+        cor de fundo: # c71c22;
+        border-color: # c71c22;
+    }
+
+.btn-danger .badge {
+    cor: # c71c22;
+    cor de fundo: #ffffff;
+}
+
+.btn-link {
+    peso da fonte: 400;
+    cor: # 2fa4e7;
+    raio da borda: 0;
+}
+
+    .btn-link,
+    .btn-link: ativo,
+    .btn-link.active,
+    .btn-link [desativado],
+    fieldset [desativado] .btn-link {
+        cor de fundo: transparente;
+        sombra da caixa: nenhum;
+    }
+
+        .btn-link,
+        .btn-link: hover,
+        .btn-link: foco,
+        .btn-link: ativo {
+            cor da borda: transparente;
+        }
+
+            .btn-link: hover,
+            .btn-link: focus {
+                cor: # 157ab5;
+                decoração de texto: sublinhado;
+                cor de fundo: transparente;
+            }
+
+            .btn-link [desativado]: passar o mouse,
+            fieldset [disabled] .btn-link: hover,
+            .btn-link [desativado]: foco,
+            fieldset [desativado] .btn-link: focus {
+                cor: # 999999;
+                decoração de texto: nenhum;
+            }
+
+.btn-lg,
+.btn-group-lg > .btn {
+    preenchimento: 14px 16px;
+    tamanho da fonte: 18px;
+    altura da linha: 1,333333;
+    raio da borda: 6px;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+    preenchimento: 5px 10px;
+    tamanho da fonte: 12px;
+    altura da linha: 1,5;
+    raio da borda: 3px;
+}
+
+.btn-xs,
+.btn-group-xs > .btn {
+    preenchimento: 1px 5px;
+    tamanho da fonte: 12px;
+    altura da linha: 1,5;
+    raio da borda: 3px;
+}
+
+.btn-block {
+    display: bloco;
+    largura: 100%;
+}
+
+    .btn-block + .btn-block {
+        margem superior: 5px;
+    }
+
+input [type = "submit"]. btn-block,
+input [type = "reset"]. bloco btn,
+input [type = "botão"]. btn-block {
+    largura: 100%;
+}
+
+.desvaneça {
+    opacidade: 0;
+    transição: opacidade 0.15s linear;
+}
+
+.aparecimento gradual {
+    opacidade: 1;
+}
+
+.collapse {
+    Mostrar nenhum;
+}
+
+    .collapse.in {
+        display: bloco;
+    }
+
+tr.collapse.in {
+    display: linha da tabela;
+}
+
+tbody.collapse.in {
+    display: table-row-group;
+}
+
+.collapsing {
+    posição: relativa;
+    altura: 0;
+    estouro: oculto;
+    propriedade de transição: altura, visibilidade;
+    duração da transição: 0,35s;
+    função de tempo de transição: facilidade;
+}
+
+.caret {
+    display: bloco embutido;
+    largura: 0;
+    altura: 0;
+    margem esquerda: 2px;
+    alinhamento vertical: meio;
+    border-top: 4px tracejado;
+    borda superior: 4px sólido \ 9;
+    border-right: 4px sólido transparente;
+    borda esquerda: 4px sólido transparente;
+}
+
+.Soltar-se,
+.suspenso {
+    posição: relativa;
+}
+
+.dropdown-toggle: focus {
+    esboço: 0;
+}
+
+.menu suspenso {
+    posição: absoluta;
+    Os 100 melhores%;
+    esquerda: 0;
+    índice z: 1000;
+    Mostrar nenhum;
+    fl oat: esquerda;
+    largura mínima: 160px;
+    preenchimento: 5px 0;
+    margem: 2px 0 0;
+    tamanho da fonte: 14px;
+    alinhamento de texto: esquerda;
+    estilo de lista: nenhum;
+    cor de fundo: #ffffff;
+    clipe de fundo: caixa de enchimento;
+    borda: 1px sólido #cccccc;
+    borda: 1px solid rgba (0, 0, 0, 0,15);
+    raio da borda: 4px;
+    sombra da caixa: 0 6px 12px rgba (0, 0, 0, 0,175);
+}
+
+.dropdown-menu.pull-right {
+    direita: 0;
+    esquerda: automático;
+}
+
+.dropdown-menu .divider {
+    altura: 1px;
+    margem: 9px 0;
+    estouro: oculto;
+    cor de fundo: # e5e5e5;
+}
+
+. menu suspenso > li > a {
+    display: bloco;
+    preenchimento: 3px 20px;
+    limpar ambos;
+    peso da fonte: 400;
+    altura da linha: 1,42857143;
+    cor: # 333333;
+    espaço em branco: nowrap;
+}
+
+    . menu suspenso > li > a: passar o mouse,
+    . menu suspenso > li > a: focus {
+        cor: #ffffff;
+        decoração de texto: nenhum;
+        cor de fundo: # 2fa4e7;
+    }
+
+. menu suspenso > .ativo > a,
+. menu suspenso > .ativo > a: passar o mouse,
+. menu suspenso > .active > a: focus {
+    cor: #ffffff;
+    decoração de texto: nenhum;
+    cor de fundo: # 2fa4e7;
+    esboço: 0;
+}
+
+. menu suspenso > . desabilitado > a,
+. menu suspenso > . desativado > a: hover,
+. menu suspenso > . desativado > a: focus {
+    cor: # 999999;
+}
+
+. menu suspenso > . desativado > a: hover,
+. menu suspenso > . desativado > a: focus {
+    decoração de texto: nenhum;
+    cursor: não permitido;
+    cor de fundo: transparente;
+    imagem de fundo: nenhuma;
+    filtro: progid: DXImageTransform.Microsoft.gradient (enabled = false);
+}
+
+.open > .dropdown-menu {
+    display: bloco;
+}
+
+.open > a {
+    esboço: 0;
+}
+
+.dropdown-menu-right {
+    direita: 0;
+    esquerda: automático;
+}
+
+.dropdown-menu-left {
+    direita: automático;
+    esquerda: 0;
+}
+
+.dropdown-header {
+    display: bloco;
+    preenchimento: 3px 20px;
+    tamanho da fonte: 12px;
+    altura da linha: 1,42857143;
+    cor: # 999999;
+    espaço em branco: nowrap;
+}
+
+.dropdown-backdrop {
+    posição: fixa;
+    topo: 0;
+    direita: 0;
+    inferior: 0;
+    esquerda: 0;
+    índice z: 990;
+}
+
+.pull-right > .dropdown-menu {
+    direita: 0;
+    esquerda: automático;
+}
+
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+    contente: "";
+    borda superior: 0;
+    border-bottom: 4px tracejado;
+    borda inferior: 4px sólido \ 9;
+}
+
+.dropup. menu suspenso,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+    topo: automático;
+    inferior: 100%;
+    margin-bottom: 2px;
+}
+
+@media (largura mínima: 768px) {
+    .navbar-right .dropdown-menu {
+        direita: 0;
+        esquerda: automático;
+    }
+
+    .navbar-right .dropdown-menu-left {
+        direita: automático;
+        esquerda: 0;
+    }
+}
+
+.btn-group,
+.btn-group-vertical {
+    posição: relativa;
+    display: bloco embutido;
+    alinhamento vertical: meio;
+}
+
+    .btn-group > .btn,
+    .btn-group-vertical > .btn {
+        posição: relativa;
+        flutuar: esquerda;
+    }
+
+        .btn-group > .btn: hover,
+        .btn-group-vertical > .btn: hover,
+        .btn-group > .btn: foco,
+        .btn-group-vertical > .btn: foco,
+        .btn-group > .btn: ativo,
+        .btn-group-vertical > .btn: ativo,
+        .btn-group > .btn.active,
+        .btn-group-vertical > .btn.active {
+            índice z: 2;
+        }
+
+    .btn-group .btn + .btn,
+    .btn-group .btn + .btn-group,
+    .btn-group .btn-group + .btn,
+    .btn-group .btn-group + .btn-group {
+        margem esquerda: -1px;
+    }
+
+.btn-toolbar {
+    margem esquerda: -5px;
+}
+
+    .btn-toolbar .btn,
+    .btn-toolbar .btn-group,
+    .btn-toolbar .input-group {
+        flutuar: esquerda;
+    }
+
+    .btn-barra de ferramentas > .btn,
+    .btn-toolbar > .btn-group,
+    .btn-barra de ferramentas > .input-group {
+        margem esquerda: 5px;
+    }
+
+.btn-group > .btn: not (: first-child): not (: last-child): not (.dropdown-toggle) {
+    raio da borda: 0;
+}
+
+.btn-group > .btn: primeiro filho {
+    margem esquerda: 0;
+}
+
+.btn-group > .btn: first-child: not (: last-child): not (.dropdown-toggle) {
+    raio da borda superior direita: 0;
+    raio da borda inferior direita: 0;
+}
+
+.btn-group > .btn: último filho: não (: primeiro filho),
+.btn-group > .dropdown-toggle: not (: first-child) {
+    raio da borda superior esquerda: 0;
+    raio da borda inferior esquerda: 0;
+}
+
+.btn-group > .btn-group {
+    flutuar: esquerda;
+}
+
+    .btn-group > .btn-group: not (: first-child): not (: last-child) > .btn {
+        raio da borda: 0;
+    }
+
+    .btn-group > .btn-group: primeiro filho: não (: último filho) > .btn: último filho,
+    .btn-group > .btn-group: first-child: not (: last-child) > .dropdown-toggle {
+        raio da borda superior direita: 0;
+        raio da borda inferior direita: 0;
+    }
+
+    .btn-group > .btn-group: último-filho: não (: primeiro-filho) > .btn: primeiro-filho {
+        raio da borda superior esquerda: 0;
+        raio da borda inferior esquerda: 0;
+    }
+
+.btn-group .dropdown-toggle: ativo,
+.btn-group.open .dropdown-toggle {
+    esboço: 0;
+}
+
+.btn-group > .btn + .dropdown-toggle {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.btn-group > .btn-lg + .dropdown-toggle {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.btn-group.open .dropdown-toggle {
+    sombra da caixa: inserção 0 3px 5px rgba (0, 0, 0, 0,125);
+}
+
+    .btn-group.open .dropdown-toggle.btn-link {
+        sombra da caixa: nenhum;
+    }
+
+.btn .caret {
+    margem esquerda: 0;
+}
+
+.btn-lg .caret {
+    largura da borda: 5px 5px 0;
+    largura da borda inferior: 0;
+}
+
+.dropup .btn-lg .caret {
+    largura da borda: 0 5px 5px;
+}
+
+.btn-group-vertical > .btn,
+.btn-group-vertical > .btn-group,
+.btn-group-vertical > .btn-group > .btn {
+    display: bloco;
+    float: nenhum;
+    largura: 100%;
+    largura máxima: 100%;
+}
+
+    .btn-group-vertical > .btn-group > .btn {
+        float: nenhum;
+    }
+
+    .btn-group-vertical > .btn + .btn,
+    .btn-group-vertical > .btn + .btn-group,
+    .btn-group-vertical > .btn-group + .btn,
+    .btn-group-vertical > .btn-group + .btn-group {
+        margin-top: -1px;
+        margem esquerda: 0;
+    }
+
+    .btn-group-vertical > .btn: not (: primeiro filho): not (: último filho) {
+        raio da borda: 0;
+    }
+
+    .btn-group-vertical > .btn: primeiro-filho: não (: último-filho) {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        raio da borda inferior direita: 0;
+        raio da borda inferior esquerda: 0;
+    }
+
+    .btn-group-vertical > .btn: último-filho: não (: primeiro-filho) {
+        raio da borda superior esquerda: 0;
+        raio da borda superior direita: 0;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .btn-group-vertical > .btn-group: not (: first-child): not (: last-child) > .btn {
+        raio da borda: 0;
+    }
+
+    .btn-group-vertical > .btn-group: first-child: not (: last-child) > .btn: last-child,
+    .btn-group-vertical > .btn-group: first-child: not (: last-child) > .dropdown-toggle {
+        raio da borda inferior direita: 0;
+        raio da borda inferior esquerda: 0;
+    }
+
+    .btn-group-vertical > .btn-group: último-filho: não (: primeiro-filho) > .btn: primeiro-filho {
+        raio da borda superior esquerda: 0;
+        raio da borda superior direita: 0;
+    }
+
+.btn-group -justed {
+    display: mesa;
+    largura: 100%;
+    layout da mesa: fixo;
+    colapso da fronteira: separado;
+}
+
+    .btn-group -justed > .btn,
+    .btn-group -justed > .btn-group {
+        display: table-cell;
+        float: nenhum;
+        largura: 1%;
+    }
+
+        .btn-group -justed > .btn-group .btn {
+            largura: 100%;
+        }
+
+        .btn-group -justed > .btn-group .dropdown-menu {
+            esquerda: automático;
+        }
+
+[data-toggle = "buttons"] > .btn input [type = "radio"],
+[data-toggle = "buttons"] > .btn-group > .btn input [type = "radio"],
+[data-toggle = "buttons"] > .btn input [type = "checkbox"],
+[data-toggle = "buttons"] > .btn-group > .btn input [type = "checkbox"] {
+    posição: absoluta;
+    clipe: rect (0, 0, 0, 0);
+    eventos de ponteiro: nenhum;
+}
+
+.input-group {
+    posição: relativa;
+    display: mesa;
+    colapso da fronteira: separado;
+}
+
+    .input-group [class * = "col-"] {
+        float: nenhum;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .input-group .form-control {
+        posição: relativa;
+        índice z: 2;
+        flutuar: esquerda;
+        largura: 100%;
+        margem inferior: 0;
+    }
+
+        .input-group .form-control: focus {
+            índice z: 3;
+        }
+
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > ​​.btn {
+    altura: 54px;
+    preenchimento: 14px 16px;
+    tamanho da fonte: 18px;
+    altura da linha: 1,333333;
+    raio da borda: 6px;
+}
+
+select.input-group-lg > .form-control,
+select.input-group-lg > .input-group-addon,
+select.input-group-lg > .input-group-btn > ​​.btn {
+    altura: 54px;
+    altura da linha: 54px;
+}
+
+textarea.input-group-lg > .form-control,
+textarea.input-group-lg > .input-group-addon,
+textarea.input-group-lg > .input-group-btn > ​​.btn,
+selecione [múltiplo] .input-group-lg > .form-control,
+selecione [múltiplo] .input-group-lg > .input-group-addon,
+selecione [múltiplo] .input-group-lg > .input-group-btn > ​​.btn {
+    altura: automático;
+}
+
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > ​​.btn {
+    altura: 30px;
+    preenchimento: 5px 10px;
+    tamanho da fonte: 12px;
+    altura da linha: 1,5;
+    raio da borda: 3px;
+}
+
+select.input-group-sm > .form-control,
+select.input-group-sm > .input-group-addon,
+select.input-group-sm > .input-group-btn > ​​.btn {
+    altura: 30px;
+    altura da linha: 30px;
+}
+
+textarea.input-group-sm > .form-control,
+textarea.input-group-sm > .input-group-addon,
+textarea.input-group-sm > .input-group-btn > ​​.btn,
+selecione [múltiplo] .input-group-sm > .form-control,
+selecione [múltiplo] .input-group-sm > .input-group-addon,
+selecione [múltiplo] .input-group-sm > .input-group-btn > ​​.btn {
+    altura: automático;
+}
+
+.input-group-addon,
+.input-group-btn,
+.input-group .form-control {
+    display: table-cell;
+}
+
+    .input-group-addon: not (: first-child): not (: last-child),
+    .input-group-btn: not (: first-child): not (: last-child),
+    .input-group .form-control: not (: first-child): not (: last-child) {
+        raio da borda: 0;
+    }
+
+.input-group-addon,
+.input-group-btn {
+    largura: 1%;
+    espaço em branco: nowrap;
+    alinhamento vertical: meio;
+}
+
+.input-group-addon {
+    preenchimento: 8px 12px;
+    tamanho da fonte: 14px;
+    peso da fonte: 400;
+    altura da linha: 1;
+    cor: # 555555;
+    alinhamento de texto: centro;
+    cor de fundo: #eeeeee;
+    borda: 1px sólido #cccccc;
+    raio da borda: 4px;
+}
+
+    .input-group-addon.input-sm {
+        preenchimento: 5px 10px;
+        tamanho da fonte: 12px;
+        raio da borda: 3px;
+    }
+
+    .input-group-addon.input-lg {
+        preenchimento: 14px 16px;
+        tamanho da fonte: 18px;
+        raio da borda: 6px;
+    }
+
+    .input-group-addon input [type = "radio"],
+    .input-group-addon input [type = "checkbox"] {
+        margem superior: 0;
+    }
+
+    .input-group .form-control: primeiro filho,
+    .input-group-addon: primeiro filho,
+    .input-group-btn: primeiro filho > .btn,
+    .input-group-btn: first-child > .btn-group > .btn,
+    .input-group-btn: first-child > .dropdown-toggle,
+    .input-group-btn: last-child > .btn: not (: last-child): not (.dropdown-toggle),
+    .input-group-btn: último-filho > .btn-group: not (: último-filho) > .btn {
+        raio da borda superior direita: 0;
+        raio da borda inferior direita: 0;
+    }
+
+    .input-group-addon: first-child {
+        borda direita: 0;
+    }
+
+    .input-group .form-control: último filho,
+    .input-group-addon: último filho,
+    .input-group-btn: último-filho > .btn,
+    .input-group-btn: último-filho > .btn-group > .btn,
+    .input-group-btn: last-child > .dropdown-toggle,
+    .input-group-btn: first-child > .btn: not (: first-child),
+    .input-group-btn: primeiro filho > .btn-group: not (: primeiro filho) > .btn {
+        raio da borda superior esquerda: 0;
+        raio da borda inferior esquerda: 0;
+    }
+
+    .input-group-addon: last-child {
+        borda esquerda: 0;
+    }
+
+.input-group-btn {
+    posição: relativa;
+    tamanho da fonte: 0;
+    espaço em branco: nowrap;
+}
+
+    .input-group-btn > ​​.btn {
+        posição: relativa;
+    }
+
+        .input-group-btn > ​​.btn + .btn {
+            margem esquerda: -1px;
+        }
+
+        .input-group-btn > ​​.btn: hover,
+        .input-group-btn > ​​.btn: foco,
+        .input-group-btn > ​​.btn: active {
+            índice z: 2;
+        }
+
+    .input-group-btn: primeiro filho > .btn,
+    .input-group-btn: primeiro-filho > .btn-group {
+        margem direita: -1px;
+    }
+
+    .input-group-btn: último-filho > .btn,
+    .input-group-btn: último-filho > .btn-group {
+        índice z: 2;
+        margem esquerda: -1px;
+    }
+
+.nav {
+    padding-left: 0;
+    margem inferior: 0;
+    estilo de lista: nenhum;
+}
+
+    .nav > li {
+        posição: relativa;
+        display: bloco;
+    }
+
+        .nav > li > a {
+            posição: relativa;
+            display: bloco;
+            preenchimento: 10px 15px;
+        }
+
+            .nav > li > a: passar o mouse,
+            .nav > li > a: focus {
+                decoração de texto: nenhum;
+                cor de fundo: #eeeeee;
+            }
+
+        .nav > li.disabled > a {
+            cor: # 999999;
+        }
+
+            .nav > li.disabled > a: hover,
+            .nav > li.disabled > a: focus {
+                cor: # 999999;
+                decoração de texto: nenhum;
+                cursor: não permitido;
+                cor de fundo: transparente;
+            }
+
+    .nav .open > a,
+    .nav .open > a: passar o mouse,
+    .nav .open > a: focus {
+        cor de fundo: #eeeeee;
+        border-color: # 2fa4e7;
+    }
+
+    .nav .nav-divider {
+        altura: 1px;
+        margem: 9px 0;
+        estouro: oculto;
+        cor de fundo: # e5e5e5;
+    }
+
+    .nav > li > a > img {
+        largura máxima: nenhum;
+    }
+
+.nav-tabs {
+    border-bottom: 1px solid #dddddd;
+}
+
+    .nav-tabs > li {
+        flutuar: esquerda;
+        margin-bottom: -1px;
+    }
+
+        .nav-tabs > li > a {
+            margem direita: 2px;
+            altura da linha: 1,42857143;
+            borda: 1px sólido transparente;
+            border-radius: 4px 4px 0 0;
+        }
+
+            .nav-tabs > li > a: hover {
+                border-color: #eeeeee #eeeeee #dddddd;
+            }
+
+        .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a: hover,
+        .nav-tabs > li.active > a: focus {
+            cor: # 555555;
+            cursor: padrão;
+            cor de fundo: #ffffff;
+            borda: 1px sólido #dddddd;
+            cor da borda inferior: transparente;
+        }
+
+    .nav-tabs.nav -justed {
+        largura: 100%;
+        borda inferior: 0;
+    }
+
+        .nav-tabs.nav -justed > li {
+            float: nenhum;
+        }
+
+            .nav-tabs.nav -justed > li > a {
+                margin-bottom: 5px;
+                alinhamento de texto: centro;
+            }
+
+        .nav-tabs.nav -justed > .dropdown .dropdown-menu {
+            topo: automático;
+            esquerda: automático;
+        }
+
+@media (largura mínima: 768px) {
+    .nav-tabs.nav -justed > li {
+        display: table-cell;
+        largura: 1%;
+    }
+
+        .nav-tabs.nav -justed > li > a {
+            margem inferior: 0;
+        }
+}
+
+.nav-tabs.nav -justed > li > a {
+    margem direita: 0;
+    raio da borda: 4px;
+}
+
+.nav-tabs.nav -justed > .active > a,
+.nav-tabs.nav -justed > .active > a: hover,
+.nav-tabs.nav -justed > .active > a: focus {
+    borda: 1px sólido #dddddd;
+}
+
+@media (largura mínima: 768px) {
+    .nav-tabs.nav -justed > li > a {
+        border-bottom: 1px solid #dddddd;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .nav-tabs.nav -justed > .active > a,
+    .nav-tabs.nav -justed > .active > a: hover,
+    .nav-tabs.nav -justed > .active > a: focus {
+        border-bottom-color: #ffffff;
+    }
+}
+
+.nav-pills > li {
+    flutuar: esquerda;
+}
+
+    .nav-pills > li > a {
+        raio da borda: 4px;
+    }
+
+.nav-pílulas > li + li {
+    margem esquerda: 2px;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a: hover,
+.nav-pills > li.active > a: focus {
+    cor: #ffffff;
+    cor de fundo: # 2fa4e7;
+}
+
+.nav-stacked > li {
+    float: nenhum;
+}
+
+    .nav-stacked > li + li {
+        margem superior: 2px;
+        margem esquerda: 0;
+    }
+
+.nav -justed {
+    largura: 100%;
+}
+
+.nav justificado > li {
+    float: nenhum;
+}
+
+    .nav justificado > li > a {
+        margin-bottom: 5px;
+        alinhamento de texto: centro;
+    }
+
+.nav justificado > .dropdown .dropdown-menu {
+    topo: automático;
+    esquerda: automático;
+}
+
+@media (largura mínima: 768px) {
+    .nav justificado > li {
+        display: table-cell;
+        largura: 1%;
+    }
+
+        .nav justificado > li > a {
+            margem inferior: 0;
+        }
+}
+
+.nav-tabs -justed {
+    borda inferior: 0;
+}
+
+.nav-tabs-justificado > li > a {
+    margem direita: 0;
+    raio da borda: 4px;
+}
+
+.nav-tabs -justed > .active > a,
+.nav-tabs -justed > .active > a: hover,
+.nav-tabs -justed > .active > a: focus {
+    borda: 1px sólido #dddddd;
+}
+
+@media (largura mínima: 768px) {
+    .nav-tabs-justificado > li > a {
+        border-bottom: 1px solid #dddddd;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .nav-tabs -justed > .active > a,
+    .nav-tabs -justed > .active > a: hover,
+    .nav-tabs -justed > .active > a: focus {
+        border-bottom-color: #ffffff;
+    }
+}
+
+.tab-content > .tab-pane {
+    Mostrar nenhum;
+}
+
+.tab-content > .active {
+    display: bloco;
+}
+
+.nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    raio da borda superior esquerda: 0;
+    raio da borda superior direita: 0;
+}
+
+.navbar {
+    posição: relativa;
+    altura mínima: 50px;
+    margin-bottom: 20px;
+    borda: 1px sólido transparente;
+}
+
+@media (largura mínima: 768px) {
+    .navbar {
+        raio da borda: 4px;
+    }
+}
+
+@media (largura mínima: 768px) {
+    .navbar-header {
+        flutuar: esquerda;
+    }
+}
+
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visível;
+    border-top: 1px sólido transparente;
+    sombra da caixa: inserção 0 1px 0 rgba (255, 255, 255, 0,1);
+    -webkit-overflow-scrolling: touch;
+}
+
+    .navbar-collapse.in {
+        overflow-y: automático;
+    }
+
+@media (largura mínima: 768px) {
+    .navbar-collapse {
+        largura: automático;
+        borda superior: 0;
+        sombra da caixa: nenhum;
+    }
+
+        .navbar-collapse.collapse {
+            display: bloquear ! importante;
+            altura: automático ! importante;
+            acolchoamento inferior: 0;
+            estouro: visível ! importante;
+        }
+
+        .navbar-collapse.in {
+            overflow-y: visível;
+        }
+
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-static-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    posição: fixa;
+    direita: 0;
+    esquerda: 0;
+    índice z: 1030;
+}
+
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+        altura máxima: 340px;
+    }
+
+@media (max-device-width: 480px) e (orientação: paisagem) {
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+        altura máxima: 200px;
+    }
+}
+
+@media (largura mínima: 768px) {
+    .navbar-fixed-top,
+    .navbar-fixed-bottom {
+        raio da borda: 0;
+    }
+}
+
+.navbar-fixed-top {
+    topo: 0;
+    largura da borda: 0 0 1px;
+}
+
+.navbar-fixed-bottom {
+    inferior: 0;
+    margem inferior: 0;
+    largura da borda: 1px 0 0;
+}
+
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
+    margem direita: -15px;
+    margem esquerda: -15px;
+}
+
+@media (largura mínima: 768px) {
+    .container > .navbar-header,
+    .container-fluid > .navbar-header,
+    .container > .navbar-collapse,
+    .container-fluid > .navbar-collapse {
+        margem direita: 0;
+        margem esquerda: 0;
+    }
+}
+
+.navbar-static-top {
+    índice z: 1000;
+    largura da borda: 0 0 1px;
+}
+
+@media (largura mínima: 768px) {
+    .navbar-static-top {
+        raio da borda: 0;
+    }
+}
+
+.navbar-brand {
+    flutuar: esquerda;
+    altura: 50px;
+    preenchimento: 15px 15px;
+    tamanho da fonte: 18px;
+    altura da linha: 20px;
+}
+
+    .navbar-brand: hover,
+    .navbar-brand: focus {
+        decoração de texto: nenhum;
+    }
+
+.navbar-marca > img {
+    display: bloco;
+}
+
+@media (largura mínima: 768px) {
+    .navbar > .container .navbar-brand,
+    .navbar > .container-fluid .navbar-brand {
+        margem esquerda: -15px;
+    }
+}
+
+.navbar-toggle {
+    posição: relativa;
+    flutuar: certo;
+    preenchimento: 9px 10px;
+    margem direita: 15px;
+    margem superior: 8px;
+    margin-bottom: 8px;
+    cor de fundo: transparente;
+    imagem de fundo: nenhuma;
+    borda: 1px sólido transparente;
+    raio da borda: 4px;
+}
+
+    .navbar-toggle: focus {
+        esboço: 0;
+    }
+
+    .navbar-toggle .icon-bar {
+        display: bloco;
+        largura: 22px;
+        altura: 2px;
+        raio da borda: 1px;
+    }
+
+        .navbar-toggle .icon-bar + .icon-bar {
+            margem superior: 4px;
+        }
+
+@media (largura mínima: 768px) {
+    .navbar-toggle {
+        Mostrar nenhum;
+    }
+}
+
+.navbar-nav {
+    margem: 7,5px -15px;
+}
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        acolchoamento inferior: 10px;
+        altura da linha: 20px;
+    }
+
+@media (largura máxima: 767px) {
+    .navbar-nav .open .dropdown-menu {
+        posição: estática;
+        float: nenhum;
+        largura: automático;
+        margem superior: 0;
+        cor de fundo: transparente;
+        fronteira: 0;
+        sombra da caixa: nenhum;
+    }
+
+        .navbar-nav .open. menu suspenso > li > a,
+        .navbar-nav .open .dropdown-menu .dropdown-header {
+            preenchimento: 5px 15px 5px 25px;
+        }
+
+    .navbar-nav .open. menu suspenso > li > a {
+        altura da linha: 20px;
+    }
+
+        .navbar-nav .open. menu suspenso > li > a: hover,
+        .navbar-nav .open. menu suspenso > li > a: focus {
+            imagem de fundo: nenhuma;
+        }
+}
+
+@media (largura mínima: 768px) {
+    .navbar-nav {
+        flutuar: esquerda;
+        margem: 0;
+    }
+
+        .navbar-nav > li {
+            flutuar: esquerda;
+        }
+
+            .navbar-nav > li > a {
+                acolchoamento superior: 15px;
+                acolchoamento inferior: 15px;
+            }
+}
+
+.navbar-form {
+    preenchimento: 10px 15px;
+    margem direita: -15px;
+    margem esquerda: -15px;
+    border-top: 1px sólido transparente;
+    borda inferior: 1px sólido transparente;
+    sombra da caixa: inserção 0 1px 0 rgba (255, 255, 255, 0,1), 0 1px 0 rgba (255, 255, 255, 0,1);
+    margem superior: 6px;
+    margin-bottom: 6px;
+}
+
+@media (largura mínima: 768px) {
+    .navbar-form .form-group {
+        display: bloco embutido;
+        margem inferior: 0;
+        alinhamento vertical: meio;
+    }
+
+    .navbar-form .form-control {
+        display: bloco embutido;
+        largura: automático;
+        alinhamento vertical: meio;
+    }
+
+    .navbar-form .form-control-static {
+        display: bloco embutido;
+    }
+
+    .navbar-form .input-group {
+        display: tabela embutida;
+        alinhamento vertical: meio;
+    }
+
+        .navbar-form .input-group .input-group-addon,
+        .navbar-form .input-group .input-group-btn,
+        .navbar-form .input-group .form-control {
+            largura: automático;
+        }
+
+        .navbar-form .input-group > .form-control {
+            largura: 100%;
+        }
+
+    .navbar-form .control-label {
+        margem inferior: 0;
+        alinhamento vertical: meio;
+    }
+
+    .navbar-form .radio,
+    .navbar-form .checkbox {
+        display: bloco embutido;
+        margem superior: 0;
+        margem inferior: 0;
+        alinhamento vertical: meio;
+    }
+
+        etiqueta .navbar-form .radio,
+        .navbar-form .checkbox label {
+            padding-left: 0;
+        }
+
+        .navbar-form .radio input [type = "radio"],
+        .navbar-form .checkbox input [type = "checkbox"] {
+            posição: relativa;
+            margem esquerda: 0;
+        }
+
+    .navbar-form .has-feedback .form-control-feedback {
+        topo: 0;
+    }
+}
+
+@media (largura máxima: 767px) {
+    .navbar-form .form-group {
+        margin-bottom: 5px;
+    }
+
+        .navbar-form .form-group: last-child {
+            margem inferior: 0;
+        }
+}
+
+@media (largura mínima: 768px) {
+    .navbar-form {
+        largura: automático;
+        acolchoamento superior: 0;
+        acolchoamento inferior: 0;
+        margem direita: 0;
+        margem esquerda: 0;
+        fronteira: 0;
+        sombra da caixa: nenhum;
+    }
+}
+
+.navbar-nav > li > . menu suspenso {
+    margem superior: 0;
+    raio da borda superior esquerda: 0;
+    raio da borda superior direita: 0;
+}
+
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+    margem inferior: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    raio da borda inferior direita: 0;
+    raio da borda inferior esquerda: 0;
+}
+
+.navbar-btn {
+    margem superior: 6px;
+    margin-bottom: 6px;
+}
+
+    .navbar-btn.btn-sm {
+        margem superior: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-btn.btn-xs {
+        margem superior: 14px;
+        margin-bottom: 14px;
+    }
+
+.navbar-text {
+    margem superior: 15px;
+    margin-bottom: 15px;
+}
+
+@media (largura mínima: 768px) {
+    .navbar-text {
+        flutuar: esquerda;
+        margem direita: 15px;
+        margem esquerda: 15px;
+    }
+}
+
+@media (largura mínima: 768px) {
+    .navbar-left {
+        float: esquerda ! importante;
+    }
+
+    .navbar-right {
+        flutuar: certo ! importante;
+        margem direita: -15px;
+    }
+
+        .navbar-right ~ .navbar-right {
+            margem direita: 0;
+        }
+}
+
+.navbar-default {
+    cor de fundo: # 2fa4e7;
+    border-color: # 1995dc;
+}
+
+    .navbar-default .navbar-brand {
+        cor: #ffffff;
+    }
+
+        .navbar-default .navbar-brand: hover,
+        .navbar-default .navbar-brand: focus {
+            cor: #ffffff;
+            cor de fundo: nenhuma;
+        }
+
+    .navbar-default .navbar-text {
+        color: #dddddd;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        cor: #ffffff;
+    }
+
+        .navbar-default .navbar-nav > li > a: hover,
+        .navbar-default .navbar-nav > li > a: focus {
+            cor: #ffffff;
+            cor de fundo: # 178acc;
+        }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a: hover,
+    .navbar-default .navbar-nav > .active > a: focus {
+        cor: #ffffff;
+        cor de fundo: # 178acc;
+    }
+
+    .navbar-default .navbar-nav > .disabled > a,
+    .navbar-default .navbar-nav > .disabled > a: hover,
+    .navbar-default .navbar-nav > .disabled > a: focus {
+        color: #dddddd;
+        cor de fundo: transparente;
+    }
+
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a: hover,
+    .navbar-default .navbar-nav > .open > a: focus {
+        cor: #ffffff;
+        cor de fundo: # 178acc;
+    }
+
+@media (largura máxima: 767px) {
+    .navbar-default .navbar-nav .open. menu suspenso > li > a {
+        cor: #ffffff;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a: hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a: focus {
+        cor: #ffffff;
+        cor de fundo: # 178acc;
+    }
+
+    .navbar-default .navbar-nav .open. menu suspenso > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a: hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a: focus {
+        cor: #ffffff;
+        cor de fundo: # 178acc;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a: hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a: focus {
+        color: #dddddd;
+        cor de fundo: transparente;
+    }
+}
+
+.navbar-default .navbar-toggle {
+    cor da borda: # 178acc;
+}
+
+    .navbar-default .navbar-toggle: passar o mouse,
+    .navbar-default .navbar-toggle: focus {
+        cor de fundo: # 178acc;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        cor de fundo: #ffffff;
+    }
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: # 1995dc;
+}
+
+.navbar-default .navbar-link {
+    cor: #ffffff;
+}
+
+    .navbar-default .navbar-link: hover {
+        cor: #ffffff;
+    }
+
+.navbar-default .btn-link {
+    cor: #ffffff;
+}
+
+    .navbar-default .btn-link: hover,
+    .navbar-default .btn-link: focus {
+        cor: #ffffff;
+    }
+
+    .navbar-default .btn-link [desativado]: passar o mouse,
+    fieldset [desativado] .navbar-default .btn-link: hover,
+    .navbar-default .btn-link [desabilitado]: foco,
+    fieldset [desativado] .navbar-default .btn-link: focus {
+        color: #dddddd;
+    }
+
+.navbar-inverse {
+    cor de fundo: # 033c73;
+    border-color: # 022f5a;
+}
+
+    .navbar-inverse .navbar-brand {
+        cor: #ffffff;
+    }
+
+        .navbar-inverse .navbar-brand: hover,
+        .navbar-inverse .navbar-brand: focus {
+            cor: #ffffff;
+            cor de fundo: nenhuma;
+        }
+
+    .navbar-inverse .navbar-text {
+        cor: #ffffff;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        cor: #ffffff;
+    }
+
+        .navbar-inverse .navbar-nav > li > a: hover,
+        .navbar-inverse .navbar-nav > li > a: focus {
+            cor: #ffffff;
+            cor de fundo: # 022f5a;
+        }
+
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a: hover,
+    .navbar-inverse .navbar-nav > .active > a: focus {
+        cor: #ffffff;
+        cor de fundo: # 022f5a;
+    }
+
+    .navbar-inverse .navbar-nav > .disabled > a,
+    .navbar-inverse .navbar-nav > .disabled > a: hover,
+    .navbar-inverse .navbar-nav > .disabled > a: focus {
+        cor: #cccccc;
+        cor de fundo: transparente;
+    }
+
+    .navbar-inverse .navbar-nav > .open > a,
+    .navbar-inverse .navbar-nav > .open > a: hover,
+    .navbar-inverse .navbar-nav > .open > a: focus {
+        cor: #ffffff;
+        cor de fundo: # 022f5a;
+    }
+
+@media (largura máxima: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+        border-color: # 022f5a;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+        cor de fundo: # 022f5a;
+    }
+
+    .navbar-inverse .navbar-nav .open. menu suspenso > li > a {
+        cor: #ffffff;
+    }
+
+        .navbar-inverse .navbar-nav .open. menu suspenso > li > a: passar o mouse,
+        .navbar-inverse .navbar-nav .open. menu suspenso > li > a: focus {
+            cor: #ffffff;
+            cor de fundo: # 022f5a;
+        }
+
+    .navbar-inverse .navbar-nav .open. menu suspenso > .active > a,
+    .navbar-inverse .navbar-nav .open. menu suspenso > .active > a: hover,
+    .navbar-inverse .navbar-nav .open. menu suspenso > .active > a: focus {
+        cor: #ffffff;
+        cor de fundo: # 022f5a;
+    }
+
+    .navbar-inverse .navbar-nav .open. menu suspenso > . desabilitado > a,
+    .navbar-inverse .navbar-nav .open. menu suspenso > .disabled > a: hover,
+    .navbar-inverse .navbar-nav .open. menu suspenso > .disabled > a: focus {
+        cor: #cccccc;
+        cor de fundo: transparente;
+    }
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: # 022f5a;
+}
+
+    .navbar-inverse .navbar-toggle: passar o mouse,
+    .navbar-inverse .navbar-toggle: focus {
+        cor de fundo: # 022f5a;
+    }
+
+    .navbar-inverse .navbar-toggle .icon-bar {
+        cor de fundo: #ffffff;
+    }
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    cor da borda: # 022a50;
+}
+
+.navbar-inverse .navbar-link {
+    cor: #ffffff;
+}
+
+    .navbar-inverse .navbar-link: hover {
+        cor: #ffffff;
+    }
+
+.navbar-inverse .btn-link {
+    cor: #ffffff;
+}
+
+    .navbar-inverse .btn-link: passar o mouse,
+    .navbar-inverse .btn-link: focus {
+        cor: #ffffff;
+    }
+
+    .navbar-inverse .btn-link [desativado]: passar o mouse,
+    fieldset [disabled] .navbar-inverse .btn-link: hover,
+    .navbar-inverse .btn-link [desativado]: foco,
+    fieldset [desativado] .navbar-inverse .btn-link: focus {
+        cor: #cccccc;
+    }
+
+.migalhas de pão {
+    preenchimento: 8px 15px;
+    margin-bottom: 20px;
+    estilo de lista: nenhum;
+    cor de fundo: # f5f5f5;
+    raio da borda: 4px;
+}
+
+.breadcrumb > li {
+    display: bloco embutido;
+}
+
+    .breadcrumb > li + li: antes de {
+        preenchimento: 0 5px;
+        cor: #cccccc;
+        conteúdo: "/ \ 00a0";
+    }
+
+.breadcrumb > .active {
+    cor: # 999999;
+}
+
+.pagination {
+    display: bloco embutido;
+    padding-left: 0;
+    margem: 20px 0;
+    raio da borda: 4px;
+}
+
+.paginação > li {
+    display: embutido;
+}
+
+    .paginação > li > a,
+    .paginação > li > span {
+        posição: relativa;
+        flutuar: esquerda;
+        preenchimento: 8px 12px;
+        margem esquerda: -1px;
+        altura da linha: 1,42857143;
+        cor: # 2fa4e7;
+        decoração de texto: nenhum;
+        cor de fundo: #ffffff;
+        borda: 1px sólido #dddddd;
+    }
+
+        .paginação > li > a: passar o mouse,
+        .paginação > li > span: pairar,
+        .paginação > li > a: foco,
+        .paginação > li > span: focus {
+            índice z: 2;
+            cor: # 157ab5;
+            cor de fundo: #eeeeee;
+            border-color: #dddddd;
+        }
+
+    .paginação > li: primeiro filho > a,
+    .paginação > li: primeiro filho > span {
+        margem esquerda: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .paginação > li: último filho > a,
+    .paginação > li: último filho > span {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a: hover,
+.pagination > .active > span: hover,
+.pagination > .active > a: focus,
+.pagination > .active > span: focus {
+    índice z: 3;
+    cor: # 999999;
+    cursor: padrão;
+    cor de fundo: # f5f5f5;
+    border-color: #dddddd;
+}
+
+.pagination > .disabled > span,
+.pagination > .disabled > span: hover,
+.pagination > .disabled > span: focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a: hover,
+.pagination > .disabled > a: focus {
+    cor: # 999999;
+    cursor: não permitido;
+    cor de fundo: #ffffff;
+    border-color: #dddddd;
+}
+
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+    preenchimento: 14px 16px;
+    tamanho da fonte: 18px;
+    altura da linha: 1,333333;
+}
+
+.paginação-lg > li: primeiro filho > a,
+.pagination-lg > li: first-child > span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.pagination-lg > li: last-child > a,
+.pagination-lg > li: last-child > span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+    preenchimento: 5px 10px;
+    tamanho da fonte: 12px;
+    altura da linha: 1,5;
+}
+
+.paginação-sm > li: primeiro filho > a,
+.pagination-sm > li: first-child > span {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.paginação-sm > li: último filho > a,
+.pagination-sm > li: last-child > span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.pager {
+    padding-left: 0;
+    margem: 20px 0;
+    alinhamento de texto: centro;
+    estilo de lista: nenhum;
+}
+
+    .pager li {
+        display: embutido;
+    }
+
+        .pager li > a,
+        .pager li > span {
+            display: bloco embutido;
+            preenchimento: 5px 14px;
+            cor de fundo: #ffffff;
+            borda: 1px sólido #dddddd;
+            raio da borda: 15px;
+        }
+
+            .pager li > a: pairar,
+            .pager li > a: focus {
+                decoração de texto: nenhum;
+                cor de fundo: #eeeeee;
+            }
+
+    .pager .next > a,
+    .pager .next > span {
+        flutuar: certo;
+    }
+
+    .pager .previous > a,
+    .pager .previous > span {
+        flutuar: esquerda;
+    }
+
+    .pager .disabled > a,
+    .pager .disabled > a: hover,
+    .pager .disabled > a: focus,
+    .pager .disabled > span {
+        cor: # 999999;
+        cursor: não permitido;
+        cor de fundo: #ffffff;
+    }
+
+.rótulo {
+    display: embutido;
+    preenchimento: .2em .6em .3em;
+    tamanho da fonte: 75%;
+    peso da fonte: 700;
+    altura da linha: 1;
+    cor: #ffffff;
+    alinhamento de texto: centro;
+    espaço em branco: nowrap;
+    alinhamento vertical: linha de base;
+    raio da borda: .25em;
+}
+
+a.label: hover,
+a.label: focus {
+    cor: #ffffff;
+    decoração de texto: nenhum;
+    cursor: ponteiro;
+}
+
+.label: empty {
+    Mostrar nenhum;
+}
+
+.btn .label {
+    posição: relativa;
+    topo: -1px;
+}
+
+.label-default {
+    cor de fundo: # 999999;
+}
+
+    .label-default [href]: passar o mouse,
+    .label-default [href]: focus {
+        cor de fundo: # 808080;
+    }
+
+.label-primary {
+    cor de fundo: # 2fa4e7;
+}
+
+    .label-primary [href]: hover,
+    .label-primary [href]: focus {
+        cor de fundo: # 178acc;
+    }
+
+.label-success {
+    cor de fundo: # 73a839;
+}
+
+    .label-success [href]: hover,
+    .label-success [href]: focus {
+        cor de fundo: # 59822c;
+    }
+
+.label-info {
+    cor de fundo: # 033c73;
+}
+
+    .label-info [href]: passar o mouse,
+    .label-info [href]: focus {
+        cor de fundo: # 022241;
+    }
+
+.label-warning {
+    cor de fundo: # dd5600;
+}
+
+    .label-warning [href]: hover,
+    .label-warning [href]: focus {
+        cor de fundo: # aa4200;
+    }
+
+.label-perigo {
+    cor de fundo: # c71c22;
+}
+
+    .label-danger [href]: hover,
+    .label-perigo [href]: focus {
+        cor de fundo: # 9a161a;
+    }
+
+.distintivo {
+    display: bloco embutido;
+    largura mínima: 10px;
+    preenchimento: 3px 7px;
+    tamanho da fonte: 12px;
+    intensidade da fonte: Negrito;
+    altura da linha: 1;
+    cor: #ffffff;
+    alinhamento de texto: centro;
+    espaço em branco: nowrap;
+    alinhamento vertical: meio;
+    cor de fundo: # 2fa4e7;
+    raio da borda: 10px;
+}
+
+.badge: empty {
+    Mostrar nenhum;
+}
+
+.btn .badge {
+    posição: relativa;
+    topo: -1px;
+}
+
+.btn-xs .badge,
+.btn-group-xs > .btn .badge {
+    topo: 0;
+    preenchimento: 1px 5px;
+}
+
+a.badge: hover,
+a.badge: focus {
+    cor: #ffffff;
+    decoração de texto: nenhum;
+    cursor: ponteiro;
+}
+
+.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+    cor: # 2fa4e7;
+    cor de fundo: #ffffff;
+}
+
+.list-group-item > .badge {
+    flutuar: certo;
+}
+
+    .list-group-item > .badge + .badge {
+        margem direita: 5px;
+    }
+
+.nav-pills > li > a > .badge {
+    margem esquerda: 3px;
+}
+
+.jumbotron {
+    acolchoamento superior: 30px;
+    acolchoamento inferior: 30px;
+    margin-bottom: 30px;
+    cor: herdar;
+    cor de fundo: #eeeeee;
+}
+
+    .jumbotron h1,
+    .jumbotron .h1 {
+        cor: herdar;
+    }
+
+    .jumbotron p {
+        margin-bottom: 15px;
+        tamanho da fonte: 21px;
+        peso da fonte: 200;
+    }
+
+    .jumbotron > hr {
+        border-top-color: # d5d5d5;
+    }
+
+.container .jumbotron,
+.container-fluid .jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+    raio da borda: 6px;
+}
+
+.jumbotron .container {
+    largura máxima: 100%;
+}
+
+@media screen e (largura mínima: 768px) {
+    .jumbotron {
+        acolchoamento superior: 48px;
+        acolchoamento inferior: 48px;
+    }
+
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
+    .jumbotron h1,
+    .jumbotron .h1 {
+        tamanho da fonte: 63px;
+    }
+}
+
+.miniatura {
+    display: bloco;
+    preenchimento: 4px;
+    margin-bottom: 20px;
+    altura da linha: 1,42857143;
+    cor de fundo: #ffffff;
+    borda: 1px sólido #dddddd;
+    raio da borda: 4px;
+    transição: suavização de entrada e saída de 0,2 s;
+}
+
+.thumbnail > img,
+.thumbnail a > img {
+    margem direita: automático;
+    margem esquerda: automático;
+}
+
+a.thumbnail: hover,
+a.thumbnail: foco,
+a.thumbnail.active {
+    border-color: # 2fa4e7;
+}
+
+.thumbnail .caption {
+    preenchimento: 9px;
+    cor: # 555555;
+}
+
+.alerta {
+    preenchimento: 15px;
+    margin-bottom: 20px;
+    borda: 1px sólido transparente;
+    raio da borda: 4px;
+}
+
+.alert h4 {
+    margem superior: 0;
+    cor: herdar;
+}
+
+.alert .alert-link {
+    intensidade da fonte: Negrito;
+}
+
+.alert > p,
+.alert > ul {
+    margem inferior: 0;
+}
+
+    .alert > p + p {
+        margem superior: 5px;
+    }
+
+.alert-dispensable,
+.alert-dispensible {
+    padding-right: 35px;
+}
+
+    .alert-dispensable .close,
+    .alert-dispensible .close {
+        posição: relativa;
+        topo: -2px;
+        direita: -21px;
+        cor: herdar;
+    }
+
+.alert-success {
+    cor: # 468847;
+    cor de fundo: # dff0d8;
+    border-color: # d6e9c6;
+}
+
+    .alert-success hr {
+        border-top-color: # c9e2b3;
+    }
+
+    .alert-success .alert-link {
+        cor: # 356635;
+    }
+
+.alert-info {
+    cor: # 3a87ad;
+    cor de fundo: # d9edf7;
+    border-color: # bce8f1;
+}
+
+    .alert-info hr {
+        border-top-color: # a6e1ec;
+    }
+
+    .alert-info .alert-link {
+        cor: # 2d6987;
+    }
+
+.alert-warning {
+    cor: # c09853;
+    cor de fundo: # fcf8e3;
+    border-color: # fbeed5;
+}
+
+    .alert-warning hr {
+        border-top-color: # f8e5be;
+    }
+
+    .alert-warning .alert-link {
+        cor: # a47e3c;
+    }
+
+.alert-perigo {
+    cor: # b94a48;
+    cor de fundo: # f2dede;
+    border-color: # eed3d7;
+}
+
+    .alert-perigo hr {
+        border-top-color: # e6c1c7;
+    }
+
+    .alert-perigo .alert-link {
+        cor: # 953b39;
+    }
+
+@ -webkit-keyframes progress-bar-stripes {
+    a partir de {
+        posição de fundo: 40px 0;
+    }
+
+    para {
+        posição de fundo: 0 0;
+    }
+}
+
+@keyframes progress-bar-stripes {
+    a partir de {
+        posição de fundo: 40px 0;
+    }
+
+    para {
+        posição de fundo: 0 0;
+    }
+}
+
+.progresso {
+    altura: 20px;
+    margin-bottom: 20px;
+    estouro: oculto;
+    cor de fundo: # f5f5f5;
+    raio da borda: 4px;
+    sombra da caixa: inserção 0 1px 2px rgba (0, 0, 0, 0,1);
+}
+
+.Barra de progresso {
+    flutuar: esquerda;
+    largura: 0%;
+    altura: 100%;
+    tamanho da fonte: 12px;
+    altura da linha: 20px;
+    cor: #ffffff;
+    alinhamento de texto: centro;
+    cor de fundo: # 2fa4e7;
+    sombra da caixa: inserção 0 -1px 0 rgba (0, 0, 0, 0,15);
+    transição: largura 0,6s facilidade;
+}
+
+.progress-listrado .progress-bar,
+.progress-bar-stripes {
+    imagem de fundo: gradiente linear (45deg, rgba (255, 255, 255, 0,15) 25%, transparente 25%, transparente 50%, rgba (255, 255, 255, 0,15) 50%, rgba (255, 255, 255, 0,15) 75%, transparente 75%, transparente);
+    tamanho do fundo: 40px 40px;
+}
+
+.progress.active .progress-bar,
+.progress-bar.active {
+    -webkit-animation: progress-bar-stripes 2s linear infinito;
+    animação: progress-bar-stripes 2s linear infinito;
+}
+
+.progress-bar-success {
+    cor de fundo: # 73a839;
+}
+
+.progress-stripes .progress-bar-success {
+    imagem de fundo: gradiente linear (45deg, rgba (255, 255, 255, 0,15) 25%, transparente 25%, transparente 50%, rgba (255, 255, 255, 0,15) 50%, rgba (255, 255, 255, 0,15) 75%, transparente 75%, transparente);
+}
+
+.progress-bar-info {
+    cor de fundo: # 033c73;
+}
+
+.progress-listrado .progress-bar-info {
+    imagem de fundo: gradiente linear (45deg, rgba (255, 255, 255, 0,15) 25%, transparente 25%, transparente 50%, rgba (255, 255, 255, 0,15) 50%, rgba (255, 255, 255, 0,15) 75%, transparente 75%, transparente);
+}
+
+.progress-bar-warning {
+    cor de fundo: # dd5600;
+}
+
+.progress-stripes .progress-bar-warning {
+    imagem de fundo: gradiente linear (45deg, rgba (255, 255, 255, 0,15) 25%, transparente 25%, transparente 50%, rgba (255, 255, 255, 0,15) 50%, rgba (255, 255, 255, 0,15) 75%, transparente 75%, transparente);
+}
+
+.progress-bar-danger {
+    cor de fundo: # c71c22;
+}
+
+.progress-stripes .progress-bar-danger {
+    imagem de fundo: gradiente linear (45deg, rgba (255, 255, 255, 0,15) 25%, transparente 25%, transparente 50%, rgba (255, 255, 255, 0,15) 50%, rgba (255, 255, 255, 0,15) 75%, transparente 75%, transparente);
+}
+
+.meios de comunicação {
+    margem superior: 15px;
+}
+
+.media: primeiro filho {
+    margem superior: 0;
+}
+
+.meios de comunicação,
+.media-body {
+    estouro: oculto;
+    zoom: 1;
+}
+
+.media-body {
+    largura: 10000px;
+}
+
+.media-object {
+    display: bloco;
+}
+
+    .media-object.img-thumbnail {
+        largura máxima: nenhum;
+    }
+
+.media-right,
+.media > .pull-right {
+    padding-left: 10px;
+}
+
+.media-left,
+.media > .pull-left {
+    padding-right: 10px;
+}
+
+.media-left,
+.media-right,
+.media-body {
+    display: table-cell;
+    alinhamento vertical: topo;
+}
+
+.media-middle {
+    alinhamento vertical: meio;
+}
+
+.media-bottom {
+    alinhamento vertical: inferior;
+}
+
+.media-header {
+    margem superior: 0;
+    margin-bottom: 5px;
+}
+
+.media-list {
+    padding-left: 0;
+    estilo de lista: nenhum;
+}
+
+.list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    posição: relativa;
+    display: bloco;
+    preenchimento: 10px 15px;
+    margin-bottom: -1px;
+    cor de fundo: #ffffff;
+    borda: 1px sólido #dddddd;
+}
+
+    .list-group-item: first-child {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    .list-group-item: last-child {
+        margem inferior: 0;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .list-group-item.disabled,
+    .list-group-item.disabled: hover,
+    .list-group-item.disabled: focus {
+        cor: # 999999;
+        cursor: não permitido;
+        cor de fundo: #eeeeee;
+    }
+
+        .list-group-item.disabled .list-group-item-header,
+        .list-group-item.disabled: hover .list-group-item-header,
+        .list-group-item.disabled: focus .list-group-item-header {
+            cor: herdar;
+        }
+
+        .list-group-item.disabled .list-group-item-text,
+        .list-group-item.disabled: passe o mouse .list-group-item-text,
+        .list-group-item.disabled: focus .list-group-item-text {
+            cor: # 999999;
+        }
+
+    .list-group-item.active,
+    .list-group-item.active: hover,
+    .list-group-item.active: focus {
+        índice z: 2;
+        cor: #ffffff;
+        cor de fundo: # 2fa4e7;
+        border-color: # 2fa4e7;
+    }
+
+        .list-group-item.active .list-group-item-header,
+        .list-group-item.active: hover .list-group-item-header,
+        .list-group-item.active: focus .list-group-item-header,
+        .lista-grupo-item.ativo .lista-grupo-item-cabeçalho > pequeno,
+        .list-group-item.active: hover .list-group-item-header > pequeno,
+        .list-group-item.active: focus .list-group-item-header > pequeno,
+        .list-group-item.active .list-group-item-header > .small,
+        .list-group-item.active: hover .list-group-item-header > .small,
+        .list-group-item.active: focus .list-group-item-header > .small {
+            cor: herdar;
+        }
+
+        .list-group-item.active .list-group-item-text,
+        .list-group-item.active: passe o mouse .list-group-item-text,
+        .list-group-item.active: focus .list-group-item-text {
+            cor: # e6f4fc;
+        }
+
+a.list-group-item,
+button.list-group-item {
+    cor: # 555555;
+}
+
+    a.list-group-item .list-group-item-header,
+    button.list-group-item .list-group-item-header {
+        cor: # 333333;
+    }
+
+    a.list-group-item: hover,
+    button.list-group-item: hover,
+    a.list-group-item: focus,
+    button.list-group-item: focus {
+        cor: # 555555;
+        decoração de texto: nenhum;
+        cor de fundo: # f5f5f5;
+    }
+
+button.list-group-item {
+    largura: 100%;
+    alinhamento de texto: esquerda;
+}
+
+.list-group-item-success {
+    cor: # 468847;
+    cor de fundo: # dff0d8;
+}
+
+a.list-group-item-success,
+button.list-group-item-success {
+    cor: # 468847;
+}
+
+    a.list-group-item-success .list-group-item-header,
+    button.list-group-item-success .list-group-item-header {
+        cor: herdar;
+    }
+
+    a.list-group-item-success: hover,
+    button.list-group-item-success: hover,
+    a.list-group-item-success: focus,
+    button.list-group-item-success: focus {
+        cor: # 468847;
+        cor de fundo: # d0e9c6;
+    }
+
+    a.list-group-item-success.active,
+    button.list-group-item-success.active,
+    a.list-group-item-success.active: hover,
+    button.list-group-item-success.active: hover,
+    a.list-group-item-success.active: focus,
+    button.list-group-item-success.active: focus {
+        cor: #fff;
+        cor de fundo: # 468847;
+        border-color: # 468847;
+    }
+
+.list-group-item-info {
+    cor: # 3a87ad;
+    cor de fundo: # d9edf7;
+}
+
+a.list-group-item-info,
+button.list-group-item-info {
+    cor: # 3a87ad;
+}
+
+    a.list-group-item-info .list-group-item-header,
+    button.list-group-item-info .list-group-item-header {
+        cor: herdar;
+    }
+
+    a.list-group-item-info: hover,
+    button.list-group-item-info: hover,
+    a.list-group-item-info: focus,
+    button.list-group-item-info: focus {
+        cor: # 3a87ad;
+        cor de fundo: # c4e3f3;
+    }
+
+    a.list-group-item-info.active,
+    button.list-group-item-info.active,
+    a.list-group-item-info.active: hover,
+    button.list-group-item-info.active: hover,
+    a.list-group-item-info.active: focus,
+    button.list-group-item-info.active: focus {
+        cor: #fff;
+        cor de fundo: # 3a87ad;
+        border-color: # 3a87ad;
+    }
+
+.list-group-item-warning {
+    cor: # c09853;
+    cor de fundo: # fcf8e3;
+}
+
+a.list-group-item-warning,
+button.list-group-item-warning {
+    cor: # c09853;
+}
+
+    a.list-group-item-warning .list-group-item-header,
+    button.list-group-item-warning .list-group-item-header {
+        cor: herdar;
+    }
+
+    a.list-group-item-warning: hover,
+    button.list-group-item-warning: hover,
+    a.list-group-item-warning: focus,
+    button.list-group-item-warning: focus {
+        cor: # c09853;
+        cor de fundo: # faf2cc;
+    }
+
+    a.list-group-item-warning.active,
+    button.list-group-item-warning.active,
+    a.list-group-item-warning.active: hover,
+    button.list-group-item-warning.active: hover,
+    a.list-group-item-warning.active: focus,
+    button.list-group-item-warning.active: focus {
+        cor: #fff;
+        cor de fundo: # c09853;
+        border-color: # c09853;
+    }
+
+.lista-grupo-item-perigo {
+    cor: # b94a48;
+    cor de fundo: # f2dede;
+}
+
+a.list-group-item-perigo,
+button.list-group-item-danger {
+    cor: # b94a48;
+}
+
+a.lista-grupo-item-perigo .lista-grupo-item-título,
+botão.lista-grupo-item-perigo. lista-grupo-item-cabeçalho {
+    cor: herdar;
+}
+
+a.list-group-item-danger: hover,
+button.list-group-item-danger: hover,
+a.list-group-item-perigo: foco,
+button.list-group-item-danger: focus {
+    cor: # b94a48;
+    cor de fundo: #ebcccc;
+}
+
+a.lista-grupo-item-perigo.ativo,
+botão.lista-grupo-item-perigo.ativo,
+a.lista-grupo-item-perigo.ativo: pairar,
+botão.lista-grupo-item-perigo.ativo: passe o mouse,
+a.lista-grupo-item-perigo.ativo: foco,
+button.list-group-item-danger.active: focus {
+    cor: #fff;
+    cor de fundo: # b94a48;
+    border-color: # b94a48;
+}
+
+.list-group-item-header {
+    margem superior: 0;
+    margin-bottom: 5px;
+}
+
+.list-group-item-text {
+    margem inferior: 0;
+    altura da linha: 1,3;
+}
+
+.panel {
+    margin-bottom: 20px;
+    cor de fundo: #ffffff;
+    borda: 1px sólido transparente;
+    raio da borda: 4px;
+    sombra da caixa: 0 1px 1px rgba (0, 0, 0, 0,05);
+}
+
+.panel-body {
+    preenchimento: 15px;
+}
+
+.panel-header {
+    preenchimento: 10px 15px;
+    borda inferior: 1px sólido transparente;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+    .panel-header > .dropdown .dropdown-toggle {
+        cor: herdar;
+    }
+
+.panel-title {
+    margem superior: 0;
+    margem inferior: 0;
+    tamanho da fonte: 16px;
+    cor: herdar;
+}
+
+    .panel-title > a,
+    .panel-title > small,
+    .panel-title > .small,
+    .panel-title > small > a,
+    .panel-title > .small > a {
+        cor: herdar;
+    }
+
+.panel-footer {
+    preenchimento: 10px 15px;
+    cor de fundo: # f5f5f5;
+    border-top: 1px solid #dddddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.panel > .list-group,
+.panel > .panel-collapse > .list-group {
+    margem inferior: 0;
+}
+
+    .panel > .list-group .list-group-item,
+    .panel > .panel-collapse > .list-group .list-group-item {
+        largura da borda: 1px 0;
+        raio da borda: 0;
+    }
+
+    .panel > .list-group: primeiro filho .list-group-item: primeiro filho,
+    .panel > .panel-collapse > .list-group: first-child .list-group-item: first-child {
+        borda superior: 0;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    .panel > .list-group: último-filho .list-group-item: último-filho,
+    .panel > .panel-collapse > .list-group: last-child .list-group-item: last-child {
+        borda inferior: 0;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+.panel > .panel-header + .panel-collapse > .list-group .list-group-item: first-child {
+    raio da borda superior esquerda: 0;
+    raio da borda superior direita: 0;
+}
+
+.panel-header + .list-group .list-group-item: first-child {
+    largura da borda superior: 0;
+}
+
+.list-group + .panel-footer {
+    largura da borda superior: 0;
+}
+
+.panel > .table,
+.panel > .table-responsive > .table,
+.panel > .panel-collapse > .table {
+    margem inferior: 0;
+}
+
+    .panel > .table caption,
+    .panel > .table-responsive > .table caption,
+    .panel > .panel-collapse > .table caption {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .panel > .table: primeiro filho,
+    .panel > .table-responsive: first-child > .table: first-child {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+        .panel > .table: primeiro filho > thead: primeiro filho > tr: primeiro filho,
+        .panel > .table-responsive: first-child > .table: first-child > thead: first-child > tr: first-child,
+        .panel > .table: primeiro filho > tbody: primeiro filho > tr: primeiro filho,
+        .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+            .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+            .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+            .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+            .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+            .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+            .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+            .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+            .panel > .table-responsive: first-child > .table: first-child > tbody: first-child > tr: first-child th: first-child {
+                border-top-left-radius: 3px;
+            }
+
+            .panel > .table: primeiro filho > thead: primeiro filho > tr: primeiro filho td: último filho,
+            .panel > .table-responsive: first-child > .table: first-child > thead: first-child > tr: first-child td: last-child,
+            .panel > .table: primeiro filho > tbody: primeiro filho > tr: primeiro filho td: último filho,
+            .panel > .table-responsive: first-child > .table: first-child > tbody: first-child > tr: first-child td: last-child,
+            .panel > .table: primeiro filho > thead: primeiro filho > tr: primeiro filho th: último filho,
+            .panel > .table-responsive: first-child > .table: first-child > thead: first-child > tr: first-child th: last-child,
+            .panel > .table: primeiro filho > tbody: primeiro filho > tr: primeiro filho th: último filho,
+            .panel > .table-responsive: first-child > .table: first-child > tbody: first-child > tr: first-child th: last-child {
+                border-top-right-radius: 3px;
+            }
+
+    .panel > .table: último filho,
+    .panel > .table-responsive: last-child > .table: last-child {
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+        .panel > .table: last-child > tbody: last-child > tr: last-child,
+        .panel > .table-responsive: last-child > .table: last-child > tbody: last-child > tr: last-child,
+        .panel > .table: last-child > tfoot: last-child > tr: last-child,
+        .panel > .table-responsive: last-child > .table: last-child > tfoot: last-child > tr: last-child {
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+            .panel > .table: último-filho > tbody: último-filho > tr: último-filho td: primeiro-filho,
+            .panel > .table-responsive: last-child > .table: last-child > tbody: last-child > tr: last-child td: first-child,
+            .panel > .table: último-filho > tfoot: último-filho > tr: último-filho td: primeiro-filho,
+            .panel > .table-responsive: last-child > .table: last-child > tfoot: last-child > tr: last-child td: first-child,
+            .panel > .table: último filho > tbody: último filho > tr: último filho th: primeiro filho,
+            .panel > .table-responsive: last-child > .table: last-child > tbody: last-child > tr: last-child th: first-child,
+            .panel > .table: last-child > tfoot: last-child > tr: last-child th: first-child,
+            .panel > .table-responsive: last-child > .table: last-child > tfoot: last-child > tr: last-child th: first-child {
+                border-bottom-left-radius: 3px;
+            }
+
+            .panel > .table: último-filho > tbody: último-filho > tr: último-filho td: último-filho,
+            .panel > .table-responsive: last-child > .table: last-child > tbody: last-child > tr: last-child td: last-child,
+            .panel > .table: último-filho > tfoot: último-filho > tr: último-filho td: último-filho,
+            .panel > .table-responsive: last-child > .table: last-child > tfoot: last-child > tr: last-child td: last-child,
+            .panel > .table: last-child > tbody: last-child > tr: last-child th: last-child,
+            .panel > .table-responsive: last-child > .table: last-child > tbody: last-child > tr: last-child th: last-child,
+            .panel > .table: last-child > tfoot: last-child > tr: last-child th: last-child,
+            .panel > .table-responsive: last-child > .table: last-child > tfoot: last-child > tr: last-child th: last-child {
+                border-bottom-right-radius: 3px;
+            }
+
+    .panel > .panel-body + .table,
+    .panel > .panel-body + .table-responsive,
+    .panel > .table + .panel-body,
+    .panel > .table-responsive + .panel-body {
+        border-top: 1px solid #dddddd;
+    }
+
+    .panel > .table > tbody: first-child > tr: first-child th,
+    .panel > .table > tbody: first-child > tr: first-child td {
+        borda superior: 0;
+    }
+
+.panel > .table-bordered,
+.panel > .table-responsive > .table-bordered {
+    fronteira: 0;
+}
+
+    .panel > .table-bordered > thead > tr > th: first-child,
+    .panel > .table-responsive > .table-bordered > thead > tr > th: first-child,
+    .panel > .table-bordered > tbody > tr > th: primeiro filho,
+    .panel > .table-responsive > .table-bordered > tbody > tr > th: first-child,
+    .panel > .table-bordered > tfoot > tr > th: primeiro filho,
+    .panel > .table-responsive > .table-bordered > tfoot > tr > th: primeiro filho,
+    .panel > .table-bordered > thead > tr > td: first-child,
+    .panel > .table-responsive > .table-bordered > thead > tr > td: first-child,
+    .panel > .table-bordered > tbody > tr > td: first-child,
+    .panel > .table-responsive > .table-bordered > tbody > tr > td: first-child,
+    .panel > .table-bordered > tfoot > tr > td: first-child,
+    .panel > .table-responsive > .table-bordered > tfoot > tr > td: first-child {
+        borda esquerda: 0;
+    }
+
+    .panel > .table-bordered > thead > tr > th: last-child,
+    .panel > .table-responsive > .table-bordered > thead > tr > th: last-child,
+    .panel > .table-bordered > tbody > tr > th: último filho,
+    .panel > .table-responsive > .table-bordered > tbody > tr > th: último filho,
+    .panel > .table-bordered > tfoot > tr > th: último filho,
+    .panel > .table-responsive > .table-bordered > tfoot > tr > th: último filho,
+    .panel > .table-bordered > thead > tr > td: last-child,
+    .panel > .table-responsive > .table-bordered > thead > tr > td: last-child,
+    .panel > .table-bordered > tbody > tr > td: last-child,
+    .panel > .table-responsive > .table-bordered > tbody > tr > td: último filho,
+    .panel > .table-bordered > tfoot > tr > td: last-child,
+    .panel > .table-responsive > .table-bordered > tfoot > tr > td: last-child {
+        borda direita: 0;
+    }
+
+    .panel > .table-bordered > thead > tr: first-child > td,
+    .panel > .table-responsive > .table-bordered > thead > tr: first-child > td,
+    .panel > .table-bordered > tbody > tr: first-child > td,
+    .panel > .table-responsive > .table-bordered > tbody > tr: first-child > td,
+    .panel > .table-bordered > thead > tr: first-child > th,
+    .panel > .table-responsive > .table-bordered > thead > tr: first-child > th,
+    .panel > .table-bordered > tbody > tr: first-child > th,
+    .panel > .table-responsive > .table-bordered > tbody > tr: first-child > th {
+        borda inferior: 0;
+    }
+
+    .panel > .table-bordered > tbody > tr: last-child > td,
+    .panel > .table-responsive > .table-bordered > tbody > tr: last-child > td,
+    .panel > .table-bordered > tfoot > tr: last-child > td,
+    .panel > .table-responsive > .table-bordered > tfoot > tr: last-child > td,
+    .panel > .table-bordered > tbody > tr: last-child > th,
+    .panel > .table-responsive > .table-bordered > tbody > tr: last-child > th,
+    .panel > .table-bordered > tfoot > tr: last-child > th,
+    .panel > .table-responsive > .table-bordered > tfoot > tr: last-child > th {
+        borda inferior: 0;
+    }
+
+.panel > .table-responsive {
+    margem inferior: 0;
+    fronteira: 0;
+}
+
+.panel-group {
+    margin-bottom: 20px;
+}
+
+    .panel-group .panel {
+        margem inferior: 0;
+        raio da borda: 4px;
+    }
+
+        .panel-group .panel + .panel {
+            margem superior: 5px;
+        }
+
+    .panel-group .panel-header {
+        borda inferior: 0;
+    }
+
+        .panel-group .panel-header + .panel-collapse > .panel-body,
+        .panel-group .panel-header + .panel-collapse > .list-group {
+            border-top: 1px solid #dddddd;
+        }
+
+    .panel-group .panel-footer {
+        borda superior: 0;
+    }
+
+        .panel-group .panel-footer + .panel-collapse .panel-body {
+            border-bottom: 1px solid #dddddd;
+        }
+
+.panel-default {
+    border-color: #dddddd;
+}
+
+    .panel-default > .panel-header {
+        cor: # 555555;
+        cor de fundo: # f5f5f5;
+        border-color: #dddddd;
+    }
+
+        .panel-default > .panel-header + .panel-collapse > .panel-body {
+            border-top-color: #dddddd;
+        }
+
+        .panel-default > .panel-header .badge {
+            cor: # f5f5f5;
+            cor de fundo: # 555555;
+        }
+
+    .panel-default > .panel-footer + .panel-collapse > .panel-body {
+        border-bottom-color: #dddddd;
+    }
+
+.panel-primary {
+    border-color: #dddddd;
+}
+
+    .panel-primary > .panel-header {
+        cor: #ffffff;
+        cor de fundo: # 2fa4e7;
+        border-color: #dddddd;
+    }
+
+        .panel-primary > .panel-header + .panel-collapse > .panel-body {
+            border-top-color: #dddddd;
+        }
+
+        .panel-primary > .panel-header .badge {
+            cor: # 2fa4e7;
+            cor de fundo: #ffffff;
+        }
+
+    .panel-Primary > .panel-footer + .panel-collapse > .panel-body {
+        border-bottom-color: #dddddd;
+    }
+
+.panel-success {
+    border-color: #dddddd;
+}
+
+    .panel-success > .panel-header {
+        cor: # 468847;
+        cor de fundo: # 73a839;
+        border-color: #dddddd;
+    }
+
+        .panel-success > .panel-header + .panel-collapse > .panel-body {
+            border-top-color: #dddddd;
+        }
+
+        .panel-success > .panel-header .badge {
+            cor: # 73a839;
+            cor de fundo: # 468847;
+        }
+
+.panel-sucesso > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #dddddd;
+}
+
+.panel-info {
+    border-color: #dddddd;
+}
+
+    .panel-info > .panel-header {
+        cor: # 3a87ad;
+        cor de fundo: # 033c73;
+        border-color: #dddddd;
+    }
+
+        .panel-info > .panel-header + .panel-collapse > .panel-body {
+            border-top-color: #dddddd;
+        }
+
+        .panel-info > .panel-header .badge {
+            cor: # 033c73;
+            cor de fundo: # 3a87ad;
+        }
+
+    .panel-info > .panel-footer + .panel-collapse > .panel-body {
+        border-bottom-color: #dddddd;
+    }
+
+.panel-warning {
+    border-color: #dddddd;
+}
+
+    .panel-warning > .panel-header {
+        cor: # c09853;
+        cor de fundo: # dd5600;
+        border-color: #dddddd;
+    }
+
+        .panel-warning > .panel-header + .panel-collapse > .panel-body {
+            border-top-color: #dddddd;
+        }
+
+        .panel-warning > .panel-header .badge {
+            cor: # dd5600;
+            cor de fundo: # c09853;
+        }
+
+    .panel-warning > .panel-footer + .panel-collapse > .panel-body {
+        border-bottom-color: #dddddd;
+    }
+
+.panel-danger {
+    border-color: #dddddd;
+}
+
+.panel-perigo > .panel-header {
+    cor: # b94a48;
+    cor de fundo: # c71c22;
+    border-color: #dddddd;
+}
+
+    .panel-perigo > .panel-header + .panel-collapse > .panel-body {
+        border-top-color: #dddddd;
+    }
+
+    .panel-perigo > .panel-header .badge {
+        cor: # c71c22;
+        cor de fundo: # b94a48;
+    }
+
+.panel-perigo > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #dddddd;
+}
+
+.embed-responsive {
+    posição: relativa;
+    display: bloco;
+    altura: 0;
+    preenchimento: 0;
+    estouro: oculto;
+}
+
+    .embed-responsive .embed-responsive-item,
+    iframe responsivo a .embed,
+    .embed-responsive embed,
+    objeto responsivo .embed,
+    .embed-responsive video {
+        posição: absoluta;
+        topo: 0;
+        inferior: 0;
+        esquerda: 0;
+        largura: 100%;
+        altura: 100%;
+        fronteira: 0;
+    }
+
+.embed-responsive-16by9 {
+    fundo acolchoado: 56,25%;
+}
+
+.embed-responsive-4by3 {
+    acolchoamento inferior: 75%;
+}
+
+.Nós vamos {
+    altura mínima: 20px;
+    preenchimento: 19px;
+    margin-bottom: 20px;
+    cor de fundo: # f5f5f5;
+    borda: 1px sólido # e3e3e3;
+    raio da borda: 4px;
+    sombra da caixa: inserção 0 1px 1px rgba (0, 0, 0, 0,05);
+}
+
+.well blockquote {
+    border-color: #ddd;
+    cor da borda: rgba (0, 0, 0, 0,15);
+}
+
+.well-lg {
+    preenchimento: 24px;
+    raio da borda: 6px;
+}
+
+.well-sm {
+    preenchimento: 9px;
+    raio da borda: 3px;
+}
+
+.fechar {
+    flutuar: certo;
+    tamanho da fonte: 21px;
+    intensidade da fonte: Negrito;
+    altura da linha: 1;
+    cor: # 000000;
+    sombra do texto: 0 1px 0 #ffffff;
+    filtro: alfa (opacidade = 20);
+    opacidade: 0,2;
+}
+
+.close: hover,
+.close: focus {
+    cor: # 000000;
+    decoração de texto: nenhum;
+    cursor: ponteiro;
+    filtro: alfa (opacidade = 50);
+    opacidade: 0,5;
+}
+
+button.close {
+    preenchimento: 0;
+    cursor: ponteiro;
+    fundo: transparente;
+    fronteira: 0;
+    -webkit-aparência: nenhum;
+    aparência: nenhuma;
+}
+
+.modal-open {
+    estouro: oculto;
+}
+
+.modal {
+    posição: fixa;
+    topo: 0;
+    direita: 0;
+    inferior: 0;
+    esquerda: 0;
+    índice z: 1050;
+    Mostrar nenhum;
+    estouro: oculto;
+    -webkit-overflow-scrolling: touch;
+    esboço: 0;
+}
+
+    .modal.fade .modal-dialog {
+        -webkit-transform: traduzir (0, -25%);
+        transformar: traduzir (0, -25%);
+        transição: -webkit-transform 0.3s atenuação;
+        transição: atenuação da transformação 0.3s;
+    }
+
+    .modal.in .modal-dialog {
+        -webkit-transform: traduzir (0, 0);
+        transformar: traduzir (0, 0);
+    }
+
+.modal-open .modal {
+    overflow-x: oculto;
+    overflow-y: automático;
+}
+
+.modal-dialog {
+    posição: relativa;
+    largura: automático;
+    margem: 10px;
+}
+
+.modal-content {
+    posição: relativa;
+    cor de fundo: #ffffff;
+    clipe de fundo: caixa de enchimento;
+    borda: 1px sólido # 999999;
+    borda: 1px sólido rgba (0, 0, 0, 0,2);
+    raio da borda: 6px;
+    sombra da caixa: 0 3px 9px rgba (0, 0, 0, 0,5);
+    esboço: 0;
+}
+
+.modal-backdrop {
+    posição: fixa;
+    topo: 0;
+    direita: 0;
+    inferior: 0;
+    esquerda: 0;
+    índice z: 1040;
+    cor de fundo: # 000000;
+}
+
+    .modal-backdrop.fade {
+        filtro: alfa (opacidade = 0);
+        opacidade: 0;
+    }
+
+    .modal-backdrop.in {
+        filtro: alfa (opacidade = 50);
+        opacidade: 0,5;
+    }
+
+.modal-header {
+    preenchimento: 15px;
+    borda inferior: 1px sólido # e5e5e5;
+}
+
+    .modal-header .close {
+        margin-top: -2px;
+    }
+
+.modal-title {
+    margem: 0;
+    altura da linha: 1,42857143;
+}
+
+.modal-body {
+    posição: relativa;
+    preenchimento: 20px;
+}
+
+.modal-footer {
+    preenchimento: 20px;
+    alinhamento de texto: direita;
+    border-top: 1px sólido # e5e5e5;
+}
+
+    .modal-footer .btn + .btn {
+        margem inferior: 0;
+        margem esquerda: 5px;
+    }
+
+    .modal-footer .btn-group .btn + .btn {
+        margem esquerda: -1px;
+    }
+
+    .modal-footer .btn-block + .btn-block {
+        margem esquerda: 0;
+    }
+
+.modal-scrollbar-measure {
+    posição: absoluta;
+    topo: -9999px;
+    largura: 50px;
+    altura: 50px;
+    estouro: rolar;
+}
+
+@media (largura mínima: 768px) {
+    .modal-dialog {
+        largura: 600px;
+        margem: 30px automático;
+    }
+
+    .modal-content {
+        sombra da caixa: 0 5px 15px rgba (0, 0, 0, 0,5);
+    }
+
+    .modal-sm {
+        largura: 300px;
+    }
+}
+
+@media (largura mínima: 992px) {
+    .modal-lg {
+        largura: 900px;
+    }
+}
+
+.tooltip {
+    posição: absoluta;
+    índice z: 1070;
+    display: bloco;
+    família da fonte: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    estilo da fonte: normal;
+    peso da fonte: 400;
+    altura da linha: 1,42857143;
+    quebra de linha: automático;
+    alinhamento de texto: esquerda;
+    alinhamento de texto: início;
+    decoração de texto: nenhum;
+    sombra do texto: nenhum;
+    transformação de texto: nenhum;
+    espaçamento entre letras: normal;
+    quebra de palavras: normal;
+    espaçamento entre palavras: normal;
+    quebra de linha: normal;
+    espaço em branco: normal;
+    tamanho da fonte: 12px;
+    filtro: alfa (opacidade = 0);
+    opacidade: 0;
+}
+
+    .tooltip.in {
+        filtro: alfa (opacidade = 90);
+        opacidade: 0,9;
+    }
+
+    .tooltip.top {
+        preenchimento: 5px 0;
+        margem superior: -3px;
+    }
+
+    .tooltip.right {
+        preenchimento: 0 5px;
+        margem esquerda: 3px;
+    }
+
+    .tooltip.bottom {
+        preenchimento: 5px 0;
+        margem superior: 3px;
+    }
+
+    .tooltip.left {
+        preenchimento: 0 5px;
+        margem esquerda: -3px;
+    }
+
+    .tooltip.top .tooltip-arrow {
+        inferior: 0;
+        esquerda: 50%;
+        margem esquerda: -5px;
+        largura da borda: 5px 5px 0;
+        cor da borda superior: # 000000;
+    }
+
+    .tooltip.top-left .tooltip-arrow {
+        direita: 5px;
+        inferior: 0;
+        margin-bottom: -5px;
+        largura da borda: 5px 5px 0;
+        cor da borda superior: # 000000;
+    }
+
+    .tooltip.top-right .tooltip-arrow {
+        inferior: 0;
+        esquerda: 5px;
+        margin-bottom: -5px;
+        largura da borda: 5px 5px 0;
+        cor da borda superior: # 000000;
+    }
+
+    .tooltip.right .tooltip-arrow {
+        topo: 50%;
+        esquerda: 0;
+        margin-top: -5px;
+        border-width: 5px 5px 5px 0;
+        border-right-color: # 000000;
+    }
+
+    .tooltip.left .tooltip-arrow {
+        topo: 50%;
+        direita: 0;
+        margin-top: -5px;
+        border-width: 5px 0 5px 5px;
+        cor da borda esquerda: # 000000;
+    }
+
+    .tooltip.bottom .tooltip-arrow {
+        topo: 0;
+        esquerda: 50%;
+        margem esquerda: -5px;
+        largura da borda: 0 5px 5px;
+        cor da borda inferior: # 000000;
+    }
+
+    .tooltip.bottom-left .tooltip-arrow {
+        topo: 0;
+        direita: 5px;
+        margin-top: -5px;
+        largura da borda: 0 5px 5px;
+        cor da borda inferior: # 000000;
+    }
+
+    .tooltip.bottom-right .tooltip-arrow {
+        topo: 0;
+        esquerda: 5px;
+        margin-top: -5px;
+        largura da borda: 0 5px 5px;
+        cor da borda inferior: # 000000;
+    }
+
+.tooltip-inner {
+    largura máxima: 200px;
+    preenchimento: 3px 8px;
+    cor: #ffffff;
+    alinhamento de texto: centro;
+    cor de fundo: # 000000;
+    raio da borda: 4px;
+}
+
+.tooltip-arrow {
+    posição: absoluta;
+    largura: 0;
+    altura: 0;
+    cor da borda: transparente;
+    estilo de borda: sólido;
+}
+
+.dar um pulo {
+    posição: absoluta;
+    topo: 0;
+    esquerda: 0;
+    índice z: 1060;
+    Mostrar nenhum;
+    largura máxima: 276 px;
+    preenchimento: 1px;
+    família da fonte: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    estilo da fonte: normal;
+    peso da fonte: 400;
+    altura da linha: 1,42857143;
+    quebra de linha: automático;
+    alinhamento de texto: esquerda;
+    alinhamento de texto: início;
+    decoração de texto: nenhum;
+    sombra do texto: nenhum;
+    transformação de texto: nenhum;
+    espaçamento entre letras: normal;
+    quebra de palavras: normal;
+    espaçamento entre palavras: normal;
+    quebra de linha: normal;
+    espaço em branco: normal;
+    tamanho da fonte: 14px;
+    cor de fundo: #ffffff;
+    clipe de fundo: caixa de enchimento;
+    borda: 1px sólido #cccccc;
+    borda: 1px sólido rgba (0, 0, 0, 0,2);
+    raio da borda: 6px;
+    sombra da caixa: 0 5px 10px rgba (0, 0, 0, 0,2);
+}
+
+.popover.top {
+    margin-top: -10px;
+}
+
+.popover.right {
+    margem esquerda: 10px;
+}
+
+.popover.bottom {
+    margem superior: 10px;
+}
+
+.popover.left {
+    margem esquerda: -10px;
+}
+
+.popover > .arrow {
+    largura da borda: 11px;
+}
+
+    .popover > .arrow,
+    .popover > .arrow: após {
+        posição: absoluta;
+        display: bloco;
+        largura: 0;
+        altura: 0;
+        cor da borda: transparente;
+        estilo de borda: sólido;
+    }
+
+        .popover > .arrow: após {
+            contente: "";
+            largura da borda: 10px;
+        }
+
+.popover.top > .arrow {
+    inferior: -11px;
+    esquerda: 50%;
+    margem esquerda: -11px;
+    cor da borda superior: # 999999;
+    cor da borda superior: rgba (0, 0, 0, 0,25);
+    largura da borda inferior: 0;
+}
+
+    .popover.top > .arrow: após {
+        inferior: 1px;
+        margem esquerda: -10px;
+        contente: " ";
+        border-top-color: #ffffff;
+        largura da borda inferior: 0;
+    }
+
+.popover.right > .arrow {
+    topo: 50%;
+    esquerda: -11px;
+    margin-top: -11px;
+    cor da borda certa: # 999999;
+    border-right-color: rgba (0, 0, 0, 0,25);
+    largura da borda esquerda: 0;
+}
+
+    .popover.right > .arrow: após {
+        inferior: -10px;
+        esquerda: 1px;
+        contente: " ";
+        border-right-color: #ffffff;
+        largura da borda esquerda: 0;
+    }
+
+.popover.bottom > .arrow {
+    topo: -11px;
+    esquerda: 50%;
+    margem esquerda: -11px;
+    largura da borda superior: 0;
+    cor da borda inferior: # 999999;
+    cor da borda inferior: rgba (0, 0, 0, 0,25);
+}
+
+    .popover.bottom > .arrow: after {
+        topo: 1px;
+        margem esquerda: -10px;
+        contente: " ";
+        largura da borda superior: 0;
+        border-bottom-color: #ffffff;
+    }
+
+.popover.left > .arrow {
+    topo: 50%;
+    direita: -11px;
+    margin-top: -11px;
+    border-right-width: 0;
+    cor da borda esquerda: # 999999;
+    cor da borda esquerda: rgba (0, 0, 0, 0,25);
+}
+
+    .popover.left > .arrow: after {
+        direita: 1px;
+        inferior: -10px;
+        contente: " ";
+        border-right-width: 0;
+        cor da borda esquerda: #ffffff;
+    }
+
+.popover-title {
+    preenchimento: 8px 14px;
+    margem: 0;
+    tamanho da fonte: 14px;
+    cor de fundo: # f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+}
+
+.popover-content {
+    preenchimento: 9px 14px;
+}
+
+.carousel {
+    posição: relativa;
+}
+
+.carousel-inner {
+    posição: relativa;
+    largura: 100%;
+    estouro: oculto;
+}
+
+    .carousel-inner > .item {
+        posição: relativa;
+        Mostrar nenhum;
+        transição: 0,6s facilitado à esquerda;
+    }
+
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            altura da linha: 1;
+        }
+
+@media all e (transform-3d), (-webkit-transform-3d) {
+    .carousel-inner > .item {
+        transição: -webkit-transform 0.6s Easy-in-out;
+        transição: transformada de 0,6s com facilidade de entrada;
+        -webkit-backface-visibility: oculto;
+        visibilidade da face posterior: oculto;
+        -webkit-perspectiva: 1000px;
+        perspectiva: 1000px;
+    }
+
+        .carousel-inner > .item.next,
+        .carousel-inner > .item.active.right {
+            -webkit-transform: translate3d (100%, 0, 0);
+            transform: translate3d (100%, 0, 0);
+            esquerda: 0;
+        }
+
+        .carousel-inner > .item.prev,
+        .carousel-inner > .item.active.left {
+            -webkit-transform: translate3d (-100%, 0, 0);
+            transform: translate3d (-100%, 0, 0);
+            esquerda: 0;
+        }
+
+            .carousel-inner > .item.next.left,
+            .carousel-inner > .item.prev.right,
+            .carousel-inner > .item.active {
+                -webkit-transform: translate3d (0, 0, 0);
+                transform: translate3d (0, 0, 0);
+                esquerda: 0;
+            }
+}
+
+.carossel-interno > .ativo,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+    display: bloco;
+}
+
+.carousel-inner > .active {
+    esquerda: 0;
+}
+
+.carousel-inner > .next,
+.carousel-inner > .prev {
+    posição: absoluta;
+    topo: 0;
+    largura: 100%;
+}
+
+.carousel-inner > .next {
+    esquerda: 100%;
+}
+
+.carousel-inner > .prev {
+    esquerda: -100%;
+}
+
+    .carousel-inner > .next.left,
+    .carousel-inner > .prev.right {
+        esquerda: 0;
+    }
+
+.carousel-inner > .active.left {
+    esquerda: -100%;
+}
+
+.carousel-inner > .active.right {
+    esquerda: 100%;
+}
+
+.carousel-control {
+    posição: absoluta;
+    topo: 0;
+    inferior: 0;
+    esquerda: 0;
+    largura: 15%;
+    tamanho da fonte: 20px;
+    cor: #ffffff;
+    alinhamento de texto: centro;
+    sombra do texto: 0 1px 2px rgba (0, 0, 0, 0,6);
+    cor de fundo: rgba (0, 0, 0, 0);
+    filtro: alfa (opacidade = 50);
+    opacidade: 0,5;
+}
+
+    .carousel-control.left {
+        imagem de fundo: gradiente linear (para a direita, rgba (0, 0, 0, 0,5) 0%, rgba (0, 0, 0, 0,0001) 100%);
+        filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# 80000000', endColorstr = '# 00000000', GradientType = 1);
+        repetição de fundo: repetir-x;
+    }
+
+    .carousel-control.right {
+        direita: 0;
+        esquerda: automático;
+        imagem de fundo: gradiente linear (para a direita, rgba (0, 0, 0, 0,0001) 0%, rgba (0, 0, 0, 0,5) 100%);
+        filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# 00000000', endColorstr = '# 80000000', GradientType = 1);
+        repetição de fundo: repetir-x;
+    }
+
+    .carossel-controle: pairar,
+    .carousel-control: focus {
+        cor: #ffffff;
+        decoração de texto: nenhum;
+        esboço: 0;
+        filtro: alfa (opacidade = 90);
+        opacidade: 0,9;
+    }
+
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next,
+    .carossel-controle .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right {
+        posição: absoluta;
+        topo: 50%;
+        índice z: 5;
+        display: bloco embutido;
+        margin-top: -10px;
+    }
+
+    .carousel-control .icon-prev,
+    .carousel-control .glyphicon-chevron-left {
+        esquerda: 50%;
+        margem esquerda: -10px;
+    }
+
+    .carousel-control .icon-next,
+    .carousel-control .glyphicon-chevron-right {
+        direita: 50%;
+        margem direita: -10px;
+    }
+
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next {
+        largura: 20px;
+        altura: 20px;
+        família da fonte: serif;
+        altura da linha: 1;
+    }
+
+        .carousel-control .icon-prev: before {
+            conteúdo: "\ 2039";
+        }
+
+        .carousel-control .icon-next: antes de {
+            conteúdo: "\ 203a";
+        }
+
+.carossel-indicadores {
+    posição: absoluta;
+    inferior: 10px;
+    esquerda: 50%;
+    índice z: 15;
+    largura: 60%;
+    padding-left: 0;
+    margem esquerda: -30%;
+    alinhamento de texto: centro;
+    estilo de lista: nenhum;
+}
+
+    .carossel-indicadores li {
+        display: bloco embutido;
+        largura: 10px;
+        altura: 10px;
+        margem: 1px;
+        texto-indent: -999px;
+        cursor: ponteiro;
+        cor de fundo: # 000 \ 9;
+        cor de fundo: rgba (0, 0, 0, 0);
+        borda: 1px sólido #ffffff;
+        raio da borda: 10px;
+    }
+
+    .carossel-indicadores .active {
+        largura: 12px;
+        altura: 12px;
+        margem: 0;
+        cor de fundo: #ffffff;
+    }
+
+.carousel-caption {
+    posição: absoluta;
+    direita: 15%;
+    inferior: 20px;
+    esquerda: 15%;
+    índice z: 10;
+    acolchoamento superior: 20px;
+    acolchoamento inferior: 20px;
+    cor: #ffffff;
+    alinhamento de texto: centro;
+    sombra do texto: 0 1px 2px rgba (0, 0, 0, 0,6);
+}
+
+    .carousel-caption .btn {
+        sombra do texto: nenhum;
+    }
+
+@media screen e (largura mínima: 768px) {
+    .carossel-controle .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next {
+        largura: 30px;
+        altura: 30px;
+        margin-top: -10px;
+        tamanho da fonte: 30px;
+    }
+
+    .carossel-controle .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        margem esquerda: -10px;
+    }
+
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        margem direita: -10px;
+    }
+
+    .carousel-caption {
+        direita: 20%;
+        esquerda: 20%;
+        acolchoamento inferior: 30px;
+    }
+
+    .carossel-indicadores {
+        inferior: 20px;
+    }
+}
+
+.clearfix: antes,
+.clearfix: depois,
+.dl-horizontal dd: antes,
+.dl-horizontal dd: depois,
+.container: antes,
+.contêiner: depois,
+.container-fluid: antes,
+.container-fluid: after,
+.row: antes,
+.row: depois,
+.form-horizontal .form-group: antes,
+.form-horizontal .form-group: depois,
+.btn-toolbar: antes,
+.btn-barra de ferramentas: depois,
+.btn-group-vertical > .btn-group: antes,
+.btn-group-vertical > .btn-group: depois,
+.nav: antes,
+.nav: depois,
+.navbar: antes,
+.navbar: depois,
+.navbar-header: antes,
+.navbar-header: depois,
+.navbar-collapse: antes,
+.navbar-collapse: depois,
+.pager: antes,
+.pager: depois,
+.panel-body: antes,
+.panel-body: depois,
+.modal-header: antes,
+.modal-header: depois,
+.modal-footer: antes,
+.modal-footer: após {
+    display: mesa;
+    contente: " ";
+}
+
+.clearfix: depois,
+.dl-horizontal dd: depois,
+.contêiner: depois,
+.container-fluid: after,
+.row: depois,
+.form-horizontal .form-group: depois,
+.btn-barra de ferramentas: depois,
+.btn-group-vertical > .btn-group: depois,
+.nav: depois,
+.navbar: depois,
+.navbar-header: depois,
+.navbar-collapse: depois,
+.pager: depois,
+.panel-body: depois,
+.modal-header: depois,
+.modal-footer: após {
+    limpar ambos;
+}
+
+.center-block {
+    display: bloco;
+    margem direita: automático;
+    margem esquerda: automático;
+}
+
+.pull-right {
+    flutuar: certo ! importante;
+}
+
+.pull-left {
+    float: esquerda ! importante;
+}
+
+.ocultar {
+    display: nenhum ! importante;
+}
+
+.exposição {
+    display: bloquear ! importante;
+}
+
+.invisível {
+    visibilidade: oculto;
+}
+
+.text-hide {
+    fonte: 0/0 a;
+    cor: transparente;
+    sombra do texto: nenhum;
+    cor de fundo: transparente;
+    fronteira: 0;
+}
+
+.escondido {
+    display: nenhum ! importante;
+}
+
+.affix {
+    posição: fixa;
+}
+
+@ -ms-viewport {
+    largura: largura do dispositivo;
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+    display: nenhum ! importante;
+}
+
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+    display: nenhum ! importante;
+}
+
+@media (largura máxima: 767px) {
+    .visible-xs {
+        display: bloquear ! importante;
+    }
+
+    table.visible-xs {
+        display: tabela ! importante;
+    }
+
+    tr.visible-xs {
+        display: table-row ! importante;
+    }
+
+    th.visible-xs,
+    td.visible-xs {
+        display: table-cell ! importante;
+    }
+}
+
+@media (largura máxima: 767px) {
+    .visible-xs-block {
+        display: bloquear ! importante;
+    }
+}
+
+@media (largura máxima: 767px) {
+    .visible-xs-inline {
+        display: embutido ! importante;
+    }
+}
+
+@media (largura máxima: 767px) {
+    .visible-xs-inline-block {
+        display: bloco embutido ! importante;
+    }
+}
+
+@media (largura mínima: 768 pixels) e (largura máxima: 991 pixels) {
+    .visible-sm {
+        display: bloquear ! importante;
+    }
+
+    table.visible-sm {
+        display: tabela ! importante;
+    }
+
+    tr.visible-sm {
+        display: table-row ! importante;
+    }
+
+    th.visible-sm,
+    td.visible-sm {
+        display: table-cell ! importante;
+    }
+}
+
+@media (largura mínima: 768 pixels) e (largura máxima: 991 pixels) {
+    .visible-sm-block {
+        display: bloquear ! importante;
+    }
+}
+
+@media (largura mínima: 768 pixels) e (largura máxima: 991 pixels) {
+    .visible-sm-inline {
+        display: embutido ! importante;
+    }
+}
+
+@media (largura mínima: 768 pixels) e (largura máxima: 991 pixels) {
+    .visible-sm-inline-block {
+        display: bloco embutido ! importante;
+    }
+}
+
+@media (largura mínima: 992 pixels) e (largura máxima: 1199 pixels) {
+    .visible-md {
+        display: bloquear ! importante;
+    }
+
+    table.visible-md {
+        display: tabela ! importante;
+    }
+
+    tr.visible-md {
+        display: table-row ! importante;
+    }
+
+    th.visible-md,
+    td.visible-md {
+        display: table-cell ! importante;
+    }
+}
+
+@media (largura mínima: 992 pixels) e (largura máxima: 1199 pixels) {
+    .visible-md-block {
+        display: bloquear ! importante;
+    }
+}
+
+@media (largura mínima: 992 pixels) e (largura máxima: 1199 pixels) {
+    .visible-md-inline {
+        display: embutido ! importante;
+    }
+}
+
+@media (largura mínima: 992 pixels) e (largura máxima: 1199 pixels) {
+    .visible-md-inline-block {
+        display: bloco embutido ! importante;
+    }
+}
+
+@media (largura mínima: 1200px) {
+    .visible-lg {
+        display: bloquear ! importante;
+    }
+
+    table.visible-lg {
+        display: tabela ! importante;
+    }
+
+    tr.visible-lg {
+        display: table-row ! importante;
+    }
+
+    th.visible-lg,
+    td.visible-lg {
+        display: table-cell ! importante;
+    }
+}
+
+@media (largura mínima: 1200px) {
+    .visible-lg-block {
+        display: bloquear ! importante;
+    }
+}
+
+@media (largura mínima: 1200px) {
+    .visible-lg-inline {
+        display: embutido ! importante;
+    }
+}
+
+@media (largura mínima: 1200px) {
+    .visible-lg-inline-block {
+        display: bloco embutido ! importante;
+    }
+}
+
+@media (largura máxima: 767px) {
+    .hidden-xs {
+        display: nenhum ! importante;
+    }
+}
+
+@media (largura mínima: 768 pixels) e (largura máxima: 991 pixels) {
+    .hidden-sm {
+        display: nenhum ! importante;
+    }
+}
+
+@media (largura mínima: 992 pixels) e (largura máxima: 1199 pixels) {
+    .hidden-md {
+        display: nenhum ! importante;
+    }
+}
+
+@media (largura mínima: 1200px) {
+    .hidden-lg {
+        display: nenhum ! importante;
+    }
+}
+
+.visible-print {
+    display: nenhum ! importante;
+}
+
+@media print {
+    .visible-print {
+        display: bloquear ! importante;
+    }
+
+    table.visible-print {
+        display: tabela ! importante;
+    }
+
+    tr.visible-print {
+        display: table-row ! importante;
+    }
+
+    a impressão visível,
+    td.visible-print {
+        display: table-cell ! importante;
+    }
+}
+
+.visible-print-block {
+    display: nenhum ! importante;
+}
+
+@media print {
+    .visible-print-block {
+        display: bloquear ! importante;
+    }
+}
+
+.visible-print-inline {
+    display: nenhum ! importante;
+}
+
+@media print {
+    .visible-print-inline {
+        display: embutido ! importante;
+    }
+}
+
+.visible-print-inline-block {
+    display: nenhum ! importante;
+}
+
+@media print {
+    .visible-print-inline-block {
+        display: bloco embutido ! importante;
+    }
+}
+
+@media print {
+    .hidden-print {
+        display: nenhum ! importante;
+    }
+}
+
+.navbar {
+    imagem de fundo: gradiente linear (# 54b4eb, # 2fa4e7 60%, # 1d9ce5);
+    filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# ff54b4eb', endColorstr = '# ff1d9ce5', GradientType = 0);
+    repetição de fundo: sem repetição;
+    borda inferior: 1px sólido # 178acc;
+    -webkit-filter: nenhum;
+    filtro: nenhum;
+    sombra da caixa: 0 1px 10px rgba (0, 0, 0, 0,1);
+}
+
+.navbar-default .badge {
+    cor de fundo: #fff;
+    cor: # 2fa4e7;
+}
+
+.navbar-inverse {
+    imagem de fundo: gradiente linear (# 04519b, # 044687 60%, # 033769);
+    filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# ff04519b', endColorstr = '# ff033769', GradientType = 0);
+    repetição de fundo: sem repetição;
+    -webkit-filter: nenhum;
+    filtro: nenhum;
+    border-bottom: 1px solid # 022241;
+}
+
+    .navbar-inverse .badge {
+        cor de fundo: #fff;
+        cor: # 033c73;
+    }
+
+.navbar .navbar-nav > li > a,
+.navbar-brand {
+    sombra do texto: 0 1px 0 rgba (0, 0, 0, 0,1);
+}
+
+@media (largura máxima: 767px) {
+    .navbar .dropdown-header {
+        cor: #fff;
+    }
+
+    .navbar. menu suspenso a {
+        cor: #fff;
+    }
+}
+
+.btn {
+    sombra do texto: 0 1px 0 rgba (0, 0, 0, 0,1);
+}
+
+    .btn .caret {
+        border-top-color: #fff;
+    }
+
+.btn-default {
+    imagem de fundo: gradiente linear (#ffffff, #ffffff 60%, # f5f5f5);
+    filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# ffffffff', endColorstr = '# fff5f5f5', GradientType = 0);
+    repetição de fundo: sem repetição;
+    -webkit-filter: nenhum;
+    filtro: nenhum;
+    borda inferior: 1px sólido # e6e6e6;
+}
+
+    .btn-default: hover {
+        cor: # 555555;
+    }
+
+    .btn-default .caret {
+        cor da borda superior: # 555555;
+    }
+
+.btn-default {
+    imagem de fundo: gradiente linear (#ffffff, #ffffff 60%, # f5f5f5);
+    filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# ffffffff', endColorstr = '# fff5f5f5', GradientType = 0);
+    repetição de fundo: sem repetição;
+    -webkit-filter: nenhum;
+    filtro: nenhum;
+    borda inferior: 1px sólido # e6e6e6;
+}
+
+.btn-primary {
+    imagem de fundo: gradiente linear (# 54b4eb, # 2fa4e7 60%, # 1d9ce5);
+    filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# ff54b4eb', endColorstr = '# ff1d9ce5', GradientType = 0);
+    repetição de fundo: sem repetição;
+    -webkit-filter: nenhum;
+    filtro: nenhum;
+    borda inferior: 1px sólido # 178acc;
+}
+
+.btn-success {
+    imagem de fundo: gradiente linear (# 88c149, # 73a839 60%, # 699934);
+    filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# ff88c149', endColorstr = '# ff699934', GradientType = 0);
+    repetição de fundo: sem repetição;
+    -webkit-filter: nenhum;
+    filtro: nenhum;
+    borda inferior: 1px sólido # 59822c;
+}
+
+.btn-info {
+    imagem de fundo: gradiente linear (# 04519b, # 033c73 60%, # 02325f);
+    filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# ff04519b', endColorstr = '# ff02325f', GradientType = 0);
+    repetição de fundo: sem repetição;
+    -webkit-filter: nenhum;
+    filtro: nenhum;
+    border-bottom: 1px solid # 022241;
+}
+
+.btn-warning {
+    imagem de fundo: gradiente linear (# ff6707, # dd5600 60%, # c94e00);
+    filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# ffff6707', endColorstr = '# ffc94e00', GradientType = 0);
+    repetição de fundo: sem repetição;
+    -webkit-filter: nenhum;
+    filtro: nenhum;
+    borda inferior: 1px sólido # aa4200;
+}
+
+.btn-perigo {
+    imagem de fundo: gradiente linear (# e12b31, # c71c22 60%, # b5191f);
+    filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# ffe12b31', endColorstr = '# ffb5191f', GradientType = 0);
+    repetição de fundo: sem repetição;
+    -webkit-filter: nenhum;
+    filtro: nenhum;
+    borda inferior: 1px sólido # 9a161a;
+}
+
+.panel-principal .panel-cabeçalho,
+.panel-success .panel-header,
+.panel-warning .panel-header,
+.panel-perigo. painel-cabeçalho,
+.panel-info .panel-header,
+.panel-primary .panel-title,
+.panel-success .panel-title,
+.panel-warning .panel-title,
+.panel-perigo .panel-title,
+.panel-info .panel-title {
+    cor: #fff;
+}
