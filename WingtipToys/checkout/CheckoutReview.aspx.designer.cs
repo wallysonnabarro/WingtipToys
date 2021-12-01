@@ -7,47 +7,38 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace WingtipToys
+namespace WingtipToys.checkout
 {
 
 
-    public partial class SiteMaster
+    public partial class CheckoutReview
     {
 
         /// <summary>
-        /// Controle cartCount.
+        /// Controle OrderItemList.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor cartCount;
+        protected global::System.Web.UI.WebControls.GridView OrderItemList;
 
         /// <summary>
-        /// Controle Image1.
+        /// Controle ShipInfo.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.DetailsView ShipInfo;
 
         /// <summary>
-        /// Controle categoryList.
+        /// Controle CheckoutConfirm.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView categoryList;
-
-        /// <summary>
-        /// Controle MainContent.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button CheckoutConfirm;
     }
 }

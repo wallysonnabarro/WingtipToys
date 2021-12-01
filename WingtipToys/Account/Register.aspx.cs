@@ -25,6 +25,13 @@ namespace WingtipToys.Account
                 //manager.SendEmail(user.Id, "Confirme sua conta", "Confirme sua conta clicando <a href=\"" + callbackUrl + "\">aqui</a>.");
 
                 signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
+
+                using (WingtipToys.Logic.ShoppingCartActions usersShoppingCart = new WingtipToys.Logic.ShoppingCartActions())
+                {
+                    String cartId = usersShoppingCart.GetCartId();
+                    usersShoppingCart.MigrateCart(cartId, user.Id);
+                }
+
                 IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
             }
             else 

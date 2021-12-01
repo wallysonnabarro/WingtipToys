@@ -205,6 +205,11 @@
     <Content Include="Catalog\Images\truckbig.png" />
     <Content Include="Catalog\Images\truckearly.png" />
     <Content Include="Catalog\Images\truckfire.png" />
+    <Content Include="checkout\CheckoutCancel.aspx" />
+    <Content Include="checkout\CheckoutComplete.aspx" />
+    <Content Include="checkout\CheckoutError.aspx" />
+    <Content Include="checkout\CheckoutReview.aspx" />
+    <Content Include="checkout\CheckoutStart.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -228,6 +233,8 @@
     <Content Include="Account\Web.config" />
     <Content Include="Catalog\Images\Thumbs.db" />
     <Content Include="Catalog\Images\Thumbs\Thumbs.db" />
+    <Content Include="checkout\Web.config" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\logo.jpg" />
     <Content Include="ProductDetails.aspx" />
@@ -260,6 +267,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -390,6 +398,41 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="checkout\CheckoutCancel.aspx.cs">
+      <DependentUpon>CheckoutCancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout\CheckoutCancel.aspx.designer.cs">
+      <DependentUpon>CheckoutCancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout\CheckoutComplete.aspx.cs">
+      <DependentUpon>CheckoutComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout\CheckoutComplete.aspx.designer.cs">
+      <DependentUpon>CheckoutComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout\CheckoutError.aspx.cs">
+      <DependentUpon>CheckoutError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout\CheckoutError.aspx.designer.cs">
+      <DependentUpon>CheckoutError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout\CheckoutReview.aspx.cs">
+      <DependentUpon>CheckoutReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout\CheckoutReview.aspx.designer.cs">
+      <DependentUpon>CheckoutReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout\CheckoutStart.aspx.cs">
+      <DependentUpon>CheckoutStart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout\CheckoutStart.aspx.designer.cs">
+      <DependentUpon>CheckoutStart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -407,10 +450,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\PayPalFunctions.cs" />
     <Compile Include="Logic\ShoppingCartActions.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductContext.cs" />
     <Compile Include="Models\ProductDatabaseInitializer.cs" />
@@ -429,6 +475,13 @@
       <DependentUpon>ProductList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

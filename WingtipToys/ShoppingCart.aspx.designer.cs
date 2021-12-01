@@ -11,43 +11,61 @@ namespace WingtipToys
 {
 
 
-    public partial class SiteMaster
+    public partial class ShoppingCart
     {
 
         /// <summary>
-        /// Controle cartCount.
+        /// Controle ShoppingCartTitle.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor cartCount;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ShoppingCartTitle;
 
         /// <summary>
-        /// Controle Image1.
+        /// Controle CartList.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.GridView CartList;
 
         /// <summary>
-        /// Controle categoryList.
+        /// Controle LabelTotalText.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView categoryList;
+        protected global::System.Web.UI.WebControls.Label LabelTotalText;
 
         /// <summary>
-        /// Controle MainContent.
+        /// Controle lblTotal.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Label lblTotal;
+
+        /// <summary>
+        /// Controle UpdateBtn.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button UpdateBtn;
+
+        /// <summary>
+        /// Controle CheckoutImageBtn.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton CheckoutImageBtn;
     }
 }
